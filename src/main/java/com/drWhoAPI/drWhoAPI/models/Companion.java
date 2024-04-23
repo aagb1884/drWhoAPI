@@ -1,0 +1,92 @@
+package com.drWhoAPI.drWhoAPI.models;
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="companions")
+public class Companion {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @Column
+    private String firstName;
+    @Column
+    private String lastName;
+    @Column
+    private String nickname;
+    @Column
+    private String primaryEra;
+    @Column
+    private String mainActor;
+    @Column
+    private String bio;
+
+    public Companion() {
+    }
+
+    public Companion(String firstName, String lastName, String nickname, String primaryEra, String mainActor, String bio) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.nickname = nickname;
+        this.primaryEra = primaryEra;
+        this.mainActor = mainActor;
+        this.bio = bio;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getPrimaryEra() {
+        return primaryEra;
+    }
+
+    public void setPrimaryEra(String primaryEra) {
+        this.primaryEra = primaryEra;
+    }
+
+    public String getMainActor() {
+        return mainActor;
+    }
+
+    public void setMainActor(String mainActor) {
+        this.mainActor = mainActor;
+    }
+
+    public String getBio() {
+        return bio;
+    }
+
+    public void setBio(String bio) {
+        this.bio = bio;
+    }
+}

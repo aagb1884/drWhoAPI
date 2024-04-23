@@ -1,6 +1,9 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name="companions")
@@ -21,6 +24,26 @@ public class Companion {
     private String mainActor;
     @Column
     private String bio;
+    @JsonIgnoreProperties({"doctors", "companions"})
+    @ManyToMany
+    @JoinTable(
+            name = "companion_stories",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "companion_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "story_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            }
+    )
+    private List<Story> stories;
 
     public Companion() {
     }

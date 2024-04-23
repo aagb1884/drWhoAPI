@@ -1,11 +1,25 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="reviews")
 public class Review {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @ManyToOne
+    @JoinColumn(name = "story_id", nullable = false)
     private Story story;
+    @JsonIgnoreProperties({"userReviews"})
+    @ManyToOne
+    @JoinColumn(name = "user_id", nullable = false)
     private User user;
+    @Column
     private String review;
+    @Column
     private Integer rating;
 
     public Review() {

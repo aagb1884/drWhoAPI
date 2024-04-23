@@ -1,6 +1,10 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+
+import java.awt.print.Book;
+import java.util.List;
 
 @Entity
 @Table (name="doctors")
@@ -17,6 +21,26 @@ public class Doctor {
     private String mainActor;
     @Column
     private String bio;
+    @JsonIgnoreProperties({"doctors"})
+    @ManyToMany
+    @JoinTable(
+            name = "doctor_stories",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "doctor_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "story_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            }
+    )
+    private List<Story> stories;
 
     public Doctor() {
     }

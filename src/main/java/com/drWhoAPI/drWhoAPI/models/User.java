@@ -1,17 +1,32 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name="users")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private String email;
+    @Column
     private String display_name;
+    @Column
     private String location;
+    @Column
     private String userImgURL;
+    @Column
     private String userBio;
+    @Column
     private String userWebsite;
+    @JsonIgnoreProperties({"user"})
+    @OneToMany(mappedBy = "user")
     private List<Review> userReviews;
 
     public User() {

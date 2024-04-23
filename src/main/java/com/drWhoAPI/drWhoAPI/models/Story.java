@@ -2,24 +2,79 @@ package com.drWhoAPI.drWhoAPI.models;
 
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import jakarta.persistence.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Entity
+@Table(name="stories")
 public class Story {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
     private String title;
+    @Column
     private Format media;
+    @Column
     private String broadcast;
+    @Column
     private String releases;
+    @JsonIgnoreProperties({"stories"})
+    @ManyToMany
+    @JoinTable(
+            name = "doctor_stories",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "story_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "doctor_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            }
+    )
     private List<Doctor> doctors;
+    @JsonIgnoreProperties({"stories"})
+    @ManyToMany
+    @JoinTable(
+            name = "companion_stories",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "story_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "companion_id",
+                            nullable = false,
+                            updatable = false
+                    )
+            }
+    )
     private List<Companion> companions;
+    @Column
     private String imgURL;
+    @Column
     private String synopsis;
+    @Column
     private String keywords;
+    @Column
     private Series series;
+    @Column
     private String productionCode;
+    @JsonIgnoreProperties({"user", "story"})
+    @OneToMany(mappedBy = "story")
     private List<Review> reviews;
 
     public Story() {

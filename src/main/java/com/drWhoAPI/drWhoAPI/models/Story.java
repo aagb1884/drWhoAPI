@@ -17,6 +17,7 @@ public class Story {
     private Long id;
     @Column
     private String title;
+    @Enumerated(EnumType.STRING)
     @Column
     private Format media;
     @Column
@@ -31,14 +32,16 @@ public class Story {
                     @JoinColumn(
                             name = "story_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             },
             inverseJoinColumns = {
                     @JoinColumn(
                             name = "doctor_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             }
     )
@@ -51,14 +54,16 @@ public class Story {
                     @JoinColumn(
                             name = "story_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             },
             inverseJoinColumns = {
                     @JoinColumn(
                             name = "companion_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             }
     )
@@ -69,6 +74,7 @@ public class Story {
     private String synopsis;
     @Column
     private String keywords;
+    @Enumerated(EnumType.STRING)
     @Column
     private Series series;
     @Column

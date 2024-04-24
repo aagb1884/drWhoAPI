@@ -32,14 +32,16 @@ public class Companion {
                     @JoinColumn(
                             name = "companion_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             },
             inverseJoinColumns = {
                     @JoinColumn(
                             name = "story_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             }
     )

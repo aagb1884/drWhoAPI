@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.awt.print.Book;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -29,14 +30,16 @@ public class Doctor {
                     @JoinColumn(
                             name = "doctor_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             },
             inverseJoinColumns = {
                     @JoinColumn(
                             name = "story_id",
                             nullable = false,
-                            updatable = false
+                            updatable = false,
+                            insertable = false
                     )
             }
     )
@@ -50,6 +53,7 @@ public class Doctor {
         this.primaryEra = primaryEra;
         this.mainActor = mainActor;
         this.bio = bio;
+        this.stories = new ArrayList<>();
     }
 
     public Long getId() {
@@ -90,5 +94,20 @@ public class Doctor {
 
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    public List<Story> getStories() {
+        return stories;
+    }
+
+    public void setStories(List<Story> stories) {
+        this.stories = stories;
+    }
+
+    public void addStory(Story story){
+        this.stories.add(story);
+    }
+    public void removeStory(Story story){
+        this.stories.remove(story);
     }
 }

@@ -1,9 +1,12 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.drWhoAPI.drWhoAPI.models.enums.Crew;
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+import org.hibernate.annotations.Cascade;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,6 +20,50 @@ public class Story {
     private Long id;
     @Column
     private String title;
+    @JsonIgnoreProperties({"stories"})
+    @ManyToMany
+    @JoinTable(
+            name = "story_cast",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "story_id",
+                            nullable = false,
+                            updatable = false,
+                            insertable = false
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "cast_id",
+                            nullable = false,
+                            updatable = false,
+                            insertable = false
+                    )
+            }
+    )
+    private List<Cast> cast;
+    @JsonIgnoreProperties({"stories"})
+    @ManyToMany
+    @JoinTable(
+            name = "story_crew",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "story_id",
+                            nullable = false,
+                            updatable = false,
+                            insertable = false
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "crew_id",
+                            nullable = false,
+                            updatable = false,
+                            insertable = false
+                    )
+            }
+    )
+    private List<Crew> crew;
     @Enumerated(EnumType.STRING)
     @Column
     private Format media;
@@ -46,8 +93,9 @@ public class Story {
             }
     )
     private List<Doctor> doctors;
-    @JsonIgnoreProperties({"stories"})
+    @JsonBackReference
     @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
             name = "companion_stories",
             joinColumns = {
@@ -88,6 +136,8 @@ public class Story {
 
     public Story(String title, Format media, String broadcast, String releases, String imgURL, String synopsis, String keywords, Series series, String productionCode) {
         this.title = title;
+        this.cast = new ArrayList<>();
+        this.crew = new ArrayList<>();
         this.media = media;
         this.broadcast = broadcast;
         this.releases = releases;
@@ -115,6 +165,38 @@ public class Story {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public List<Cast> getCast() {
+        return cast;
+    }
+
+    public void setCast(List<Cast> cast) {
+        this.cast = cast;
+    }
+
+    public void addCast(Cast castMember){
+        this.cast.add(castMember);
+    }
+
+    public void removeCast(Cast castMember){
+        this.cast.remove(castMember);
+    }
+
+    public List<Crew> getCrew() {
+        return crew;
+    }
+
+    public void setCrew(List<Crew> crew) {
+        this.crew = crew;
+    }
+
+    public void addCrew(Crew crewMember){
+        this.crew.add(crewMember);
+    }
+
+    public void removeCrew(Crew crewMember){
+        this.crew.remove(crewMember);
     }
 
     public Format getMedia() {

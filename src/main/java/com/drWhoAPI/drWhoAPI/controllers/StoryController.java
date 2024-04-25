@@ -38,6 +38,8 @@ class StoryController {
             @PathVariable Long id){
         Story updatedStory = storyRepository.findById(id).get();
         updatedStory.setTitle(updatedStory.getTitle());
+        updatedStory.setCast(updatedStory.getCast());
+        updatedStory.setCrew(updatedStory.getCrew());
         updatedStory.setMedia(updatedStory.getMedia());
         updatedStory.setBroadcast(updatedStory.getBroadcast());
         updatedStory.setReleases(updatedStory.getReleases());
@@ -59,6 +61,8 @@ class StoryController {
     public ResponseEntity<Story> createStory(@RequestBody Story Story) {
         Story newStory = new Story();
         newStory.setTitle(newStory.getTitle());
+        newStory.setCast(newStory.getCast());
+        newStory.setCrew(newStory.getCrew());
         newStory.setMedia(newStory.getMedia());
         newStory.setBroadcast(newStory.getBroadcast());
         newStory.setReleases(newStory.getReleases());

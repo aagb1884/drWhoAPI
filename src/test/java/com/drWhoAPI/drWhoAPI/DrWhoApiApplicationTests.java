@@ -1,6 +1,7 @@
 package com.drWhoAPI.drWhoAPI;
 
 import com.drWhoAPI.drWhoAPI.models.*;
+import com.drWhoAPI.drWhoAPI.models.enums.Crew;
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
 import com.drWhoAPI.drWhoAPI.repositories.*;
@@ -26,6 +27,12 @@ class DrWhoApiApplicationTests {
 	@Autowired
 	ReviewRepository reviewRepository;
 
+	@Autowired
+	CrewRepository crewRepository;
+
+	@Autowired
+	CastRepository castRepository;
+
 	@Test
 	void contextLoads() {
 	}
@@ -49,14 +56,28 @@ class DrWhoApiApplicationTests {
 	}
 
 	@Test
+	public void canSaveCrew(){
+		Crew coburn = new Crew("Anthony Coburn", "Writer", "");
+		crewRepository.save(coburn);
+	}
+
+	@Test
+	public void canSaveCast(){
+		Cast newark = new Cast("Derek Newark", "Za", "Later appeared in 'Inferno' (1970).");
+	}
+
+	@Test
 	public void canSaveStory() {
 		Doctor firstDoctor = new Doctor ("First Doctor", "1963 - 1966", "William Hartnell", "A cheeky wizard and cantankerous snob who learns how to become a hero.");
 		Companion susan = new Companion ("Susan", "Foreman", "", "1963 - 1964", "Carole Ann Ford", "The Doctor's granddaughter, a precocious but frail teenager who dotes on her grandfather but has a burgeoning desire to settle down rather than constantly travelling.");
+		Crew coburn = new Crew("Anthony Coburn", "Writer", "");
+		crewRepository.save(coburn);
 		Story unearthly = new Story("An Unearthly Child", Format.TV, "23/11/63 - 14/12/63", "Novelisation(1981), VHS(1990, 2000), DVD(2006)", "img_url", "the first ever story", "totters lane, junkyard, cavemen", Series.SEASON1, "A");
 		doctorRepository.save(firstDoctor);
 		unearthly.addDoctor(firstDoctor);
 		companionRepository.save(susan);
 		unearthly.addCompanion(susan);
+		unearthly.addCrew(coburn);
 		storyRepository.save(unearthly);
 	}
 
@@ -72,7 +93,7 @@ class DrWhoApiApplicationTests {
 		storyRepository.save(unearthly);
 		User todd = new User("todd@email.com", "hot_todd", "Nebraska", "userImgURL", "Todd is great.", "www.hottoddy.com");
 		userRepository.save(todd);
-		Review review = new Review(unearthly, todd, "very good", 4);
+		Review review = new Review(unearthly, todd, "very good", 4, false);
 		reviewRepository.save(review);
 
 	}

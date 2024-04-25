@@ -2,12 +2,13 @@ package com.drWhoAPI.drWhoAPI.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table (name="doctors")
-public class Doctor {
+@Table
+public class Cast {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -15,18 +16,16 @@ public class Doctor {
     @Column
     private String name;
     @Column
-    private String primaryEra;
+    private String role;
     @Column
-    private String mainActor;
-    @Column
-    private String bio;
-    @JsonIgnoreProperties({"doctors"})
+    private String info;
+    @JsonIgnoreProperties({"cast"})
     @ManyToMany
     @JoinTable(
-            name = "doctor_stories",
+            name = "story_cast",
             joinColumns = {
                     @JoinColumn(
-                            name = "doctor_id",
+                            name = "cast_id",
                             nullable = false,
                             updatable = false,
                             insertable = false
@@ -43,14 +42,13 @@ public class Doctor {
     )
     private List<Story> stories;
 
-    public Doctor() {
+    public Cast() {
     }
 
-    public Doctor(String name, String primaryEra, String mainActor, String bio) {
+    public Cast(String name, String role, String info) {
         this.name = name;
-        this.primaryEra = primaryEra;
-        this.mainActor = mainActor;
-        this.bio = bio;
+        this.role = role;
+        this.info = info;
         this.stories = new ArrayList<>();
     }
 
@@ -70,28 +68,20 @@ public class Doctor {
         this.name = name;
     }
 
-    public String getPrimaryEra() {
-        return primaryEra;
+    public String getRole() {
+        return role;
     }
 
-    public void setPrimaryEra(String primaryEra) {
-        this.primaryEra = primaryEra;
+    public void setRole(String role) {
+        this.role = role;
     }
 
-    public String getMainActor() {
-        return mainActor;
+    public String getInfo() {
+        return info;
     }
 
-    public void setMainActor(String mainActor) {
-        this.mainActor = mainActor;
-    }
-
-    public String getBio() {
-        return bio;
-    }
-
-    public void setBio(String bio) {
-        this.bio = bio;
+    public void setInfo(String info) {
+        this.info = info;
     }
 
     public List<Story> getStories() {
@@ -105,7 +95,6 @@ public class Doctor {
     public void addStory(Story story){
         this.stories.add(story);
     }
-    public void removeStory(Story story){
-        this.stories.remove(story);
-    }
+
+    public void removeStory(Story story){ this.stories.remove(story);}
 }

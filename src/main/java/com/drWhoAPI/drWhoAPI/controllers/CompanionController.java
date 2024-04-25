@@ -1,7 +1,6 @@
 package com.drWhoAPI.drWhoAPI.controllers;
 
 import com.drWhoAPI.drWhoAPI.models.Companion;
-import com.drWhoAPI.drWhoAPI.models.Doctor;
 import com.drWhoAPI.drWhoAPI.repositories.CompanionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

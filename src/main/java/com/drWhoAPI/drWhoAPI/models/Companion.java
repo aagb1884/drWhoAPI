@@ -3,6 +3,7 @@ package com.drWhoAPI.drWhoAPI.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -57,6 +58,7 @@ public class Companion {
         this.primaryEra = primaryEra;
         this.mainActor = mainActor;
         this.bio = bio;
+        this.stories = new ArrayList<>();
     }
 
     public Long getId() {
@@ -113,5 +115,13 @@ public class Companion {
 
     public void setBio(String bio) {
         this.bio = bio;
+    }
+
+    public List<Story> getStories() {
+        return stories;
+    }
+
+    public void setStories(List<Story> stories) {
+        this.stories = stories;
     }
 }

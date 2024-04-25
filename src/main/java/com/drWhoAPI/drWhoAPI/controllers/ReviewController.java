@@ -34,13 +34,14 @@ class ReviewController {
 
     @PutMapping(value = "/reviews/{id}")
     public ResponseEntity<Review> updateReview(
-            @RequestBody Review doctor,
+            @RequestBody Review review,
             @PathVariable Long id){
         Review updatedReview = reviewRepository.findById(id).get();
-        updatedReview.setStory(doctor.getStory());
-        updatedReview.setUser(doctor.getUser());
-        updatedReview.setReview(doctor.getReview());
-        updatedReview.setRating(doctor.getRating());
+        updatedReview.setStory(review.getStory());
+        updatedReview.setUser(review.getUser());
+        updatedReview.setReview(review.getReview());
+        updatedReview.setRating(review.getRating());
+        updatedReview.setReviewPrivate(review.getReviewPrivate());
 
         reviewRepository.save(updatedReview);
 
@@ -48,13 +49,13 @@ class ReviewController {
     }
 
     @PostMapping(value = "/reviews")
-    public ResponseEntity<Review> createReview(@RequestBody Review doctor) {
+    public ResponseEntity<Review> createReview(@RequestBody Review review) {
         Review newReview = new Review();
-        newReview.setStory(doctor.getStory());
-        newReview.setUser(doctor.getUser());
-        newReview.setReview(doctor.getReview());
-        newReview.setRating(doctor.getRating());
-
+        newReview.setStory(review.getStory());
+        newReview.setUser(review.getUser());
+        newReview.setReview(review.getReview());
+        newReview.setRating(review.getRating());
+        newReview.setReviewPrivate(review.getReviewPrivate());
 
         reviewRepository.save(newReview);
 

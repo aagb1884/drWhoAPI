@@ -1,5 +1,6 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -25,8 +26,8 @@ public class User {
     private String userBio;
     @Column
     private String userWebsite;
-    @JsonIgnoreProperties({"user"})
-    @OneToMany(mappedBy = "user")
+    @JsonBackReference
+    @OneToMany(mappedBy = "user", fetch= FetchType.LAZY)
     private List<Review> userReviews;
 
     public User() {

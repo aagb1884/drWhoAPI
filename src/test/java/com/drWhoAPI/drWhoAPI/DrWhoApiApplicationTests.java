@@ -1,7 +1,7 @@
 package com.drWhoAPI.drWhoAPI;
 
 import com.drWhoAPI.drWhoAPI.models.*;
-import com.drWhoAPI.drWhoAPI.models.enums.Crew;
+import com.drWhoAPI.drWhoAPI.models.Crew;
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
 import com.drWhoAPI.drWhoAPI.repositories.*;
@@ -33,6 +33,9 @@ class DrWhoApiApplicationTests {
 	@Autowired
 	CastRepository castRepository;
 
+	@Autowired
+	PersonRepository personRepository;
+
 	@Test
 	void contextLoads() {
 	}
@@ -56,29 +59,40 @@ class DrWhoApiApplicationTests {
 	}
 
 	@Test
-	public void canSaveCrew(){
-		Crew coburn = new Crew("Anthony Coburn", "Writer", "");
-		crewRepository.save(coburn);
-	}
-
-	@Test
-	public void canSaveCast(){
-		Cast newark = new Cast("Derek Newark", "Za", "Later appeared in 'Inferno' (1970).");
+	public void canSavePerson(){
+		Person dnewark = new Person("Derek Newark", "Actor.");
+		personRepository.save(dnewark);
 	}
 
 	@Test
 	public void canSaveStory() {
 		Doctor firstDoctor = new Doctor ("First Doctor", "1963 - 1966", "William Hartnell", "A cheeky wizard and cantankerous snob who learns how to become a hero.");
 		Companion susan = new Companion ("Susan", "Foreman", "", "1963 - 1964", "Carole Ann Ford", "The Doctor's granddaughter, a precocious but frail teenager who dotes on her grandfather but has a burgeoning desire to settle down rather than constantly travelling.");
-		Crew coburn = new Crew("Anthony Coburn", "Writer", "");
-		crewRepository.save(coburn);
+		Person aCoburn =  new Person("Anthony Coburn", "Writer.");
+		personRepository.save(aCoburn);
 		Story unearthly = new Story("An Unearthly Child", Format.TV, "23/11/63 - 14/12/63", "Novelisation(1981), VHS(1990, 2000), DVD(2006)", "img_url", "the first ever story", "totters lane, junkyard, cavemen", Series.SEASON1, "A");
 		doctorRepository.save(firstDoctor);
 		unearthly.addDoctor(firstDoctor);
 		companionRepository.save(susan);
 		unearthly.addCompanion(susan);
-		unearthly.addCrew(coburn);
 		storyRepository.save(unearthly);
+	}
+
+	@Test
+	public void canSaveCrew(){
+		Doctor firstDoctor = new Doctor ("First Doctor", "1963 - 1966", "William Hartnell", "A cheeky wizard and cantankerous snob who learns how to become a hero.");
+		Companion susan = new Companion ("Susan", "Foreman", "", "1963 - 1964", "Carole Ann Ford", "The Doctor's granddaughter, a precocious but frail teenager who dotes on her grandfather but has a burgeoning desire to settle down rather than constantly travelling.");
+		Person aCoburn =  new Person("Anthony Coburn", "Writer.");
+		personRepository.save(aCoburn);
+		Story unearthly = new Story("An Unearthly Child", Format.TV, "23/11/63 - 14/12/63", "Novelisation(1981), VHS(1990, 2000), DVD(2006)", "img_url", "the first ever story", "totters lane, junkyard, cavemen", Series.SEASON1, "A");
+		doctorRepository.save(firstDoctor);
+		unearthly.addDoctor(firstDoctor);
+		companionRepository.save(susan);
+		unearthly.addCompanion(susan);
+		storyRepository.save(unearthly);
+		Crew writer = new Crew(aCoburn, "Writer", unearthly);
+		crewRepository.save(writer);
+
 	}
 
 	@Test

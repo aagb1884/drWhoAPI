@@ -3,29 +3,28 @@ package com.drWhoAPI.drWhoAPI.models;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table
-public class Cast {
-
+public class Crew {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    @JsonIgnoreProperties({"castRoles"})
+    @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
+    @JsonIgnoreProperties({"crewRoles"})
     @ManyToOne
     @JoinColumn(name = "person_id")
     private Person person;
     @Column
     private String role;
-
     @ManyToOne
     @JoinColumn(name = "story_id", nullable = false)
     private Story story;
 
-    public Cast() {
+    public Crew() {
     }
 
-    public Cast(Person person, String role, Story story) {
+    public Crew(Person person, String role, Story story) {
         this.person = person;
         this.role = role;
         this.story = story;

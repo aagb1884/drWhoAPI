@@ -1,6 +1,6 @@
 package com.drWhoAPI.drWhoAPI.controllers;
 
-import com.drWhoAPI.drWhoAPI.models.enums.Crew;
+import com.drWhoAPI.drWhoAPI.models.Crew;
 import com.drWhoAPI.drWhoAPI.repositories.CrewRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -37,10 +37,9 @@ class CrewController {
             @RequestBody Crew crew,
             @PathVariable Long id){
         Crew updatedCrewMember = crewRepository.findById(id).get();
-        updatedCrewMember.setName(crew.getName());
+        updatedCrewMember.setPerson(crew.getPerson());
         updatedCrewMember.setRole(crew.getRole());
-        updatedCrewMember.setInfo(crew.getInfo());
-        updatedCrewMember.setStories(crew.getStories());
+        updatedCrewMember.setStory(crew.getStory());
 
         crewRepository.save(updatedCrewMember);
 
@@ -50,10 +49,9 @@ class CrewController {
     @PostMapping(value = "/crew")
     public ResponseEntity<Crew> createCrewMember(@RequestBody Crew crew) {
         Crew newCrewMember = new Crew();
-        newCrewMember.setName(crew.getName());
+        newCrewMember.setPerson(crew.getPerson());
         newCrewMember.setRole(crew.getRole());
-        newCrewMember.setInfo(crew.getInfo());
-        newCrewMember.setStories(crew.getStories());
+        newCrewMember.setStory(crew.getStory());
 
         crewRepository.save(newCrewMember);
 

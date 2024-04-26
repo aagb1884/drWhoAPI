@@ -1,7 +1,6 @@
 package com.drWhoAPI.drWhoAPI.controllers;
 
 import com.drWhoAPI.drWhoAPI.models.Cast;
-import com.drWhoAPI.drWhoAPI.models.enums.Crew;
 import com.drWhoAPI.drWhoAPI.repositories.CastRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -38,10 +37,9 @@ class CastController {
             @RequestBody Cast cast,
             @PathVariable Long id){
         Cast updatedCastMember = castRepository.findById(id).get();
-        updatedCastMember.setName(cast.getName());
+        updatedCastMember.setPerson(cast.getPerson());
         updatedCastMember.setRole(cast.getRole());
-        updatedCastMember.setInfo(cast.getInfo());
-        updatedCastMember.setStories(cast.getStories());
+        updatedCastMember.setStory(cast.getStory());
 
         castRepository.save(updatedCastMember);
 
@@ -51,10 +49,9 @@ class CastController {
     @PostMapping(value = "/cast")
     public ResponseEntity<Cast> createCastMember(@RequestBody Cast cast) {
         Cast newCastMember = new Cast();
-        newCastMember.setName(cast.getName());
+        newCastMember.setPerson(cast.getPerson());
         newCastMember.setRole(cast.getRole());
-        newCastMember.setInfo(cast.getInfo());
-        newCastMember.setStories(cast.getStories());
+        newCastMember.setStory(cast.getStory());
 
         castRepository.save(newCastMember);
 

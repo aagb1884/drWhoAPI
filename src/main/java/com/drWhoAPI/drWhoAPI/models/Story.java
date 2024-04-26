@@ -1,6 +1,5 @@
 package com.drWhoAPI.drWhoAPI.models;
 
-import com.drWhoAPI.drWhoAPI.models.enums.Crew;
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
 import com.fasterxml.jackson.annotation.JsonBackReference;
@@ -20,49 +19,11 @@ public class Story {
     private Long id;
     @Column
     private String title;
-    @JsonIgnoreProperties({"stories"})
-    @ManyToMany
-    @JoinTable(
-            name = "story_cast",
-            joinColumns = {
-                    @JoinColumn(
-                            name = "story_id",
-                            nullable = false,
-                            updatable = false,
-                            insertable = false
-                    )
-            },
-            inverseJoinColumns = {
-                    @JoinColumn(
-                            name = "cast_id",
-                            nullable = false,
-                            updatable = false,
-                            insertable = false
-                    )
-            }
-    )
+    @JsonIgnoreProperties({"person", "story"})
+    @OneToMany(mappedBy = "story")
     private List<Cast> cast;
-    @JsonIgnoreProperties({"stories"})
-    @ManyToMany
-    @JoinTable(
-            name = "story_crew",
-            joinColumns = {
-                    @JoinColumn(
-                            name = "story_id",
-                            nullable = false,
-                            updatable = false,
-                            insertable = false
-                    )
-            },
-            inverseJoinColumns = {
-                    @JoinColumn(
-                            name = "crew_id",
-                            nullable = false,
-                            updatable = false,
-                            insertable = false
-                    )
-            }
-    )
+    @JsonIgnoreProperties({"person", "story"})
+    @OneToMany(mappedBy = "story")
     private List<Crew> crew;
     @Enumerated(EnumType.STRING)
     @Column

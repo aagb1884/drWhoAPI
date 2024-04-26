@@ -1,7 +1,8 @@
 package com.drWhoAPI.drWhoAPI;
 
 import com.drWhoAPI.drWhoAPI.models.*;
-import com.drWhoAPI.drWhoAPI.models.Crew;
+import com.drWhoAPI.drWhoAPI.models.CastAndCrew;
+import com.drWhoAPI.drWhoAPI.models.enums.CastOrCrew;
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
 import com.drWhoAPI.drWhoAPI.repositories.*;
@@ -28,10 +29,7 @@ class DrWhoApiApplicationTests {
 	ReviewRepository reviewRepository;
 
 	@Autowired
-	CrewRepository crewRepository;
-
-	@Autowired
-	CastRepository castRepository;
+	CastAndCrewRepository castAndCrewRepository;
 
 	@Autowired
 	PersonRepository personRepository;
@@ -90,8 +88,8 @@ class DrWhoApiApplicationTests {
 		companionRepository.save(susan);
 		unearthly.addCompanion(susan);
 		storyRepository.save(unearthly);
-		Crew writer = new Crew(aCoburn, "Writer", unearthly);
-		crewRepository.save(writer);
+		CastAndCrew writer = new CastAndCrew(aCoburn, "Writer", CastOrCrew.CREW, unearthly);
+		castAndCrewRepository.save(writer);
 
 	}
 

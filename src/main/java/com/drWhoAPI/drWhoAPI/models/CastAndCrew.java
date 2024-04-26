@@ -1,14 +1,12 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.drWhoAPI.drWhoAPI.models.enums.CastOrCrew;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
-import java.util.ArrayList;
-import java.util.List;
-
 @Entity
 @Table
-public class Crew {
+public class CastAndCrew {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
     @JsonIgnoreProperties({"crewRoles"})
@@ -17,16 +15,20 @@ public class Crew {
     private Person person;
     @Column
     private String role;
+    @Enumerated(EnumType.STRING)
+    @Column
+    private CastOrCrew category;
     @ManyToOne
     @JoinColumn(name = "story_id", nullable = false)
     private Story story;
 
-    public Crew() {
+    public CastAndCrew() {
     }
 
-    public Crew(Person person, String role, Story story) {
+    public CastAndCrew(Person person, String role, CastOrCrew category, Story story) {
         this.person = person;
         this.role = role;
+        this.category = category;
         this.story = story;
     }
 
@@ -52,6 +54,14 @@ public class Crew {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public CastOrCrew getCategory() {
+        return category;
+    }
+
+    public void setCategory(CastOrCrew category) {
+        this.category = category;
     }
 
     public Story getStory() {

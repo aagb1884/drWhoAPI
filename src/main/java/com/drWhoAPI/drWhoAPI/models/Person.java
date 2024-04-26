@@ -16,12 +16,12 @@ public class Person {
     private String name;
     @Column
     private String info;
+//    @JsonIgnoreProperties({"person"})
+//    @OneToMany(mappedBy = "person")
+//    private List<Cast> castRoles;
     @JsonIgnoreProperties({"person"})
     @OneToMany(mappedBy = "person")
-    private List<Cast> castRoles;
-    @JsonIgnoreProperties({"person"})
-    @OneToMany(mappedBy = "person")
-    private List<Crew> crewRoles;
+    private List<CastAndCrew> castCrewRoles;
 
     public Person() {
     }
@@ -29,8 +29,8 @@ public class Person {
     public Person(String name, String info) {
         this.name = name;
         this.info = info;
-        this.castRoles = new ArrayList<>();
-        this.crewRoles = new ArrayList<>();
+//        this.castRoles = new ArrayList<>();
+        this.castCrewRoles = new ArrayList<>();
     }
 
     public Long getId() {
@@ -57,26 +57,26 @@ public class Person {
         this.info = info;
     }
 
-    public List<Cast> getCastRoles() {
-        return castRoles;
+//    public List<Cast> getCastRoles() {
+//        return castRoles;
+//    }
+//
+//    public void setCastRoles(List<Cast> castRoles) {
+//        this.castRoles = castRoles;
+//    }
+//
+//    public void addToCast(Cast person){ this.castRoles.add(person);}
+//
+//    public void removeFromCast(Cast person) { this.castRoles.remove(person);}
+    public List<CastAndCrew> getCastrewRoles() {
+        return castCrewRoles;
     }
 
-    public void setCastRoles(List<Cast> castRoles) {
-        this.castRoles = castRoles;
+    public void setCastCrewRoles(List<CastAndCrew> castCrewRoles) {
+        this.castCrewRoles = castCrewRoles;
     }
 
-    public void addToCast(Cast person){ this.castRoles.add(person);}
+    public void addToCastCrew(CastAndCrew person){ this.castCrewRoles.add(person);}
 
-    public void removeFromCast(Cast person) { this.castRoles.remove(person);}
-    public List<Crew> getCrewRoles() {
-        return crewRoles;
-    }
-
-    public void setCrewRoles(List<Crew> crewRoles) {
-        this.crewRoles = crewRoles;
-    }
-
-    public void addToCrew(Crew person){ this.crewRoles.add(person);}
-
-    public void removeFromCrew(Crew person) { this.crewRoles.remove(person);}
+    public void removeFromCastCrew(CastAndCrew person) { this.castCrewRoles.remove(person);}
 }

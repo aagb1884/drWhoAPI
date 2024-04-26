@@ -19,12 +19,12 @@ public class Story {
     private Long id;
     @Column
     private String title;
+//    @JsonIgnoreProperties({"person", "story"})
+//    @OneToMany(mappedBy = "story")
+//    private List<Cast> cast;
     @JsonIgnoreProperties({"person", "story"})
     @OneToMany(mappedBy = "story")
-    private List<Cast> cast;
-    @JsonIgnoreProperties({"person", "story"})
-    @OneToMany(mappedBy = "story")
-    private List<Crew> crew;
+    private List<CastAndCrew> castAndCrew;
     @Enumerated(EnumType.STRING)
     @Column
     private Format media;
@@ -97,8 +97,8 @@ public class Story {
 
     public Story(String title, Format media, String broadcast, String releases, String imgURL, String synopsis, String keywords, Series series, String productionCode) {
         this.title = title;
-        this.cast = new ArrayList<>();
-        this.crew = new ArrayList<>();
+//        this.cast = new ArrayList<>();
+        this.castAndCrew = new ArrayList<>();
         this.media = media;
         this.broadcast = broadcast;
         this.releases = releases;
@@ -128,36 +128,20 @@ public class Story {
         this.title = title;
     }
 
-    public List<Cast> getCast() {
-        return cast;
+    public List<CastAndCrew> getCastCrew() {
+        return castAndCrew;
     }
 
-    public void setCast(List<Cast> cast) {
-        this.cast = cast;
+    public void setCastCrew(List<CastAndCrew> castAndCrew) {
+        this.castAndCrew = castAndCrew;
     }
 
-    public void addCast(Cast castMember){
-        this.cast.add(castMember);
+    public void addCastCrew(CastAndCrew castCrewMember){
+        this.castAndCrew.add(castCrewMember);
     }
 
-    public void removeCast(Cast castMember){
-        this.cast.remove(castMember);
-    }
-
-    public List<Crew> getCrew() {
-        return crew;
-    }
-
-    public void setCrew(List<Crew> crew) {
-        this.crew = crew;
-    }
-
-    public void addCrew(Crew crewMember){
-        this.crew.add(crewMember);
-    }
-
-    public void removeCrew(Crew crewMember){
-        this.crew.remove(crewMember);
+    public void removeCrew(CastAndCrew castCrewMember){
+        this.castAndCrew.remove(castCrewMember);
     }
 
     public Format getMedia() {

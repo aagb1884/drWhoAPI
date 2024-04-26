@@ -1,6 +1,5 @@
 package com.drWhoAPI.drWhoAPI.controllers;
 
-import com.drWhoAPI.drWhoAPI.models.Cast;
 import com.drWhoAPI.drWhoAPI.models.Person;
 import com.drWhoAPI.drWhoAPI.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,8 +39,8 @@ class PersonController {
         Person updatedPerson = personRepository.findById(id).get();
         updatedPerson.setName(person.getName());
         updatedPerson.setInfo(person.getInfo());
-        updatedPerson.setCastRoles(person.getCastRoles());
-        updatedPerson.setCrewRoles(person.getCrewRoles());
+//        updatedPerson.setCastRoles(person.getCastRoles());
+        updatedPerson.setCastCrewRoles(person.getCastrewRoles());
 
         personRepository.save(updatedPerson);
 
@@ -53,8 +52,8 @@ class PersonController {
         Person newPerson = new Person();
         newPerson.setName(person.getName());
         newPerson.setInfo(person.getInfo());
-        newPerson.setCastRoles(person.getCastRoles());
-        newPerson.setCrewRoles(person.getCrewRoles());
+//        newPerson.setCastRoles(person.getCastRoles());
+        newPerson.setCastCrewRoles(person.getCastrewRoles());
 
         personRepository.save(newPerson);
 

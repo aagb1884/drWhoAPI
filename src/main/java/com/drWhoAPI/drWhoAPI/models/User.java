@@ -1,7 +1,6 @@
 package com.drWhoAPI.drWhoAPI.models;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -28,7 +27,7 @@ public class User {
     private String userWebsite;
     @JsonBackReference
     @OneToMany(mappedBy = "user", fetch= FetchType.LAZY)
-    private List<Review> userReviews;
+    private List<UserStories> userStories;
 
     public User() {
     }
@@ -40,7 +39,7 @@ public class User {
         this.userImgURL = userImgURL;
         this.userBio = userBio;
         this.userWebsite = userWebsite;
-        this.userReviews = new ArrayList<Review>();
+        this.userStories = new ArrayList<UserStories>();
     }
 
     public Long getId() {
@@ -99,19 +98,19 @@ public class User {
         this.userWebsite = userWebsite;
     }
 
-    public List<Review> getUserReviews() {
-        return userReviews;
+    public List<UserStories> getUserStories() {
+        return userStories;
     }
 
-    public void setUserReviews(List<Review> userReviews) {
-        this.userReviews = userReviews;
+    public void setUserStories(List<UserStories> userStories) {
+        this.userStories = userStories;
     }
 
-    public void addUserReview(Review review) {
-        this.userReviews.add(review);
+    public void addUserStory(UserStories userStory) {
+        this.userStories.add(userStory);
     }
 
-    public void removeUserReview(Review review) {
-        this.userReviews.remove(review);
+    public void removeUserStory(UserStories userStory) {
+        this.userStories.remove(userStory);
     }
 }

@@ -9,7 +9,7 @@ import jakarta.persistence.*;
 public class CastAndCrew {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
-    @JsonIgnoreProperties({"crewRoles"})
+    @JsonIgnoreProperties({"castCrewRoles"})
     @ManyToOne
     @JoinColumn(name = "person_id")
     private Person person;

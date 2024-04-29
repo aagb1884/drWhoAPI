@@ -68,7 +68,7 @@ public class Person {
 //    public void addToCast(Cast person){ this.castRoles.add(person);}
 //
 //    public void removeFromCast(Cast person) { this.castRoles.remove(person);}
-    public List<CastAndCrew> getCastrewRoles() {
+    public List<CastAndCrew> getCastCrewRoles() {
         return castCrewRoles;
     }
 

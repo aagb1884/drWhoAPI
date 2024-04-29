@@ -1,7 +1,7 @@
 package com.drWhoAPI.drWhoAPI.controllers;
 
-import com.drWhoAPI.drWhoAPI.models.Review;
-import com.drWhoAPI.drWhoAPI.repositories.ReviewRepository;
+import com.drWhoAPI.drWhoAPI.models.UserStories;
+import com.drWhoAPI.drWhoAPI.repositories.UserStoriesRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,13 +11,13 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-class ReviewController {
+class UserStoriesController {
 
     @Autowired
-    ReviewRepository reviewRepository;
+    UserStoriesRepository reviewRepository;
 
     @GetMapping(value = "/reviews")
-    public ResponseEntity<List<Review>> getAllReviews(){
+    public ResponseEntity<List<UserStories>> getAllReviews(){
         return new ResponseEntity<>(reviewRepository.findAll(), HttpStatus.OK);
     }
 
@@ -33,10 +33,10 @@ class ReviewController {
     }
 
     @PutMapping(value = "/reviews/{id}")
-    public ResponseEntity<Review> updateReview(
-            @RequestBody Review review,
+    public ResponseEntity<UserStories> updateReview(
+            @RequestBody UserStories review,
             @PathVariable Long id){
-        Review updatedReview = reviewRepository.findById(id).get();
+        UserStories updatedReview = reviewRepository.findById(id).get();
         updatedReview.setStory(review.getStory());
         updatedReview.setUser(review.getUser());
         updatedReview.setReview(review.getReview());
@@ -49,8 +49,8 @@ class ReviewController {
     }
 
     @PostMapping(value = "/reviews")
-    public ResponseEntity<Review> createReview(@RequestBody Review review) {
-        Review newReview = new Review();
+    public ResponseEntity<UserStories> createReview(@RequestBody UserStories review) {
+        UserStories newReview = new UserStories();
         newReview.setStory(review.getStory());
         newReview.setUser(review.getUser());
         newReview.setReview(review.getReview());

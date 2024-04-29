@@ -50,7 +50,7 @@ class StoryController {
         updatedStory.setKeywords(updatedStory.getKeywords());
         updatedStory.setSeries(updatedStory.getSeries());
         updatedStory.setProductionCode(updatedStory.getProductionCode());
-        updatedStory.setReviews(updatedStory.getReviews());
+        updatedStory.setStoryConnections(updatedStory.getStoryConnections());
 
         storyRepository.save(updatedStory);
 
@@ -73,7 +73,7 @@ class StoryController {
         newStory.setKeywords(newStory.getKeywords());
         newStory.setSeries(newStory.getSeries());
         newStory.setProductionCode(newStory.getProductionCode());
-        newStory.setReviews(newStory.getReviews());
+        newStory.setStoryConnections(newStory.getStoryConnections());
 
         storyRepository.save(newStory);
 

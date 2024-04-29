@@ -16,7 +16,7 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     DoctorRepository doctorRepository;
     @Autowired
-    ReviewRepository reviewRepository;
+    UserStoriesRepository reviewRepository;
     @Autowired
     StoryRepository storyRepository;
     @Autowired

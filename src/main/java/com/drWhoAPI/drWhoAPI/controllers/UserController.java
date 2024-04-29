@@ -44,7 +44,7 @@ class UserController {
         updatedUser.setUserImgURL(user.getUserImgURL());
         updatedUser.setUserBio(user.getUserBio());
         updatedUser.setUserWebsite(user.getUserWebsite());
-        updatedUser.setUserReviews(user.getUserReviews());
+        updatedUser.setUserStories(user.getUserStories());
 
         userRepository.save(updatedUser);
 
@@ -60,7 +60,7 @@ class UserController {
         newUser.setUserImgURL(user.getUserImgURL());
         newUser.setUserBio(user.getUserBio());
         newUser.setUserWebsite(user.getUserWebsite());
-        newUser.setUserReviews(user.getUserReviews());
+        newUser.setUserStories(user.getUserStories());
 
         userRepository.save(newUser);
 

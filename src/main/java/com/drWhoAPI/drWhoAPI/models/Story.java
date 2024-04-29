@@ -90,7 +90,7 @@ public class Story {
     private String productionCode;
     @JsonIgnoreProperties({"user", "story"})
     @OneToMany(mappedBy = "story")
-    private List<Review> reviews;
+    private List<UserStories> story_connections;
 
     public Story() {
     }
@@ -109,7 +109,7 @@ public class Story {
         this.keywords = keywords;
         this.series = series;
         this.productionCode = productionCode;
-        this.reviews = new ArrayList<>();
+        this.story_connections = new ArrayList<>();
     }
 
     public Long getId() {
@@ -236,17 +236,17 @@ public class Story {
         this.productionCode = productionCode;
     }
 
-    public List<Review> getReviews() {
-        return reviews;
+    public List<UserStories> getStoryConnections() {
+        return story_connections;
     }
 
-    public void setReviews(List<Review> reviews) {
-        this.reviews = reviews;
+    public void setStoryConnections(List<UserStories> storyConnection) {
+        this.story_connections = story_connections;
     }
 
-    public void addReview(Review review){
-        this.reviews.add(review);
+    public void addStoryConnection(UserStories storyConnection){
+        this.story_connections.add(storyConnection);
     }
 
-    public void removeReview(Review review){ this.reviews.remove(review);}
+    public void removeStoryConnection(UserStories storyConnection){ this.story_connections.remove(storyConnection);}
 }

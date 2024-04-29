@@ -40,7 +40,7 @@ class PersonController {
         updatedPerson.setName(person.getName());
         updatedPerson.setInfo(person.getInfo());
 //        updatedPerson.setCastRoles(person.getCastRoles());
-        updatedPerson.setCastCrewRoles(person.getCastrewRoles());
+        updatedPerson.setCastCrewRoles(person.getCastCrewRoles());
 
         personRepository.save(updatedPerson);
 
@@ -53,7 +53,7 @@ class PersonController {
         newPerson.setName(person.getName());
         newPerson.setInfo(person.getInfo());
 //        newPerson.setCastRoles(person.getCastRoles());
-        newPerson.setCastCrewRoles(person.getCastrewRoles());
+        newPerson.setCastCrewRoles(person.getCastCrewRoles());
 
         personRepository.save(newPerson);
 

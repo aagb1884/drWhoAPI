@@ -5,10 +5,13 @@ import com.drWhoAPI.drWhoAPI.models.CastAndCrew;
 import com.drWhoAPI.drWhoAPI.models.enums.CastOrCrew;
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
+import com.drWhoAPI.drWhoAPI.models.enums.UserStoryType;
 import com.drWhoAPI.drWhoAPI.repositories.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.time.LocalDateTime;
 
 @SpringBootTest
 class DrWhoApiApplicationTests {
@@ -26,7 +29,7 @@ class DrWhoApiApplicationTests {
 	UserRepository userRepository;
 
 	@Autowired
-	ReviewRepository reviewRepository;
+	UserStoriesRepository reviewRepository;
 
 	@Autowired
 	CastAndCrewRepository castAndCrewRepository;
@@ -105,7 +108,8 @@ class DrWhoApiApplicationTests {
 		storyRepository.save(unearthly);
 		User todd = new User("todd@email.com", "hot_todd", "Nebraska", "userImgURL", "Todd is great.", "www.hottoddy.com");
 		userRepository.save(todd);
-		Review review = new Review(unearthly, todd, "very good", 4, false);
+		LocalDateTime testDateTime = LocalDateTime.now();
+		UserStories review = new UserStories(unearthly, todd, UserStoryType.REVIEW, "great", 4, false, testDateTime);
 		reviewRepository.save(review);
 
 	}

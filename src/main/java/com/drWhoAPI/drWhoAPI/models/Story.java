@@ -3,10 +3,12 @@ package com.drWhoAPI.drWhoAPI.models;
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import org.hibernate.annotations.Cascade;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +31,11 @@ public class Story {
     @Column
     private Format media;
     @Column
-    private String broadcast;
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate firstEpBroadcast;
+    @Column
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate lastEpBroadcast;
     @Column
     private String releases;
     @JsonIgnoreProperties({"stories"})
@@ -87,7 +93,13 @@ public class Story {
     @Column
     private Series series;
     @Column
+    private Integer storyNumber;
+    @Column
+    private Integer noOfEpisodes;
+    @Column
     private String productionCode;
+    @Column
+    private String wikiLink;
     @JsonIgnoreProperties({"user", "story"})
     @OneToMany(mappedBy = "story")
     private List<UserStories> story_connections;
@@ -95,12 +107,13 @@ public class Story {
     public Story() {
     }
 
-    public Story(String title, Format media, String broadcast, String releases, String imgURL, String synopsis, String keywords, Series series, String productionCode) {
+    public Story(String title, Format media, LocalDate firstEpBroadcast, LocalDate lastEpBroadcast, String releases, String imgURL, String synopsis, String keywords, Series series, Integer storyNumber, Integer noOfEpisodes, String productionCode, String wikiLink) {
         this.title = title;
 //        this.cast = new ArrayList<>();
         this.castAndCrew = new ArrayList<>();
         this.media = media;
-        this.broadcast = broadcast;
+        this.firstEpBroadcast = firstEpBroadcast;
+        this.lastEpBroadcast = lastEpBroadcast;
         this.releases = releases;
         this.doctors = new ArrayList<>();
         this.companions = new ArrayList<>();
@@ -108,7 +121,10 @@ public class Story {
         this.synopsis = synopsis;
         this.keywords = keywords;
         this.series = series;
+        this.storyNumber = storyNumber;
+        this.noOfEpisodes = noOfEpisodes;
         this.productionCode = productionCode;
+        this.wikiLink = wikiLink;
         this.story_connections = new ArrayList<>();
     }
 
@@ -152,12 +168,20 @@ public class Story {
         this.media = media;
     }
 
-    public String getBroadcast() {
-        return broadcast;
+    public LocalDate getFirstEpBroadcast() {
+        return firstEpBroadcast;
     }
 
-    public void setBroadcast(String broadcast) {
-        this.broadcast = broadcast;
+    public void setFirstEpBroadcast(LocalDate firstEpBroadcast) {
+        this.firstEpBroadcast = firstEpBroadcast;
+    }
+
+    public LocalDate getLastEpBroadcast() {
+        return lastEpBroadcast;
+    }
+
+    public void setLastEpBroadcast(LocalDate lastEpBroadcast) {
+        this.lastEpBroadcast = lastEpBroadcast;
     }
 
     public String getReleases() {
@@ -228,6 +252,22 @@ public class Story {
         this.series = series;
     }
 
+    public Integer getStoryNumber() {
+        return storyNumber;
+    }
+
+    public void setStoryNumber(Integer storyNumber) {
+        this.storyNumber = storyNumber;
+    }
+
+    public Integer getNoOfEpisodes() {
+        return noOfEpisodes;
+    }
+
+    public void setNoOfEpisodes(Integer noOfEpisodes) {
+        this.noOfEpisodes = noOfEpisodes;
+    }
+
     public String getProductionCode() {
         return productionCode;
     }
@@ -236,11 +276,19 @@ public class Story {
         this.productionCode = productionCode;
     }
 
+    public String getWikiLink() {
+        return wikiLink;
+    }
+
+    public void setWikiLink(String wikiLink) {
+        this.wikiLink = wikiLink;
+    }
+
     public List<UserStories> getStoryConnections() {
         return story_connections;
     }
 
-    public void setStoryConnections(List<UserStories> storyConnection) {
+    public void setStoryConnections(List<UserStories> story_connections) {
         this.story_connections = story_connections;
     }
 

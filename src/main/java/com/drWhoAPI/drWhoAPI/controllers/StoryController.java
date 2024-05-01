@@ -41,7 +41,8 @@ class StoryController {
 //        updatedStory.setCast(updatedStory.getCast());
         updatedStory.setCastCrew(updatedStory.getCastCrew());
         updatedStory.setMedia(updatedStory.getMedia());
-        updatedStory.setBroadcast(updatedStory.getBroadcast());
+        updatedStory.setFirstEpBroadcast(updatedStory.getFirstEpBroadcast());
+        updatedStory.setLastEpBroadcast(updatedStory.getLastEpBroadcast());
         updatedStory.setReleases(updatedStory.getReleases());
         updatedStory.setDoctors(updatedStory.getDoctors());
         updatedStory.setCompanions(updatedStory.getCompanions());
@@ -49,7 +50,9 @@ class StoryController {
         updatedStory.setSynopsis(updatedStory.getSynopsis());
         updatedStory.setKeywords(updatedStory.getKeywords());
         updatedStory.setSeries(updatedStory.getSeries());
+        updatedStory.setStoryNumber(updatedStory.getStoryNumber());
         updatedStory.setProductionCode(updatedStory.getProductionCode());
+        updatedStory.setWikiLink(updatedStory.getWikiLink());
         updatedStory.setStoryConnections(updatedStory.getStoryConnections());
 
         storyRepository.save(updatedStory);
@@ -64,7 +67,8 @@ class StoryController {
 //        newStory.setCast(newStory.getCast());
         newStory.setCastCrew(newStory.getCastCrew());
         newStory.setMedia(newStory.getMedia());
-        newStory.setBroadcast(newStory.getBroadcast());
+        newStory.setFirstEpBroadcast(newStory.getFirstEpBroadcast());
+        newStory.setLastEpBroadcast(newStory.getLastEpBroadcast());
         newStory.setReleases(newStory.getReleases());
         newStory.setDoctors(newStory.getDoctors());
         newStory.setCompanions(newStory.getCompanions());
@@ -72,7 +76,9 @@ class StoryController {
         newStory.setSynopsis(newStory.getSynopsis());
         newStory.setKeywords(newStory.getKeywords());
         newStory.setSeries(newStory.getSeries());
+        newStory.setStoryNumber(newStory.getStoryNumber());
         newStory.setProductionCode(newStory.getProductionCode());
+        newStory.setWikiLink(newStory.getWikiLink());
         newStory.setStoryConnections(newStory.getStoryConnections());
 
         storyRepository.save(newStory);

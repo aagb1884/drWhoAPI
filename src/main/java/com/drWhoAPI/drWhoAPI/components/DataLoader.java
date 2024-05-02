@@ -449,6 +449,8 @@ public class DataLoader implements ApplicationRunner {
         personRepository.save(platt);
         Person pringle = new Person("Eric Pringle", "Writer");
         personRepository.save(pringle);
+        Person tRay = new Person("Trevor Ray", "Writer");
+        personRepository.save(tRay);
         Person raynor = new Person("Helen Raynor", "Writer and Doctor Who Script Editor (2005 - 2008)");
         personRepository.save(raynor);
         Person aRead = new Person("Anthony Read", "Writer and Doctor Who Script Editor (1977 - 1979)");
@@ -583,7 +585,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1964, 1973), Film Adaptation (1965), VHS (1989, 2001), DVD (2006), TV Colourisation (2023), Blu-Ray (2024).",
                 "img_url",
                 "The debut of the Daleks, who would ensure the success and survival of the show.",
-                "The Mutants; The Dead Planet; The Survivors; The Escape; The Ambush; The Expedition; The Ordeal; The Rescue; Skaro; Thals",
+                "The Mutants; The Dead Planet; The Survivors; The Escape; The Ambush; The Expedition; The Ordeal; The Rescue; Skaro; Thals; first appearance; introduction",
         Series.SEASON1,
                 2,
                 7,
@@ -628,7 +630,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1984), Audio (2003), Reconstruction/DVD (2006), Audiobook (2018).",
                 "img_url",
                 "Arriving in Central Asia in 1269, the Doctor and his friends join the caravan of the Venetian explorer Marco Polo.",
-                "Missing Episode; The Roof of the World; The Singing Sands; Five Hundred Eyes; The Wall of Lies; Rider from Shang-Tu; Mighty Kublai Khan; Assassin at Peking",
+                "Historical; Missing Episode; The Roof of the World; The Singing Sands; Five Hundred Eyes; The Wall of Lies; Rider from Shang-Tu; Mighty Kublai Khan; Assassin at Peking",
         Series.SEASON1,
                 4,
                 7,
@@ -673,7 +675,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1984), VHS (1992), DVD (2002, 2013), Audiobook (2012).",
                 "img_url",
                 "When Barbara is mistaken for the reincarnation of an Aztec goddess, she attempts to use her position to alter history, clashing with the Doctor in the process.",
-"The Temple of Evil; The Warriors of Death; The Bride of Sacrifice; The Day of Darkness; Yetaxa; change history",
+"The Temple of Evil; The Warriors of Death; The Bride of Sacrifice; The Day of Darkness; Yetaxa; change history; Historical",
         Series.SEASON1,
                 6,
                 4,
@@ -717,7 +719,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1987), VHS (2003), Audio (2006), DVD (2013 – missing episodes reanimated).",
                 "img_url",
                 "The Doctor and his friends land in Eighteenth Century France and try to avoid being executed during the titular slaughter.",
-"A Land of Fear; Guests of Madame Guillotine; A Change of Identity; The Tyrant of France; A Bargain of Necessity; Prisoners of Conciergerie; Napoleon; Robespierre; missing episodes",
+"Historical; A Land of Fear; Guests of Madame Guillotine; A Change of Identity; The Tyrant of France; A Bargain of Necessity; Prisoners of Conciergerie; Napoleon; Robespierre; missing episodes",
         Series.SEASON1,
         8,
         6,
@@ -785,7 +787,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1987), VHS (1994), DVD (2009), Audiobook (2013), Blu-Ray (2022).",
                 "img_url",
                 "The Doctor, Ian and Barbara land on the planet Dido. They find a crashed spaceship, the survivors menaced by a fearsome creature.",
-                "The Powerful Enemy; Desperate Measures; Sandy; Vicki",
+                "The Powerful Enemy; Desperate Measures; Sandy; Vicki; first appearance; introduction; companion",
         Series.SEASON2,
                 3,
                 2,
@@ -807,7 +809,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1987), VHS (1994), DVD (2009), Blu-Ray (2022), Audiobook (2023).",
                 "img_url",
                 "Everyone is relaxing in a Roman villa before accidentally getting brought to the Emperor’s court or being kidnapped and sold into slavery.",
-                "The Slave Traders; All Roads Lead to Rome; Conspiracy; Inferno; shipping",
+                "The Slave Traders; All Roads Lead to Rome; Conspiracy; Inferno; shipping; Historical",
         Series.SEASON2,
                 4,
                 4,
@@ -852,7 +854,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1966), Script Book (1994), VHS (1999),DVD (2004 – Lost in Time Boxset), Audio (2005), Audiobook (2005), Blu-Ray (2022).",
                 "img_url",
                 "The TARDIS materialises in Twelfth Century Palestine during the time of the Third Crusade.",
-                "The Lion; The Knight of Jaffa; The Wheel of Fortune; The Warlords; Richard; Lionheart",
+                "Historical; The Lion; The Knight of Jaffa; The Wheel of Fortune; The Warlords; Richard; Lionheart",
         Series.SEASON2,
                 6,
                 4,
@@ -896,7 +898,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1989), VHS (1993), DVD (2010), Audiobook (2011), Blu-Ray (2022).",
                 "img_url",
                 "The Daleks pursue the TARDIS through time and space.",
-                "The Executioners; The Death of Time; Flight Through Eternity; Journey Into Terror; The Death of Doctor Who; The Planet of Decision; Marie Celeste; Mechanoids; stupid Dalek;",
+                "The Executioners; The Death of Time; Flight Through Eternity; Journey Into Terror; The Death of Doctor Who; The Planet of Decision; Marie Celeste; Mechanoids; stupid Dalek; first appearance; introduction: companion; Steven; departure; leave; Ian; Barbara",
         Series.SEASON2,
                 8,
                 6,
@@ -919,7 +921,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1987), VHS (2002), DVD (2008), Audiobook (2016), Blu-Ray (2022), Tales of the TARDIS (2023).",
                 "img_url",
                 "The Doctor and Vicki try to persuade new arrival Steven that they have travelled in time, complicated by the fact that Steven sees a Saxon wearing a watch.",
-"The Watcher; The Meddling Monk; A Battle of Wits; Checkmate; Time Lord; another; TARDIS",
+"The Watcher; The Meddling Monk; A Battle of Wits; Checkmate; Time Lord; another; TARDIS; pseudohistorical",
         Series.SEASON2,
                 9,
                 4,
@@ -983,7 +985,7 @@ public class DataLoader implements ApplicationRunner {
                 "releases",
                 "img_url",
                 "The Doctor, Steven and Vicki find themselves at the legendary siege of Troy, but troy as they might it’s going to be hard to get away safely.",
-                "Temple of Secrets; Small Prophet, Quick Return; Death of a Spy; Horse of Destruction; Companion; leave; Vicki; departure; Troy",
+                "Historical; Temple of Secrets; Small Prophet, Quick Return; Death of a Spy; Horse of Destruction; Companion; leave; Vicki; departure; Troy; Katarina; first appearance;",
         Series.SEASON3,
                 3,
                 4,
@@ -1004,7 +1006,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1989 – in two parts), VHS (1992 – Surviving Episodes), Audio (2001), DVD (2004 – Surviving Episodes), Audiobook (2010).",
                 "img_url",
                 "Six months after ‘Mission to the Unknown’ the Doctor and his friends land on Kembel and uncover a Dalek plot to unleash a superweapon.",
-                "The Nightmare Begins; Day of Armageddon; Devil’s Planet; The Traitors; Counter Plot; Coronas of the Sun; The Feast of Steven; Volcano; Golden Death; Escape Switch; The Abandoned Planet; Destruction of Time; Dalek; masterplan; companion; death",
+                "first appearance; Sara; companion; death; dies; The Nightmare Begins; Day of Armageddon; Devil’s Planet; The Traitors; Counter Plot; Coronas of the Sun; The Feast of Steven; Volcano; Golden Death; Escape Switch; The Abandoned Planet; Destruction of Time; Dalek; masterplan;",
         Series.SEASON3,
                 4,
                 12,
@@ -1028,7 +1030,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1987), Audio (1999)",
                 "img_url",
                 "The Doctor goes missing, leaving Steven stranded in Sixteenth Century Paris as religious tensions rise.",
-                "War of God; The Sea Beggar; Priest of Death; Bell of Doom; double; The Massacre of St Bartholomew’s Eve; missing episodes",
+                "Historical; War of God; The Sea Beggar; Priest of Death; Bell of Doom; double; The Massacre of St Bartholomew’s Eve; missing episodes; first appearance; Dodo",
         Series.SEASON3,
                 5,
                 4,
@@ -1095,7 +1097,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1985), VHS (2002), DVD (2011), Audiobook (2013).",
                 "img_url",
                 "The Doctor has toothache, and his search for a dentist lands him at the O.K. Corral.",
-"A Holiday for the Doctor; Don’t Shoot the Pianist; Johnny Ringo; The OK Corral; gunfight; western; musical; ballad; last chance saloon",
+"Historical; A Holiday for the Doctor; Don’t Shoot the Pianist; Johnny Ringo; The OK Corral; gunfight; western; musical; ballad; last chance saloon",
         Series.SEASON3,
                 8,
                 4,
@@ -1109,7 +1111,7 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerGunfighter);
 
         Story savages = new Story(
-                "title",
+                "The Savages",
                 Format.TV,
                 LocalDate.of(1966, 05, 28),
                 LocalDate.of(1966, 06, 18),
@@ -1137,7 +1139,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1989), VHS (1997), Audio (2007), DVD (2008)",
                 "img_url",
                 "The Doctor, along with new friends Ben and Polly, attempt to stop a self-thinking computer in the Post Office Tower from taking over London.",
-"Companion; departure; leave; Dodo; post office tower; BT tower",
+"Companion; departure; leave; Dodo; post office tower; BT tower: first appearance; Polly; Ben",
         Series.SEASON3,
                 10,
                 4,
@@ -1160,7 +1162,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1988), Audio (2002).",
                 "img_url",
                 "The Doctor brings his new companions to a Seventeenth Century Cornwall beset by smuggling and piracy.",
-"Missing episodes; pirates; Henry Avery",
+"Missing episodes; pirates; Henry Avery; Historical;",
         Series.SEASON4,
                 1,
                 4,
@@ -1181,7 +1183,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1976), VHS (2000), DVD (2013 – Animated Episode).",
                 "img_url",
                 "The Doctor, Polly and Ben arrive in Antarctica just as a new planet appears in the sky. It’s arrival heralds the coming of the Cybermen",
-"Regeneration; missing episodes; Cybermen; Mondas",
+"Regeneration; missing episodes; Cybermen; Mondas; first appearance;",
         Series.SEASON4,
                 2,
                 4,
@@ -1204,7 +1206,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1993), Script Book (1993), Audio (1993, 2003), DVD/Blu-Ray (2016, 2020 – Animation)",
                 "img_url",
                 "Polly and Ben watch as a new man gets up from where the Doctor lay, and lands the TARDIS on the human colony on Vulcan…just as one of their scientists makes a deadly discovery.",
-"Missing episodes; regeneration; Dalek",
+"Missing episodes; regeneration; Dalek; Second Doctor; debut",
         Series.SEASON4,
                 3,
                 6,
@@ -1227,7 +1229,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1984), Audio (2000), Audiobook (2012).",
                 "img_url",
                 "The Doctor and his companions get into trouble after befriending some Jacobites in the wake of the Battle of Culloden.",
-                "Missing Episodes; companion; Jamie",
+                "Historical; Missing Episodes; companion; introduction; first appearance; Jamie",
         Series.SEASON4,
                 4,
                 4,
@@ -1344,7 +1346,7 @@ public class DataLoader implements ApplicationRunner {
                 "Audio (1992, 2003), VHS (1992 – Surviving Episode), Novelisation (1993, 2023), DVD (2004 – Surviving Episode), DVD/Blu-Ray (2021 – Animation).",
                 "img_url",
                 "The Daleks trick the Doctor into working for them.",
-"Missing episodes; Daleks; Victorian; alchemy; Skaro",
+"Missing episodes; Daleks; Victorian; alchemy; Skaro; pseudohistorical; first appearance; Victoria; great big bushy beard",
         Series.SEASON4,
                 9,
                 7,
@@ -1390,7 +1392,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1974), Audio (2001), VHS (1991 – Surviving Episode), DVD (2004 – Surviving Episode), DVD/Blu-Ray (2022 – Animation).",
                 "img_url",
                 "Yeti are besieging a Buddhist monastery in Thirties Tibet, but there’s more to these creatures than meets the eye.",
-                "Missing episodes; Yeti; Great Intelligence",
+                "Missing episodes; Yeti; Great Intelligence; pseudohistorical",
         Series.SEASON5,
                 2,
                 6,
@@ -1503,7 +1505,7 @@ public class DataLoader implements ApplicationRunner {
                 "Novelisation (1988), VHS (1992 – Surviving Episodes), DVD (2004 – Surviving Episodes), Audio (2004).",
                 "img_url",
                 "The Doctor and Jamie arrive on a space station just as it is invaded.",
-                "Missing episodes; John Smith; Cybermen;",
+                "Missing episodes; John Smith; Cybermen; first appearance; Zoe;",
         Series.SEASON5,
                 7,
                 6,
@@ -1671,22 +1673,1274 @@ public class DataLoader implements ApplicationRunner {
         CastAndCrew warGameWrite2 = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, warGames);
         castAndCrewRepository.save(warGameWrite2);
 
+
+        Story spearhead = new Story(
+                "Spearhead from Space",
+                Format.TV,
+                LocalDate.of(1970, 1, 3),
+                LocalDate.of(1970, 1, 24),
+                "Novelisation (1974), VHS (1988 - Omnibus), VHS (1995), DVD (2001, 2007, 2011, 2013), Audiobook (2008), Blu-Ray (2013).",
+                "img_url",
+                "The recently regenerated Doctor starts his exile to Earth by having a shower, stealing some stuff, and visiting Madame Tussauds.",
+                "Autons; shop window; UNIT; first appearance: Third Doctor",
+                Series.SEASON7,
+                1,
+                4,
+                "AAA",
+                "https://tardis.wiki/wiki/Spearhead_from_Space_(TV_story)"
+        );
+        spearhead.addDoctor(thirdDoctor);
+        spearhead.addCompanion(liz);
+        spearhead.addCompanion(brigadier);
+        storyRepository.save(spearhead);
+
+        CastAndCrew spearheadWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, spearhead);
+        castAndCrewRepository.save(spearheadWriter);
+
+        Story silurians = new Story(
+                "Doctor Who and the Silurians",
+                Format.TV,
+                LocalDate.of(1970, 1, 31),
+                LocalDate.of(1970, 3, 14),
+                "Novelisation (1974), VHS (1993), Audio (2006), Audiobook (2007), DVD (2008).",
+                "img_url",
+                "A nuclear-powered facility in a cave system awakens creatures who have been on Earth for longer than humanity.",
+                "Geoffrey Palmer dies; Silurians; cave monster; colourised",
+                Series.SEASON7,
+                2,
+                7,
+                "BBB",       "https://tardis.wiki/wiki/Doctor_Who_and_the_Silurians_(TV_story)"
+        );
+        silurians.addDoctor(thirdDoctor);
+        silurians.addCompanion(liz);
+        silurians.addCompanion(brigadier);
+        storyRepository.save(silurians);
+
+        CastAndCrew writerSilurians = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, silurians);
+        castAndCrewRepository.save(writerSilurians);
+
+        Story ambassadors = new Story(
+                "The Ambassadors of Death",
+                Format.TV,
+                LocalDate.of(1970, 3, 21),
+                LocalDate.of(1970, 5, 2),
+                "Novelisation (1987), VHS (2002), Audio (2009), DVD (2012).",
+                "img_url",
+                "A probe to Mars set off on its return journey, but the astronauts on board cannot be reached.",
+                "Colourised; martians; sting",
+                Series.SEASON7,
+                3,
+                7,
+                "CCC",
+                "https://tardis.wiki/wiki/The_Ambassadors_of_Death_(TV_story)"
+        );
+        ambassadors.addDoctor(thirdDoctor);
+        ambassadors.addCompanion(liz);
+        ambassadors.addCompanion(brigadier);
+        ambassadors.addCompanion(benton);
+        storyRepository.save(ambassadors);
+
+        CastAndCrew ambassadorWriter1 = new CastAndCrew(dWhitaker, "Writer", CastOrCrew.CREW, ambassadors);
+        castAndCrewRepository.save(ambassadorWriter1);
+        CastAndCrew ambassadorWriter2 = new CastAndCrew(tRay, "Writer", CastOrCrew.CREW, ambassadors);
+        castAndCrewRepository.save(ambassadorWriter2);
+        CastAndCrew ambassadorWriter3 = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, ambassadors);
+        castAndCrewRepository.save(ambassadorWriter3);
+
+
+
+        Story inferno = new Story(
+                "Inferno",
+                Format.TV,
+                LocalDate.of(1970, 5, 9),
+                LocalDate.of(1970, 6, 20),
+                "Novelisation (1984), VHS (1994), DVD (2006, 2013), Audiobook (2011).",
+                "img_url",
+                "An experimental drilling project unleashes primeval forces upon the Earth.",
+                "Parallel universe; alternate; dimension; eyepatch; colourisation; Krakatoa; Primords",
+                Series.SEASON7,
+                4,
+                7,
+                "DDD",
+                "https://tardis.wiki/wiki/Inferno_(TV_story) "
+        );
+        inferno.addDoctor(thirdDoctor);
+        inferno.addCompanion(liz);
+        inferno.addCompanion(brigadier);
+        inferno.addCompanion(benton);
+        storyRepository.save(inferno);
+
+        CastAndCrew writerInferno = new CastAndCrew(houghton, "Writer", CastOrCrew.CREW, inferno);
+        castAndCrewRepository.save(writerInferno);
+
+
+
+        Story terrorAutons = new Story(
+                "Terror of the Autons",
+                Format.TV,
+                LocalDate.of(1971, 1, 2),
+                LocalDate.of(1971, 1, 23),
+                "Novelisation (1975), VHS (1993), Audiobook (2010), DVD (2011), Blu-Ray (2021).",
+                "img_url",
+                "The Autons return as another renegade Time Lord arrives on Earth.",
+                "Master; Delgado; new; companion; Mary Whitehouse; Roger; Recolourised;",
+                Series.SEASON8,
+                1,
+                4,
+                "EEE",
+                "https://tardis.wiki/wiki/Terror_of_the_Autons_(TV_story)"
+        );
+        terrorAutons.addDoctor(thirdDoctor);
+        terrorAutons.addCompanion(jo);
+        terrorAutons.addCompanion(brigadier);
+        terrorAutons.addCompanion(benton);
+        terrorAutons.addCompanion(yates);
+        storyRepository.save(terrorAutons);
+
+        CastAndCrew writerAutons = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, terrorAutons);
+        castAndCrewRepository.save(writerAutons);
+
+
+        Story mindEvil = new Story(
+                "The Mind of Evil",
+                Format.TV,
+                LocalDate.of(1971, 1, 30),
+                LocalDate.of(1971, 3, 6),
+                "Novelisation (1985), VHS (1998), Audio (2009), DVD (2013), Blu-Ray (2021).",
+                "img_url",
+                "The Keller Machine can pacify even the most dangerous of criminals, but at what cost?",
+                "Prison; Keller; espionage; missile; Master; recolourised",
+                Series.SEASON8,
+                2,
+                6,
+                "FFF",
+                "https://tardis.wiki/wiki/The_Mind_of_Evil_(TV_story) "
+        );
+        mindEvil.addDoctor(thirdDoctor);
+        mindEvil.addCompanion(jo);
+        mindEvil.addCompanion(brigadier);
+        mindEvil.addCompanion(benton);
+        mindEvil.addCompanion(yates);
+        storyRepository.save(mindEvil);
+
+        CastAndCrew writerMind = new CastAndCrew(houghton, "role", CastOrCrew.CREW, mindEvil);
+        castAndCrewRepository.save(writerMind);
+
+
+        Story clawsAxos = new Story(
+                "The Claws of Axos",
+                Format.TV,
+                LocalDate.of(1971, 3, 13),
+                LocalDate.of(1971, 4, 3),
+                "Novelisation (1977), VHS (1992), DVD (2005, 2012), Blu-Ray (2021)",
+                "img_url",
+                "A group of gold-skinned aliens arrive on Earth and are absolutely lovely.",
+                "Axonite; Pigbin Josh; Civil Servant; recolourised",
+                Series.SEASON8,
+                3,
+                4,
+                "GGG",
+                "https://tardis.wiki/wiki/The_Claws_of_Axos_(TV_story) "
+        );
+        clawsAxos.addDoctor(thirdDoctor);
+        clawsAxos.addCompanion(jo);
+        clawsAxos.addCompanion(brigadier);
+        clawsAxos.addCompanion(benton);
+        clawsAxos.addCompanion(yates);
+        storyRepository.save(clawsAxos);
+
+        CastAndCrew writerAxos1 = new CastAndCrew(bBaker, "Writer", CastOrCrew.CREW, clawsAxos);
+        castAndCrewRepository.save(writerAxos1);
+        CastAndCrew writerAxos2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, clawsAxos);
+        castAndCrewRepository.save(writerAxos2);
+
+
+
+        Story colonySpace = new Story(
+                "Colony in Space",
+                Format.TV,
+                LocalDate.of(1971, 4, 10),
+                LocalDate.of(1971, 5, 15),
+                "Novelisation (1974), VHS (2001), Audiobook (2007), DVD (2011), Blu-Ray (2021).",
+                "img_url",
+                "The Doctor and Jo arrive at a struggling human colony under threat from an interplanetary mining corporation.",
+                "IMC; little guy; big seat; doomsday weapon; robot claw gloves",
+                Series.SEASON8,
+                4,
+                6,
+                "HHH",
+                "https://tardis.wiki/wiki/Colony_in_Space_(TV_story)"
+        );
+        colonySpace.addDoctor(thirdDoctor);
+        colonySpace.addCompanion(jo);
+        storyRepository.save(colonySpace);
+
+        CastAndCrew colonyWriter = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, colonySpace);
+        castAndCrewRepository.save(colonyWriter);
+
+
+        Story daemons = new Story(
+                "The Dæmons",
+                Format.TV,
+                LocalDate.of(1971, 5, 22),
+                LocalDate.of(1971, 6, 19),
+                "Novelisation (1974), Script Book (1992), VHS (1993) Audiobook (2008), DVD (2012), Blu-Ray (2021).",
+                "img_url",
+                "An archaeological dig in a small English village accidentally awakens a horned beast.",
+                "Devil’s End; gargoyle; shouty man; BBC 3; witchcraft; exploding church; stone guy; recolourised",
+                Series.SEASON8,
+                5,
+                5,
+                "JJJ",
+                "https://tardis.wiki/wiki/The_D%C3%A6mons_(TV_story)"
+        );
+        daemons.addDoctor(thirdDoctor);
+        daemons.addCompanion(jo);
+        daemons.addCompanion(brigadier);
+        daemons.addCompanion(benton);
+        daemons.addCompanion(yates);
+        storyRepository.save(daemons);
+
+        CastAndCrew daemonWrite1 = new CastAndCrew(bLetts, "Writer", CastOrCrew.CREW, daemons);
+        castAndCrewRepository.save(daemonWrite1);
+        CastAndCrew daemonWrite2 = new CastAndCrew(sloman, "Writer", CastOrCrew.CREW, daemons);
+        castAndCrewRepository.save(daemonWrite2);
+
+        Story dayDaleks = new Story(
+                "Day of the Daleks",
+                Format.TV,
+                LocalDate.of(1972, 1, 1),
+                LocalDate.of(1972, 1, 22),
+                "Novelisation (1974), VHS/Betamax (1986 – Omnibus), VHS (1994), Laserdisc (1996), DVD (2011), Blu-Ray (2023).",
+                "Freedom fighters from the future travel to the Twentieth Century to change their history.",
+                "synopsis",
+                "Ogrons; Dalek; alternate history; paradox;",
+                Series.SEASON9,
+                1,
+                4,
+                "KKK",
+                "https://tardis.wiki/wiki/Day_of_the_Daleks_(TV_story)"
+        );
+        dayDaleks.addDoctor(thirdDoctor);
+        dayDaleks.addCompanion(jo);
+        dayDaleks.addCompanion(brigadier);
+        dayDaleks.addCompanion(benton);
+        dayDaleks.addCompanion(yates);
+        storyRepository.save(dayDaleks);
+
+        CastAndCrew dayDwriter = new CastAndCrew(lMarks, "Writer", CastOrCrew.CREW, dayDaleks);
+        castAndCrewRepository.save(dayDwriter);
+
+        Story cursePeladon = new Story(
+                "The Curse of Peladon",
+                Format.TV,
+                LocalDate.of(1972, 1, 29),
+                LocalDate.of(1972, 2, 19),
+                "Novelisation (1975), VHS (1993), Audiobook (1995 – Abridged), Audio (2007), DVD (2010), Audiobook (2013 – Unabridged), Blu-Ray (2023).",
+                "img_url",
+                "The Doctor and Jo arrive on Peladon to find a King wearing shorts and a smattering of political intrigue.",
+                "Aggedor; Alpha Centauri; Galactic Federation; Ice Warriors; Grun",
+                Series.SEASON9,
+                2,
+                4,
+                "MMM",
+                "https://tardis.wiki/wiki/The_Curse_of_Peladon_(TV_story)"
+        );
+        cursePeladon.addDoctor(thirdDoctor);
+        cursePeladon.addCompanion(jo);
+        storyRepository.save(cursePeladon);
+
+        CastAndCrew cPeladonWriter = new CastAndCrew(hayles, "Writer", CastOrCrew.CREW, cursePeladon);
+        castAndCrewRepository.save(cPeladonWriter);
+
+        Story seaDevils = new Story(
+                "The Sea Devils",
+                Format.TV,
+                LocalDate.of(1972, 2, 26),
+                LocalDate.of(1972, 4, 1),
+                "Novelisation (1974), VHS (1995), Audio (2006), DVD (2008), Audiobook (2012), Blu-Ray (2023).",
+                "img_url",
+                "The Doctor and Jo visit the Master in a high security prison, and hear about a series of mysterious sinkings in the area.",
+                "Master; Silurian; Navy",
+                Series.SEASON9,
+                3,
+                6,
+                "LLL",
+                "https://tardis.wiki/wiki/The_Sea_Devils_(TV_story)"
+        );
+        seaDevils.addDoctor(thirdDoctor);
+        seaDevils.addCompanion(jo);
+        storyRepository.save(seaDevils);
+
+        CastAndCrew writerSeaDevil = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, seaDevils);
+        castAndCrewRepository.save(writerSeaDevil);
+
+        Story mutants = new Story(
+                "The Mutants",
+                Format.TV,
+                LocalDate.of(1972, 4, 8),
+                LocalDate.of(1972, 5, 13),
+                "Novelisation (1977), VHS (2003), DVD (2011), Blu-Ray (2023).",
+                "img_url",
+                "Human colonists are looking to change Solos’ atmosphere to make it breathable for humans, but not for the native Solonians.",
+                "Solos; Marshal; Solonian; Mutts; Geoffrey Palmer dies",
+                Series.SEASON9,
+                4,
+                6,
+                "NNN",
+                "https://tardis.wiki/wiki/The_Mutants_(TV_story)"
+        );
+        mutants.addDoctor(thirdDoctor);
+        mutants.addCompanion(jo);
+        storyRepository.save(mutants);
+
+        CastAndCrew mutantWriter1 = new CastAndCrew(bBaker, "Writer", CastOrCrew.CREW, mutants);
+        castAndCrewRepository.save(mutantWriter1);
+        CastAndCrew mutantWriter2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, mutants);
+        castAndCrewRepository.save(mutantWriter2);
+
+
+        Story timeMonster = new Story(
+                "The Time Monster",
+                Format.TV,
+                LocalDate.of(1972, 5, 20),
+                LocalDate.of(1972, 6, 24),
+                "Novelisation (1985), VHS (2001), DVD (2010), Blu-Ray (2023).",
+                "img_url",
+                "The Master tries to summon a time eating bird monster.",
+                "Master; Atlantis; UNIT; baby Benton; TOMTIT; console room; Chronovore; Kronos",
+                Series.SEASON9,
+                5,
+                6,
+                "OOO",
+                "https://tardis.wiki/wiki/The_Time_Monster_(TV_story)"
+        );
+        timeMonster.addDoctor(thirdDoctor);
+        timeMonster.addCompanion(jo);
+        timeMonster.addCompanion(brigadier);
+        timeMonster.addCompanion(benton);
+        timeMonster.addCompanion(yates);
+        storyRepository.save(timeMonster);
+
+        CastAndCrew writerTimeMonster = new CastAndCrew(sloman, "Writer", CastOrCrew.CREW, timeMonster);
+        castAndCrewRepository.save(writerTimeMonster);
+
+
+        Story threeDoctors = new Story("The Three Doctors",
+                Format.TV,
+                LocalDate.of(1972, 12, 30),
+                LocalDate.of(1973, 1, 20),
+                "Novelisation (1975), VHS (1991, 2002), DVD (2003, 2012), Blu-Ray (2019), Tales of the TARDIS (2023).",
+                "img_url",
+                "The Time Lords are facing an insurmountable power drain, and call on the Doctor to help – all of him.",
+                "keywords",
+                Series.SEASON10,
+                1,
+                4,
+                "RRR",
+                "https://tardis.wiki/wiki/The_Three_Doctors_(TV_story)"
+        );
+        threeDoctors.addDoctor(thirdDoctor);
+        threeDoctors.addDoctor(secondDoctor);
+        threeDoctors.addDoctor(firstDoctor);
+        threeDoctors.addCompanion(jo);
+        threeDoctors.addCompanion(brigadier);
+        threeDoctors.addCompanion(benton);
+        storyRepository.save(threeDoctors);
+
+        CastAndCrew threedrWr1 = new CastAndCrew(bBaker, "Writer", CastOrCrew.CREW, threeDoctors);
+        castAndCrewRepository.save(threedrWr1);
+        CastAndCrew threedrWr2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, threeDoctors);
+        castAndCrewRepository.save(threedrWr2);
+
+
+        Story carnival = new Story("Carnival of Monsters",
+                Format.TV,
+                LocalDate.of(1973, 1, 27),
+                LocalDate.of(1973, 2, 17),
+                "Novelisation (1977), VHS (1995), DVD (2002, 2011), Blu-Ray (2019).",
+                "img_url",
+                "The TARDIS lands on the SS Bernice, a ship that disappeared in the Indian Ocean, and find themselves in a time loop.",
+                "Delaware; Miniscope; Polari; Drashig; Inter Minor; Cyberman; SS Bernice",
+                Series.SEASON10,
+                2,
+                4,
+                "PPP",
+                "https://tardis.wiki/wiki/Carnival_of_Monsters_(TV_story"
+        );
+        carnival.addDoctor(thirdDoctor);
+        carnival.addCompanion(jo);
+        storyRepository.save(carnival);
+
+        CastAndCrew carnivalWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, carnival);
+        castAndCrewRepository.save(carnivalWriter);
+
+        Story frontier = new Story(
+                "Frontier in Space",
+                Format.TV,
+                LocalDate.of(1973, 2, 24),
+                LocalDate.of(1973, 3, 31),
+                "Novelisation (1976), VHS (1995), Audiobook (2008), DVD (2009), Blu-Ray (2019).",
+                "img_url",
+                "In the future, the Doctor and Jo discover Earth and Draconia are on the verge of interstellar war.",
+                "Ogrons; Master; Daleks; Delgado; Moon; Lunar; Eater; Space War; Delaware",
+                Series.SEASON10,
+                3,
+                6,
+                "QQQ",
+                "https://tardis.wiki/wiki/Frontier_in_Space_(TV_story)"
+        );
+        frontier.addDoctor(thirdDoctor);
+        frontier.addCompanion(jo);
+        storyRepository.save(frontier);
+
+        CastAndCrew frontierWriter = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, frontier);
+        castAndCrewRepository.save(frontierWriter);
+
+        Story planetDaleks = new Story(
+                "Planet of the Daleks",
+                Format.TV,
+                LocalDate.of(1973, 4, 7),
+                LocalDate.of(1973, 5, 12),
+                "Novelisation (1976), Audiobook (1995 – Abridged), VHS (1999), DVD (2009), Audiobook (2013 – Unabridged), Blu-Ray (2019).",
+                "img_url",
+                "Following the events of ‘Frontier in Space’, a recovering Doctor helps a group of Thals on a planet full of Daleks.",
+                "Dalek; Thal; invisible; Spiridon; recolourised",
+                Series.SEASON10,
+                4,
+                6,
+                "SSS",
+                "https://tardis.wiki/wiki/Planet_of_the_Daleks_(TV_story)"
+        );
+        planetDaleks.addDoctor(thirdDoctor);
+        planetDaleks.addCompanion(jo);
+        storyRepository.save(planetDaleks);
+
+        CastAndCrew planetDalekWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, planetDaleks);
+        castAndCrewRepository.save(planetDalekWriter);
+
+        Story greenDeath = new Story(
+                "The Green Death",
+                Format.TV,
+                LocalDate.of(1973, 5, 19),
+                LocalDate.of(1973, 6, 23),
+                "Novelisation (1975), VHS (1996), DVD (2004, 2013), Audiobook (2008), Blu-Ray (2019).",
+                "img_url",
+                "The Doctor and Jo investigate bright green corpses in a sensitive depiction of Wales.",
+                "one with maggots; Wales; Global Chemicals; serendipity; nut hutch; fungus; companion; departure; leaves; Jo",
+                Series.SEASON10,
+                5,
+                6,
+                "TTT",
+                "https://tardis.wiki/wiki/The_Green_Death_(TV_story)"
+        );
+        greenDeath.addDoctor(thirdDoctor);
+        greenDeath.addCompanion(jo);
+        greenDeath.addCompanion(brigadier);
+        greenDeath.addCompanion(benton);
+        greenDeath.addCompanion(yates);
+        storyRepository.save(greenDeath);
+
+        CastAndCrew greenDeathWriter = new CastAndCrew(sloman, "Writer", CastOrCrew.CREW, greenDeath);
+        castAndCrewRepository.save(greenDeathWriter);
+
+
+        Story timeWarrior = new Story(
+                "The Time Warrior",
+                Format.TV,
+                LocalDate.of(1973, 12, 15),
+                LocalDate.of(1974, 1, 5),
+                "Novelisation (1978), VHS (1989 – Omnibus), DVD (2007), Audiobook (2009),",
+                "img_url",
+                "Twentieth Century scientists are being kidnapped…but not by someone from the Twentieth Century.",
+                "Sontarans; Sontaran; Medieval; Dot Cotton; Companion; introduction; first appearance; pseudo-historical; Boba Fett",
+                Series.SEASON11,
+                1,
+                4,
+                "UUU",
+                "https://tardis.wiki/wiki/The_Time_Warrior_(TV_story)"
+        );
+        timeWarrior.addDoctor(thirdDoctor);
+        timeWarrior.addCompanion(sarahJane);
+        storyRepository.save(timeWarrior);
+
+        CastAndCrew timeWarriorWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, timeWarrior);
+        castAndCrewRepository.save(timeWarriorWriter);
+
+        Story invasionDinosaurs = new Story(
+                "Invasion of the Dinosaurs",
+                Format.TV,
+                LocalDate.of(1974, 1, 12),
+                LocalDate.of(1974, 2, 16),
+                "Novelisation (1976), VHS (2003), Audiobook (2007), DVD (2012), ",
+                "img_url",
+                "London has been evacuated. Why? It’s only bloomin’ DINOSAURS. That’s why.",
+                "KKLAK; Dinosaur Invasion; recolourised; Whomobile; puppets; Invasion;",
+                Series.SEASON11,
+                2,
+                6,
+                "WWW",
+                "https://tardis.wiki/wiki/Invasion_of_the_Dinosaurs_(TV_story)"
+        );
+        invasionDinosaurs.addDoctor(thirdDoctor);
+        invasionDinosaurs.addCompanion(sarahJane);
+        invasionDinosaurs.addCompanion(brigadier);
+        invasionDinosaurs.addCompanion(benton);
+        invasionDinosaurs.addCompanion(yates);
+        storyRepository.save(invasionDinosaurs);
+
+        CastAndCrew invDinoWriter = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, invasionDinosaurs);
+        castAndCrewRepository.save(invDinoWriter);
+
+        Story deathDaleks = new Story(
+                "Death to the Daleks",
+                Format.TV,
+                LocalDate.of(1974, 2, 23),
+                LocalDate.of(1974, 3, 16),
+                "Novelisation (1978), VHS (1987 – Omnibus), VHS (1995) DVD (2012).",
+                "img_url",
+                "The TARDIS lands on Exxilon and is immediately drained of all power.",
+                "Tarrant; root; Marine Space Corps; City; tiled floor; parrinium; space plague",
+                Series.SEASON11,
+                3,
+                4,
+                "XXX",
+                "https://tardis.wiki/wiki/Death_to_the_Daleks_(TV_story)"
+        );
+        deathDaleks.addDoctor(thirdDoctor);
+        deathDaleks.addCompanion(sarahJane);
+
+        storyRepository.save(deathDaleks);
+
+        CastAndCrew deathDaleksWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, deathDaleks);
+        castAndCrewRepository.save(deathDaleksWriter);
+
+        Story monsterPeladon = new Story(
+                "The Monster of Peladon",
+                Format.TV,
+                LocalDate.of(1974, 3, 23),
+                LocalDate.of(1974, 4, 27),
+                "Novelisation (1980), VHS (1995), Audio (2008), DVD (2010).",
+                "img_url",
+                "The Doctor returns to Peladon where he experiences some miner difficulties.",
+                "Galactic Federation; Miners; Mining; Ice Warrior; badger; hair",
+                Series.SEASON11,
+                4,
+                6,
+                "YYY",
+                "https://tardis.wiki/wiki/The_Monster_of_Peladon_(TV_story)"
+        );
+        monsterPeladon.addDoctor(thirdDoctor);
+        monsterPeladon.addCompanion(sarahJane);
+        storyRepository.save(monsterPeladon);
+
+        CastAndCrew monsterPeladonWriter = new CastAndCrew(hayles, "Writer", CastOrCrew.CREW, monsterPeladon);
+        castAndCrewRepository.save(monsterPeladonWriter);
+
+        Story planetSpiders = new Story(
+                "Planet of the Spiders",
+                Format.TV,
+                LocalDate.of(1974, 5, 4),
+                LocalDate.of(1974, 6, 8),
+                "Novelisation (1975), VHS (1991), DVD (2011).",
+                "img_url",
+                "The Doctor accidentally kills a clairvoyant and his day only gets worse from there.",
+                "Whomobile; regeneration; blue crystal; Metebelis Three; Buddhism",
+                Series.SEASON11,
+                5,
+                6,
+                "ZZZ",
+                "https://tardis.wiki/wiki/Planet_of_the_Spiders_(TV_story)"
+        );
+        planetSpiders.addDoctor(thirdDoctor);
+        planetSpiders.addCompanion(sarahJane);
+        planetSpiders.addCompanion(brigadier);
+        planetSpiders.addCompanion(benton);
+        planetSpiders.addCompanion(yates);
+        storyRepository.save(planetSpiders);
+
+        CastAndCrew planetSpidersWriter1 = new CastAndCrew(sloman, "Writer", CastOrCrew.CREW, planetSpiders);
+        castAndCrewRepository.save(planetSpidersWriter1);
+        CastAndCrew planetSpidersWriter2 = new CastAndCrew(bLetts, "Writer", CastOrCrew.CREW, planetSpiders);
+        castAndCrewRepository.save(planetSpidersWriter2);
+
+
+        Story robot = new Story(
+                "Robot",
+                Format.TV,
+                LocalDate.of(1974, 12, 28),
+                LocalDate.of(1975, 1, 18),
+                "Novelisation (1975), Junior Novelisation (1979), VHS (1992), Script Book (2001), Audiobook (2007), DVD (2007), Blu-Ray (2018).",
+                "img_url",
+                "A group of fascist scientists are using a big sad robot to steal weapons.",
+                "CSO; tank; King Kong; Giant Robot; first appearance: Harry Sullivan",
+                Series.SEASON12,
+                1,
+                4,
+                "4A",
+                "https://tardis.wiki/wiki/Robot_(TV_story)"
+        );
+        robot.addDoctor(fourthDoctor);
+        robot.addCompanion(sarahJane);
+        robot.addCompanion(brigadier);
+        robot.addCompanion(benton);
+        robot.addCompanion(harry);
+        storyRepository.save(robot);
+
+        CastAndCrew robotWriter = new CastAndCrew(terranceD, "Writer", CastOrCrew.CREW, robot);
+        castAndCrewRepository.save(robotWriter);
+
+        Story arkSpace = new Story(
+                "The Ark in Space",
+                Format.TV,
+                LocalDate.of(1975, 1, 25),
+                LocalDate.of(1975, 2, 15),
+                "Novelisation (1977), Betamax (1985 - Omnibus), VHS (1989 - Omnibus), VHS (1994), Laserdisc (1996), Script Book (2001), DVD (2002, 2013), Blu-Ray (2018).",
+                "img_url",
+                "The TARDIS lands on a space station where the remnants of humanity are waiting to outsit eternity...but something else has got in with them.",
+                "Wirrn; Alien; wasp; larvae; grub; mutation; Lucarotti; Langley;",
+                Series.SEASON12,
+                2,
+                4,
+                "4C",
+                "https://tardis.wiki/wiki/The_Ark_in_Space_(TV_story)"
+        );
+        arkSpace.addDoctor(fourthDoctor);
+        arkSpace.addCompanion(sarahJane);
+        arkSpace.addCompanion(harry);
+        storyRepository.save(arkSpace);
+
+        CastAndCrew arkSpaceWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, arkSpace);
+        castAndCrewRepository.save(arkSpaceWriter);
+
+        Story sontaranExperiment = new Story(
+                "The Sontaran Experiment",
+                Format.TV,
+                LocalDate.of(1975, 2, 22),
+                LocalDate.of(1975, 3, 1),
+                "Novelisation (1978), VHS (1991), Script Book (2001), DVD (2006), Blu-Ray (2018).",
+                "img_url",
+                "The TARDIS crew arrive on the devastated Earth to find horrific experiments are taking place.",
+                "Sontaran; Dartmoor; broken collar; torture",
+                Series.SEASON12,
+                3,
+                2,
+                "4C",
+                "https://tardis.wiki/wiki/The_Sontaran_Experiment_(TV_story)"
+        );
+        sontaranExperiment.addDoctor(fourthDoctor);
+        sontaranExperiment.addCompanion(sarahJane);
+        sontaranExperiment.addCompanion(harry);
+        storyRepository.save(sontaranExperiment);
+
+        CastAndCrew sontaranExperimentW1 = new CastAndCrew(bBaker, "Writer", CastOrCrew.CREW, sontaranExperiment);
+        castAndCrewRepository.save(sontaranExperimentW1);
+        CastAndCrew sontaranExperimentW2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, sontaranExperiment);
+        castAndCrewRepository.save(sontaranExperimentW2);
+
+        Story genesisDaleks = new Story(
+                "Genesis of the Daleks",
+                Format.TV,
+                LocalDate.of(1975, 3, 8),
+                LocalDate.of(1975, 4, 12),
+                "Novelisation (1976), Audio (1979 - Abridged), VHS (1991), Audio (2001), Script Book (2001), DVD (2006), Blu-Ray (2018).",
+                "img_url",
+                "The Time Lords ask the Doctor to avert the Daleks creation, which goes about as well as you'd expect.",
+                "Davros; first appearance; Skaro; Thals; Kaleds;",
+                Series.SEASON12,
+                4,
+                6,
+                "4E",
+                "https://tardis.wiki/wiki/Genesis_of_the_Daleks_(TV_story)"
+        );
+        genesisDaleks.addDoctor(fourthDoctor);
+        genesisDaleks.addCompanion(sarahJane);
+        genesisDaleks.addCompanion(harry);
+        storyRepository.save(genesisDaleks);
+
+        CastAndCrew genesisDaleksWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, genesisDaleks);
+        castAndCrewRepository.save(genesisDaleksWriter);
+
+        Story revengeCybermen = new Story(
+                "Revenge of the Cybermen",
+                Format.TV,
+                LocalDate.of(1975, 4, 19),
+                LocalDate.of(1975, 5, 10),
+                "Novelisation (1976), VHS/Betamax/Laserdisc (1983 - Omnibus), VHS (1999), Script Book (2001), DVD (2010), Blu-Ray (2018), Audiobook (2022).",
+                "img_url",
+                "Arriving back on Nova Beacon in its past, the TARDIS crew find a mysterious plague is taking out the crew.",
+                "Cybermen; Voga; my skystriker, my glory; Harry Sullivan is an imbecile; Cyber-Leader; Robert Holmes;",
+                Series.SEASON12,
+                5,
+                4,
+                "4D",
+                "https://tardis.wiki/wiki/Revenge_of_the_Cybermen_(TV_story)"
+        );
+        revengeCybermen.addDoctor(fourthDoctor);
+        revengeCybermen.addCompanion(sarahJane);
+        revengeCybermen.addCompanion(harry);
+        storyRepository.save(revengeCybermen);
+
+        CastAndCrew revengeCybermenWriter1 = new CastAndCrew(gDavis, "Writer", CastOrCrew.CREW, revengeCybermen);
+        castAndCrewRepository.save(revengeCybermenWriter1);
+        CastAndCrew revengeCybermenWriter2 = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, revengeCybermen);
+        castAndCrewRepository.save(revengeCybermenWriter2);
+
+
+
+        Story terrorZygons = new Story(
+                "title",
+                Format.TV,
+                LocalDate.of(1975, 8, 30),
+                LocalDate.of(1975, 9, 20),
+                "Novelisation (1976), VHS (1988), Laserdisc (1997), DVD (2013)",
+                "img_url",
+                "Lots of oil rigs are disappearing in the North Sea, and as oil rigs aren't the sort of thing that normally disappear UNIT are called in to investigate.",
+                "first appearance: Zygons; Loch Ness Monster; the Scotch; Scotland;",
+                Series.SEASON13,
+                1,
+                4,
+                "4F",
+                "https://tardis.wiki/wiki/Terror_of_the_Zygons_(TV_story)"
+        );
+        terrorZygons.addDoctor(fourthDoctor);
+        terrorZygons.addCompanion(sarahJane);
+        terrorZygons.addCompanion(brigadier);
+        terrorZygons.addCompanion(benton);
+        terrorZygons.addCompanion(harry);
+        storyRepository.save(terrorZygons);
+
+        CastAndCrew terrorZygonsWriter = new CastAndCrew(rBanksStewart, "Writer", CastOrCrew.CREW, terrorZygons);
+        castAndCrewRepository.save(terrorZygonsWriter);
+
+        Story planetEvil = new Story(
+                "Planet of Evil",
+                Format.TV,
+                LocalDate.of(1975, 9, 27),
+                LocalDate.of(1975, 10, 18),
+                "Novelisation (1977), VHS (1994), DVD (2007).",
+                "img_url",
+                "The TARDIS picks up a distress call from the edge of the known universe.",
+                "Jekyll; Hyde; Zeta Minor; Forbidden Planet; anti-matter",
+                Series.SEASON13,
+                2,
+                4,
+                "4H",
+                "https://tardis.wiki/wiki/Planet_of_Evil_(TV_story)"
+        );
+        planetEvil.addDoctor(fourthDoctor);
+        planetEvil.addCompanion(sarahJane);
+        storyRepository.save(planetEvil);
+
+        CastAndCrew planetEvilWrite = new CastAndCrew(lMarks, "Writer", CastOrCrew.CREW, planetEvil);
+        castAndCrewRepository.save(planetEvilWrite);
+
+        Story pyramids = new Story(
+                "Pyramids of Mars",
+                Format.TV,
+                LocalDate.of(1975, 10, 25),
+                LocalDate.of(1975, 11, 15),
+                "Novelisation (1976), VHS/Betamax (1985 - omnibus), VHS (1994), DVD (2004), Audiobook (2008), Blu-Ray (2011 - part of 'The Sarah Jane Adventures' Series 4 boxset)",
+                "img_url",
+                "One of the powerful evil beings in the universe is trapped on Mars, and the Doctor has to stop him being released.",
+                "Egypt; Mummy; mummies; robots; gothic; hammer horror; Osirans; pseudohistorical; Stephen Harris",
+                Series.SEASON13,
+                3,
+                4,
+                "4G",
+                "https://tardis.wiki/wiki/Pyramids_of_Mars_(TV_story)"
+        );
+        pyramids.addDoctor(fourthDoctor);
+        pyramids.addCompanion(sarahJane);
+        storyRepository.save(pyramids);
+
+        CastAndCrew pyramidswriter1 = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, pyramids);
+        castAndCrewRepository.save(pyramidswriter1);
+        CastAndCrew pyramidswriter2 = new CastAndCrew(greifer, "Writer", CastOrCrew.CREW, pyramids);
+        castAndCrewRepository.save(pyramidswriter2);
+
+        Story androidInvasion = new Story(
+                "The Android Invasion",
+                Format.TV,
+                LocalDate.of(1975, 11, 22),
+                LocalDate.of(1975, 12, 13),
+                "Novelisation (1978), VHS (1995), DVD (2012).",
+                "img_url",
+                "The Doctor and Sarah find themselves in the sleepy English village of Devesham, which is guilty of clinical Kraal practice.",
+                "duplicates; eyepatch; kraals; last story; Benton; Harry; companion; departure; leaving",
+                Series.SEASON13,
+                4,
+                4,
+                "4J",
+                "https://tardis.wiki/wiki/The_Android_Invasion_(TV_story)"
+        );
+        androidInvasion.addDoctor(fourthDoctor);
+        androidInvasion.addCompanion(sarahJane);
+        androidInvasion.addCompanion(benton);
+        androidInvasion.addCompanion(harry);
+        storyRepository.save(androidInvasion);
+
+        CastAndCrew androidWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, androidInvasion);
+        castAndCrewRepository.save(androidWriter);
+
+        Story brainMorbius = new Story(
+                "The Brain of Morbius",
+                Format.TV,
+                LocalDate.of(1976, 1, 3),
+                LocalDate.of(1976, 1, 24),
+                "Novelisation (1977), Junior Novelisation (1980), VHS/Laserdisc (1984 - Omnibus), VHS (1990), DVD (2008).",
+                "img_url",
+                "A mad scientist has preserved the brain of a war criminal. Grand guignol ensues.",
+                "Solon; magnificent head; Sisterhood of Karn; Mutt; Frankenstein; Robin Bland; Morbius Doctors",
+                Series.SEASON13,
+                5,
+                4,
+                "4K",
+                "https://tardis.wiki/wiki/The_Brain_of_Morbius_(TV_story)"
+        );
+        brainMorbius.addDoctor(fourthDoctor);
+        brainMorbius.addCompanion(sarahJane);
+        storyRepository.save(brainMorbius);
+
+        CastAndCrew brainMorbiusWriter1 = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, brainMorbius);
+        castAndCrewRepository.save(brainMorbiusWriter1);
+        CastAndCrew brainMorbiusWriter2 = new CastAndCrew(terranceD, "Writer", CastOrCrew.CREW, brainMorbius);
+        castAndCrewRepository.save(brainMorbiusWriter2);
+
+        Story seedsDoom = new Story(  "The Seeds of Doom",
+                Format.TV,
+                LocalDate.of(1976, 1, 31),
+                LocalDate.of(1976, 3, 6),
+                "Novelisation (1977), VHS (1994), DVD (2010), Audiobook (2019).",
+                "img_url",
+                "A strange, egg-shaped object is discovered in Antarctica. It is not an egg.",
+                "UNIT; Krynoid; the Thing from Another World; Green Cathedral; no touch pod",
+                Series.SEASON13,
+                6,
+                6,
+                "4L",
+                "https://tardis.wiki/wiki/The_Seeds_of_Doom_(TV_story)"
+        );
+        seedsDoom.addDoctor(fourthDoctor);
+        seedsDoom.addCompanion(sarahJane);
+        storyRepository.save(seedsDoom);
+
+        CastAndCrew name = new CastAndCrew(rBanksStewart, "Writer", CastOrCrew.CREW, seedsDoom);
+        castAndCrewRepository.save(name);
+
+
+
+        Story masque = new Story(
+                "The Masque of Mandragora",
+                Format.TV,
+                LocalDate.of(1976, 9, 4),
+                LocalDate.of(1976, 9, 25),
+                "Novelisation (1977), VHS (1991), Audiobook (2009), DVD (2010), Blu-Ray (2020).",
+                "img_url",
+                "A living energy structure leads the TARDIS to Fifteenth Century Italy, a sinister cult, and a smattering of intrigue.",
+                "Helix; pseudohistorical; energy; Portmeirion",
+                Series.SEASON14,
+                1,
+                4,
+                "4M",
+                "https://tardis.wiki/wiki/The_Masque_of_Mandragora_(TV_story)"
+        );
+        masque.addDoctor(fourthDoctor);
+        masque.addCompanion(sarahJane);
+        storyRepository.save(masque);
+
+        CastAndCrew masqueWriter = new CastAndCrew(lMarks, "Writer", CastOrCrew.CREW, masque);
+        castAndCrewRepository.save(masqueWriter);
+
+        Story handFear = new Story(
+                "The Hand of Fear",
+                Format.TV,
+                LocalDate.of(1976, 10, 2),
+                LocalDate.of(1976, 10, 23),
+                "Novelisation (1979), VHS (1996), DVD (2006), Blu-Ray (2020).",
+                "img_url",
+                "Sarah is possessed by a fossilised hand.",
+                "Companion; departure; leave; Sarah Jane Smith; Eldrad must live; Power Station",
+                Series.SEASON14,
+                2,
+                4,
+                "4N",
+                "https://tardis.wiki/wiki/The_Hand_of_Fear_(TV_story)"
+        );
+        handFear.addDoctor(fourthDoctor);
+        handFear.addCompanion(sarahJane);
+        storyRepository.save(handFear);
+
+        CastAndCrew handFearWriter1 = new CastAndCrew(bBaker, "Writer", CastOrCrew.CREW, handFear);
+        castAndCrewRepository.save(handFearWriter1);
+        CastAndCrew handFearWriter2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, handFear);
+        castAndCrewRepository.save(handFearWriter2);
+
+        Story deadlyAssassin = new Story(
+                "The Deadly Assassin",
+                Format.TV,
+                LocalDate.of(1976, 10, 30),
+                LocalDate.of(1976, 11, 20),
+                "Novelisation (1977), VHS (1991), DVD (2009), Blu-Ray (2020).",
+                "img_url",
+                "The Doctor is accused of murdering the President of the Time Lords.",
+                "Manchurian Candidate; Gallifrey; Time Lords; Matrix; Eye of Harmony; Mary Whitehouse",
+                Series.SEASON14,
+                3,
+                4,
+                "4P",
+                "https://tardis.wiki/wiki/The_Deadly_Assassin_(TV_story)"
+        );
+        deadlyAssassin.addDoctor(fourthDoctor);
+        storyRepository.save(deadlyAssassin);
+
+        CastAndCrew deadlyWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, deadlyAssassin);
+        castAndCrewRepository.save(deadlyWriter);
+
+        Story faceEvil = new Story(
+                "The Face of Evil",
+                Format.TV,
+                LocalDate.of(1977, 1, 1),
+                LocalDate.of(1977, 1, 22),
+                "Novelisation (1978), VHs (1999), DVD (2012), Blu-Ray (2020).",
+                "img_url",
+                "The Doctor arrives on a planet populated by two tribes, and discovers he is their god of evil.",
+                "day god went mad; computer; tribes; first appearance; debut; Leela; companion",
+                Series.SEASON14,
+                4,
+                4,
+                "4Q",
+                "https://tardis.wiki/wiki/The_Face_of_Evil_(TV_story)"
+        );
+        faceEvil.addDoctor(fourthDoctor);
+        faceEvil.addCompanion(leela);
+        storyRepository.save(faceEvil);
+
+        CastAndCrew faceEvilWriter = new CastAndCrew(cBoucher, "Writer", CastOrCrew.CREW, faceEvil);
+        castAndCrewRepository.save(faceEvilWriter);
+
+        Story robotsDeath = new Story(
+                "The Robots of Death",
+                Format.TV,
+                LocalDate.of(1977, 1, 29),
+                LocalDate.of(1977, 2, 19),
+                "Novelisation (1979), VHS (1986 - Omnibus), VHS (1995), DVD (2000, 2012), Blu-Ray (2020).",
+                "img_url",
+                "The Doctor and Leela arrive on a Sandminer where the money-driven crew are being picked off one-by-one.",
+                "Kaldor City; Robophobia; murder; robot",
+                Series.SEASON14,
+                5,
+                4,
+                "4R",
+                "https://tardis.wiki/wiki/The_Robots_of_Death_(TV_story)"
+        );
+        robotsDeath.addDoctor(fourthDoctor);
+        robotsDeath.addCompanion(leela);
+        storyRepository.save(robotsDeath);
+
+        CastAndCrew robotsDeathWriter = new CastAndCrew(cBoucher, "Writer", CastOrCrew.CREW, robotsDeath);
+        castAndCrewRepository.save(robotsDeathWriter);
+
+        Story talons = new Story(
+                "The Talons of Weng-Chiang",
+                Format.TV,
+                LocalDate.of(1977, 2, 26),
+                LocalDate.of(1977, 4, 2),
+                "Novelisation (1977), VHS (1989 - Omnibus), Script Book (1989), DVD (2003, 2010), Blu-Ray (2020).",
+                "img_url",
+                "The Doctor and Leela investigate disappearances and strange deaths around a theatre in Victorian London.",
+                "No, it is racist; Phantom of the Opera; Yellow Peril; giant rat; Jack the Ripper; Magnus Greel; Mr Sin; Butcher of Brisbane; final story: Philip Hinchcliffe",
+                Series.SEASON14,
+                6,
+                6,
+                "4S",
+                "https://tardis.wiki/wiki/The_Talons_of_Weng-Chiang_(TV_story)"
+        );
+        talons.addDoctor(fourthDoctor);
+        talons.addCompanion(leela);
+        storyRepository.save(talons);
+
+        CastAndCrew talonsWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, talons);
+        castAndCrewRepository.save(talonsWriter);
+
+
         Story story = new Story(
                 "title",
                 Format.TV,
-                LocalDate.of(),
-                LocalDate.of(),
+                LocalDate.of(1976),
+                LocalDate.of(1976),
                 "releases",
                 "img_url",
                 "synopsis",
                 "keywords",
-                Series.SEASON7,
+                Series.SEASON15,
                 story_number,
                 num_episodes,
                 "productionCode",
                 "wikiLink"
         );
-        CastAndCrew name = new CastAndCrew(person, "role", CastOrCrew.CREW, story);
+        story.addDoctor(fourthDoctor);
+        story.addCompanion(sarahJane);
+        storyRepository.save(story);
+
+        CastAndCrew name = new CastAndCrew(person, "Writer", CastOrCrew.CREW, story);
         castAndCrewRepository.save(name);
+
+        Story fangRock = new Story();
+        Story invisibleEnemy = new Story();
+        Story fendahl = new Story();
+        Story sunmakers = new Story();
+        Story underworld = new Story();
+        Story invasionTime = new Story();
+        Story ribos = new Story();
+        Story piratePlanet = new Story();
+        Story stonesBlood = new Story();
+        Story tara = new Story();
+        Story kroll = new Story();
+        Story armageddon = new Story();
+        Story destinyDaleks = new Story();
+        Story cityDeath = new Story();
+        Story creaturePit = new Story();
+        Story nightmareEden = new Story();
+        Story nimon = new Story();
+        Story leisureHive = new Story();
+        Story meglos = new Story();
+        Story fullCircle = new Story();
+        Story stateDecay = new Story();
+        Story warriorsgate = new Story();
+        Story traken = new Story();
+        Story logopolis = new Story();
+        Story castrovalva = new Story();
+        Story fourDoomsday = new Story();
+        Story kinda = new Story();
+        Story visitation = new Story();
+        Story blorchid = new Story();
+        Story earthshock = new Story();
+        Story timeflight = new Story();
+        Story arcofinfinity = new Story();
+        Story snakedance = new Story();
+        Story mawdryn = new Story();
+        Story terminus = new Story();
+        Story enlightenment = new Story();
+        Story kingsdemons = new Story();
+        Story fivedoctors = new Story();
+        Story warriorsDeep = new Story();
+        Story awakening = new Story();
+        Story frontios = new Story();
+        Story resurrectionDaleks = new Story();
+        Story planetFire = new Story();
+        Story androzani = new Story();
+        Story twinDilemma = new Story();
+        Story attackCybermen = new Story();
+        Story varos = new Story();
+        Story markRani = new Story();
+        Story twoDoctors = new Story();
+        Story timelash = new Story();
+        Story revelationDaleks = new Story();
+        Story trialTimelord = new Story();
+        Story mysteriousPlanet = new Story();
+        Story mindwarp = new Story();
+        Story vervoids = new Story();
+        Story ultimateFoe = new Story();
+        Story timeRani = new Story();
+        Story paradiseTowers = new Story();
+        Story deltaBannermen = new Story();
+        Story dragonfire = new Story();
+        Story remembrance = new Story();
+        Story happinessPatrol = new Story();
+        Story silverNemesis = new Story();
+        Story greatestShow = new Story();
+        Story battlefield = new Story();
+        Story ghostlight = new Story();
+        Story fenric = new Story();
+        Story survival = new Story();
+        Story tvm = new Story();
+        Story roseStory = new Story();
+        Story endWorld = new Story();
+        Story unquiet = new Story();
+        Story aliensLondon = new Story();
+        Story wwthree = new Story();
+        Story dalek = new Story();
+        Story longGame = new Story();
+        Story fathersday = new Story();
+        Story emptyChild = new Story();
+        Story drDances = new Story();
+        Story boomTown = new Story();
+        Story badWolf = new Story();
+        Story partingWays = new Story();
+        Story xmasInvasion = new Story();
+        Story newEarth = new Story();
+        Story toothClaw = new Story();
+        Story schoolReunion = new Story();
+        Story girlFireplace = new Story();
+        Story riseCybermen = new Story();
+        Story ageSteel = new Story();
+        Story idiotLantern = new Story();
+        Story impossPlanet = new Story();
+        Story satanPit = new Story();
+        Story loveMonsters = new Story();
+        Story fearHer = new Story();
+        Story armyofghosts = new Story();
+        Story doomsday = new Story();
+        Story runawayBride = new Story();
+        Story smithJones = new Story();
+        Story shakespeareCode = new Story();
+        Story gridlock = new Story();
+        Story daleksManhattan = new Story();
+        Story evolutionDaleks = new Story();
+        Story lazarus = new Story();
+        Story fortytwo = new Story();
+        Story humanNature = new Story();
+        Story famblood = new Story();
+        Story blink = new Story();
+        Story utopia = new Story();
+        Story soundDrums = new Story();
+        Story lastTimelords = new Story();
+        Story voyageDamned = new Story();
+        Story partnerscrime = new Story();
+        Story firepompeii = new Story();
+        Story planetOod = new Story();
+        Story sontaranstrategem = new Story();
+        Story poisonSky = new Story();
+        Story drDaughter = new Story();
+        Story unicornWasp = new Story();
+        Story silenceLibrary = new Story();
+        Story forestDead = new Story();
+        Story midnight = new Story();
+        Story turnLeft = new Story();
+        Story stolenEarth = new Story();
+        Story journeyEnd = new Story();
+        Story nextDr = new Story();
+        Story planetDead = new Story();
+        Story watersMars = new Story();
+        Story endTime = new Story();
+        Story eleventhHour = new Story();
+        Story beastBelow = new Story();
+        Story victoryDaleks = new Story();
+        Story timeAngels = new Story();
+        Story fleshStone = new Story();
+        Story vampiresVenice = new Story();
+        Story amyChoise = new Story();
+        Story hungryEarth = new Story();
+        Story coldBlood = new Story();
+        Story vincentDoctor = new Story();
+        Story lodger = new Story();
+        Story pandorica = new Story();
+        Story bigBang = new Story();
+        Story christmasCarol = new Story();
+        Story impossAstronaut = new Story();
+        Story dayMoon = new Story();
+        Story blackSpot = new Story();
+        Story drWife = new Story();
+        Story rebelFlesh = new Story();
+        Story almostPpl = new Story();
+        Story goodManWar = new Story();
+        Story killHitler = new Story();
+        Story nightTerrors = new Story();
+        Story girlWaited = new Story();
+        Story godComplex = new Story();
+        Story closingTime = new Story();
+        Story weddingRiver = new Story();
+        Story drWidow = new Story();
+        Story asylumDaleks = new Story();
+        Story dinoSpaceship = new Story();
+        Story townMercy = new Story();
+        Story powerThree = new Story();
+        Story angelsManhattan = new Story();
+        Story snowmen = new Story();
+        Story bellsStJohn = new Story();
+        Story name = new Story();
+        Story akhaten = new Story();
+        Story coldWar = new Story();
+        Story hide = new Story();
+        Story centreTARDIS = new Story();
+        Story crimsonHorror = new Story();
+        Story nightmareSilver = new Story();
+        Story nameDoctor = new Story();
+        Story nightDoctor = new Story();
+        Story dayDoctor = new Story();
+        Story timeDoctor = new Story();
+        Story deepBreath = new Story();
+        Story intoDalek = new Story();
+        Story robotSherwood = new Story();
+        Story listen = new Story();
+        Story timeHeist = new Story();
+        Story caretaker = new Story();
+        Story killMoon = new Story();
+        Story mummy = new Story();
+        Story flatline = new Story();
+        Story forestNight = new Story();
+        Story darkwater = new Story();
+        Story deathHeaven = new Story();
+        Story lastXmas = new Story();
+        Story magician = new Story();
+        Story witch = new Story();
+        Story underLake = new Story();
+        Story beforeFlood = new Story();
+        Story girlDied = new Story();
+        Story womanLived = new Story();
+        Story zygonInvasion = new Story();
+        Story zygonInversion = new Story();
+        Story sleepnomore = new Story();
+        Story faceraven = new Story();
+        Story heaven = new Story();
+        Story hell = new Story();
+        Story husbandsRiver = new Story();
+        Story drMysterio = new Story();
+        Story pilot = new Story();
+        Story smile = new Story();
+        Story thinIce = new Story();
+        Story knock = new Story();
+        Story oxygen = new Story();
+        Story extremis = new Story();
+        Story pyramidEndWorld = new Story();
+        Story lieLand = new Story();
+        Story empressMars = new Story();
+        Story eatersLight = new Story();
+        Story worldenough = new Story();
+        Story drfalls = new Story();
+        Story twicetime = new Story();
+        Story womanFell = new Story();
+        Story ghostMonument = new Story();
+        Story rosa = new Story();
+        Story arachnids = new Story();
+        Story tsuranga = new Story();
+        Story demonsPunjab = new Story();
+        Story kerblam = new Story();
+        Story witchfinders = new Story();
+        Story takesAway = new Story();
+        Story ranksoor = new Story();
+        Story resolution = new Story();
+        Story spyfall = new Story();
+        Story orphan = new Story();
+        Story tesla = new Story();
+        Story fugitiveJudoon = new Story();
+        Story praxeus = new Story();
+        Story canuhearme = new Story();
+        Story villaDiodati = new Story();
+        Story ascenscionCybs = new Story();
+        Story timelessChild = new Story();
+        Story revolutionDaleks = new Story();
+        Story halloweenApocalypse = new Story();
+        Story warSontarans = new Story();
+        Story onceTime = new Story();
+        Story villageAngels = new Story();
+        Story survivorsFlux = new Story();
+        Story vanquishers = new Story();
+        Story eveDaleks = new Story();
+        Story legendSeaDevils = new Story();
+        Story powerDr = new Story();
+        Story starbeast = new Story();
+        Story wildblueyonder = new Story();
+        Story giggle = new Story();
+        Story rubyRoad = new Story();
+        Story spaceBabies = new Story();
+        Story devilChord = new Story();
+        Story boom = new Story();
+        Story yards = new Story();
+        Story dotBubble = new Story();
+        Story rogue = new Story();
+        Story legendRuby = new Story();
+        Story empireDeath = new Story();
     }
 }

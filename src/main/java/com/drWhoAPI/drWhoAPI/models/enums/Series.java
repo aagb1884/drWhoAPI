@@ -48,6 +48,7 @@ public enum Series {
     WHITTAKERSPECIALS("2022 Specials"),
     SIXTYSPECIALS("Sixtieth Anniversary Specials"),
     SEASON12024("Series 1 (2024)"),
+    SEASON22025("Series 2 (2025)"),
     BBCRADIO("BBC Radio"),
     TARGET("Target Books"),
     NEWADVENTURES("The New Adventures"),

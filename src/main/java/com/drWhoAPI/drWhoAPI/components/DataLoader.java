@@ -121,7 +121,7 @@ public class DataLoader implements ApplicationRunner {
         Doctor doctorMoon = new Doctor("Doctor Moon", "2008", "Colin Salmon",
                 "The Doctor's consciousness uploaded to the Library's moon.");
         doctorRepository.save(doctorMoon);
-        
+
         Doctor curator = new Doctor("The Curator", "2013", "Tom Baker",
                 "A future, retired incarnation of the Doctor revisiting the appearance of his fourth incarnation.");
         doctorRepository.save(curator);
@@ -1043,8 +1043,8 @@ public class DataLoader implements ApplicationRunner {
         Story massacre = new Story(
                 "The Massacre",
                 Format.TV,
-                LocalDate.of(1966, 02, 05),
-                LocalDate.of(1966, 02, 26),
+                LocalDate.of(1966, 2, 5),
+                LocalDate.of(1966, 2, 26),
                 "Novelisation (1987), Audio (1999)",
                 "img_url",
                 "The Doctor goes missing, leaving Steven stranded in Sixteenth Century Paris as religious tensions rise.",
@@ -1064,8 +1064,8 @@ public class DataLoader implements ApplicationRunner {
         Story ark = new Story(
                 "The Ark",
                 Format.TV,
-                LocalDate.of(1966, 03, 05),
-                LocalDate.of(1996, 03, 26),
+                LocalDate.of(1966, 3, 5),
+                LocalDate.of(1996, 3, 26),
                 "Novelisation (1986), VHS (1998), Audio (2006), DVD (2011).",
                 "img_url",
                 "Ten million years into the future, a generation starship – designed to ferry the last of humanity away from the dying Earth – meets its greatest challenge yet: Dodo’s cold.",
@@ -5273,7 +5273,7 @@ public class DataLoader implements ApplicationRunner {
         stolenEnd.addCompanion(mickey);
         stolenEnd.addCompanion(sarahJane);
         stolenEnd.addCompanion(jack);
-	    stolenEnd.addCompanion(jTyler);
+        stolenEnd.addCompanion(jTyler);
         storyRepository.save(stolenEnd);
 
         CastAndCrew stolenEndwriter = new CastAndCrew(rtd, "Writer", CastOrCrew.CREW, stolenEnd);
@@ -5609,8 +5609,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2010, 12, 25),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "Christmas Special; Festive Special",
+                "The Doctor attempts to restore an old man's kindness to stop a spaceship from crashing.",
+                "Christmas Special; Festive Special; flying Shark; Scrooge; singing; fish; Marilyn Monroe; get your coat;",
                 Series.SERIES6A,
                 0,
                 1,
@@ -5632,8 +5632,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 4, 30),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor, Amy, Rory and River have a lovely picnic until the Doctor is unexpectedly shot dead by an astronaut rising from a lake.",
+                "Utah; Lake Silencio; the Doctor dies; President Nixon; girl; spacesuit; Silence; memory; subliminal messaging; pregnant; lines; regeneration; eyepatch lady;",
                 Series.SERIES6A,
                 1,
                 2,
@@ -5656,8 +5656,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 5, 7),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A pirate ship is terrorised by an ethereal Siren.",
+                "Henry Avery; The Smugglers; missing pirate; cut; Rory dies;",
                 Series.SERIES6A,
                 2,
                 1,
@@ -5679,8 +5679,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 5, 14),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The TARDIS is trapped inside the body of a woman.",
+                "Asteroid; outside the universe; Ood; Auntie; Uncle; House; Michael Sheen's big sexy voice; the Corsair; junkyard",
                 Series.SERIES6A,
                 3,
                 1,
@@ -5702,8 +5702,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 5, 28),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The crew of an acid-disposal factory use duplicates of themselves for the dangerous work, but the duplicates are gaining sentience.",
+                "Gangers; doppergangers; Flesh; duplicate; body horror; eyepatch lady; pregnant;",
                 Series.SERIES6A,
                 4,
                 2,
@@ -5725,8 +5725,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 6, 4),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor assembles an army to rescue Amy.",
+                "Strax; Vastra; Eyepatch Lady; Headless Monks; Colonel Runaway; Melody Pond; Ganger; duplicate; stolen child; Silence",
                 Series.SERIES6A,
                 5,
                 1,
@@ -5751,8 +5751,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 8, 27),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Ponds' childhood friend decides to kill Hitler.",
+                "Nazis; Mels; corn circles; childhood friend; poison lipstick; Teselecta; regeneration;",
                 Series.SERIES6B,
                 1,
                 1,
@@ -5774,8 +5774,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 9, 3),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A young boy is terrified of his wardrobe.",
+                "Peg Dolls; Housing Estate; bin bags; wardrobe; childhood fears; ",
                 Series.SERIES6B,
                 2,
                 1,
@@ -5797,8 +5797,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 9, 10),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Amy is separated from the Doctor and Rory and waits thirty six years for them to return.",
+                "Two hearts; plague; accelerated time stream; Two Amys; younger self; older self; old; paradox; 36 years;",
                 Series.SERIES6B,
                 3,
                 1,
@@ -5820,8 +5820,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 9, 17),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The TARDIS lands in an Eighties hotel which is being stalked by a minotaur.",
+                "Hotel; labyrinth; minotaur; faith; fear; companion; departure; Angel; cracks in time;",
                 Series.SERIES6B,
                 4,
                 1,
@@ -5843,8 +5843,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 9, 24),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor, knowing his death is near, decides to visit his old flatmate.",
+                "Craig; Sophie; Cybermen; Cybermat; Alfie; baby; Kovarian; Spacesuit; department store; blew them up with love; Stormageddon, Dark Lord of All; I speak baby",
                 Series.SERIES6B,
                 5,
                 1,
@@ -5864,8 +5864,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 10, 1),
                 "DVD/Blu-ray (2011).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "River refuses to kill the Doctor, resulting in a timeline where all of history is happening at once.",
+                "Silence; Kovarian; eyepatches; Brigadier; Dorium Moldovar; marriage; Teselecta; Doctor Who?; ",
                 Series.SERIES6B,
                 6,
                 1,
@@ -5888,8 +5888,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2011, 12, 25),
                 "DVD/Blu-ray (2012).",
                 "img_url",
-                "synopsis",
-                "Christmas Special; Festive Special; Androzani; Narnia;",
+                "The Doctor crashes into Madge Arwell's life on the eve of the Second World War.",
+                "Christmas Special; Festive Special; Androzani; Narnia; gender essentialism;",
                 Series.SERIES7A,
                 0,
                 1,
@@ -5909,8 +5909,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2012, 9, 1),
                 "DVD/Blu-ray (2012).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Daleks kidnap the Doctor, Amy and Rory and ask them to help them destroy the planet that houses the Dalek asylum.",
+                "divorce; force field; Oswin; conversion; Dalek; puppets; nanobots; parliament; eggs;",
                 Series.SERIES7A,
                 1,
                 1,
@@ -5932,8 +5932,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2012, 9, 8),
                 "DVD/Blu-ray (2012).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor is delighted to find a spaceship full of dinosaurs.",
+                "Brian; Rory's Dad; Silurian; Solomon; Queen; Nefertiti; big game hunter; John Riddell; Triceratops",
                 Series.SERIES7A,
                 2,
                 1,
@@ -5955,8 +5955,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2012, 9, 15),
                 "DVD/Blu-ray (2012).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "In the American West the town Doctor is being sought by a cyborg Gunslinger.",
+                "Western; Cowboys; experiments; sacrifice;",
                 Series.SERIES7A,
                 3,
                 1,
@@ -5978,13 +5978,13 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2012, 9, 22),
                 "DVD/Blu-ray (2012).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Black cubes start appearing all over the world, but no one can work out why.",
+                "Shakri; cubes; Brian; Rory's Dad; UNIT; first appearance of; Kate Lethbridge-Stewart;",
                 Series.SERIES7A,
                 4,
                 1,
                 "",
-                "wikilhttps://tardis.wiki/wiki/The_Power_of_Three_(TV_story)ink"
+                "https://tardis.wiki/wiki/The_Power_of_Three_(TV_story)"
         );
         powerThree.addDoctor(eleventhDoctor);
         powerThree.addCompanion(amy);
@@ -6001,8 +6001,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2012, 9, 29),
                 "DVD/Blu-ray (2012).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Rory is attacked by a Weeping Angel while getting coffee in New York.",
+                "Melody Malone; Statue of Liberty; suicide pact; paradox; afterword; last appearance of: Rory; companion departure leaves; Amy",
                 Series.SERIES7A,
                 5,
                 1,
@@ -6027,10 +6027,10 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2012, 12, 25),
                 "DVD/Blu-ray (2013).",
                 "img_url",
-                "synopsis",
-                "Christmas Special; Festive Special; Great Intelligence; Paternoster Gang",
+                "The Doctor wants to be alone, and goes to live above the clouds of Victorian London.",
+                "Christmas Special; Festive Special; Great Intelligence; Paternoster Gang; Clara dies; I'm a lizard from the dawn of time and this is my wife",
                 Series.SERIES7B,
-                1,
+                0,
                 1,
                 "",
                 "https://tardis.wiki/wiki/The_Snowmen_(TV_story)"
@@ -6049,8 +6049,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 3, 30),
                 "DVD/Blu-ray (2013).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor finds Clara in the present day, and discovers someone is uploading people's souls to a datacloud.",
+                "Great Intelligence; Shard; Spoonheads; evil wi-fi",
                 Series.SERIES7B,
                 1,
                 1,
@@ -6072,7 +6072,7 @@ public class DataLoader implements ApplicationRunner {
                 "DVD/Blu-ray (2013).",
                 "img_url",
                 "synopsis",
-                "keywords",
+                "ring system; Old God; Merry Gejelh; big ol speech; parasite; leaf; granddaughter; Susan; Queen of Years; Long Song;",
                 Series.SERIES7B,
                 2,
                 1,
@@ -6093,8 +6093,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 4, 13),
                 "DVD/Blu-ray (2013).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor and Clara are stranded on a Soviet submarine with a Martian.",
+                "Ultravox; submarine; Ice Warriors; cyborg; Russia; Skaldak",
                 Series.SERIES7B,
                 3,
                 1,
@@ -6115,8 +6115,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 4, 20),
                 "DVD/Blu-ray (2013).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A psychic and a traumatised soldier investigate a ghost known as the Witch of the Well.",
+                "Spiridon; Blue Crystal; Ghosts; pocket dimension; time traveller;",
                 Series.SERIES7B,
                 4,
                 1,
@@ -6137,8 +6137,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 4, 27),
                 "DVD/Blu-ray (2013).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Clara is lost in the depths of the TARDIS.",
+                "van Baalen Brothers; lava; molten; zombies; Eye of Harmony; reset button; Impossible Girl",
                 Series.SERIES7B,
                 5,
                 1,
@@ -6159,8 +6159,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 5, 4),
                 "DVD/Blu-ray (2013), Novelisation/Audiobook (2021).",
                 "img_url",
-                "synopsis",
-                "Paternoster Gang",
+                "Vastra, Jenny and Strax investigate a spate of completely red dead bodies.",
+                "Paternoster Gang; the North; Mr Sweet; red skin;",
                 Series.SERIES7B,
                 1,
                 1,
@@ -6181,8 +6181,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 5, 11),
                 "DVD/Blu-ray (2013).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor takes Clara and the kids to a kooky space theme park shortly before it's overtaken by cyborgs.",
+                "Deliberately annoying kids; Cybermen; redesign; whimsy; Cybermites; Emperor; amusement park",
                 Series.SERIES7B,
                 6,
                 1,
@@ -6203,8 +6203,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 5, 18),
                 "DVD/Blu-ray (2013).",
                 "img_url",
-                "synopsis",
-                "Whispermen; Trenzalore; Great Intelligence; first appearance: War Doctor; River Song; Paternoster Gang",
+                "The Great Intelligence brings the Doctor's friends to the planet Trenzalore.",
+                "Whispermen; Trenzalore; Great Intelligence; first appearance: War Doctor; River Song; Paternoster Gang; Impossible Girl",
                 Series.SERIES7B,
                 7,
                 1,
@@ -6227,7 +6227,7 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 11, 14),
                 "DVD/Blu-ray (2013), Novelisation/Audiobook (2018).",
                 "img_url",
-                "synopsis",
+                "The Doctor attempts to rescue someone trapped on a crashing spaceship.",
                 "Regeneration; Time War; War Doctor; Sisterhood of Karn; crash; Cass; warrior; Physician, heal thyself",
                 Series.FIFTYSPECIALS,
                 1,
@@ -6248,8 +6248,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 11, 23),
                 "DVD/Blu-ray (2013), Novelisation/Audiobook (2018).",
                 "img_url",
-                "synopsis",
-                "Multi-Doctor; first appearance: Twelfth Doctor; Arcadia; Gallifrey Falls; No More; the Moment; ",
+                "The Tenth and Eleventh Doctors are thrown back into the Time War on its final day, meeting the incarnation who destroyed Gallifrey.",
+                "Multi-Doctor; first appearance: Twelfth Doctor; all Thirteen; Arcadia; Gallifrey Falls; No More; the Moment; Zygons; Elizabeth; wedding; UNIT; Coal Hill;",
                 Series.FIFTYSPECIALS,
                 2,
                 1,
@@ -6272,7 +6272,7 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2013, 12, 25),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
+                "The Doctor makes his last stand on the planet Trenzalore.",
                 "Christmas Special; Festive Special; regeneration; town called Christmas; regeneration cycle; Trenzalore; Silence; Daleks; Cybermen; Handles; I will always remember when the Doctor was me;",
                 Series.FIFTYSPECIALS,
                 3,
@@ -6295,8 +6295,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 8, 23),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "Paternoster Gang",
+                "The newly regenerated Doctor investigates a case of a dinosaur spontaneously combusting.",
+                "Paternoster Gang; clockwork; Half-Face Man; Promised Land; Missy; dinosaur; Victorian London; phone call; Eleventh Doctor; last appearance of: Eleventh Doctor; Trenzalore;",
                 Series.SERIES8,
                 1,
                 1,
@@ -6317,8 +6317,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 8, 30),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor and Clara are miniaturised and sent into Rusty, a 'good Dalek'.",
+                "Soldier; Fantastic Voyage; slap; star being born; callous;",
                 Series.SERIES8,
                 2,
                 1,
@@ -6341,8 +6341,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 9, 6),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor is extremely irritated by a fictional character.",
+                "Robin Hood; spoon; gold; circuitry; Merry Men; Sheriff of Nottingham; archery contest; ",
                 Series.SERIES8,
                 3,
                 1,
@@ -6363,8 +6363,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 9, 13),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor is driven by an intense desire to investigate the monster behind everyone's childhood fears.",
+                "Barn; Fear is a superpower; Crying child; monster beneath bed; covers; sheets; Orson Pink; end of the universe",
                 Series.SERIES8,
                 4,
                 1,
@@ -6385,8 +6385,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 9, 20),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor and Clara are hired to rob the most secure bank in the universe.",
+                "Bank robbery; the Teller; Karabraxos; augmented human; mutant; Architect",
                 Series.SERIES8,
                 5,
                 1,
@@ -6409,8 +6409,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 9, 27),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor finally takes up the job as school caretaker.",
+                "Skovox Blitzer; racism; PE; P.E.; Coal Hill School; double life; soldier",
                 Series.SERIES8,
                 6,
                 1,
@@ -6433,8 +6433,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 10, 4),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor takes Clara and one of her pupils on a trip in the TARDIS, and arrives on a space shuttle carrying one hundred nuclear bombs.",
+                "Miracle; Egg; Dragon; Space Travel; Abortion; spiders; Hinchcliffe the shit out of it",
                 Series.SERIES8,
                 7,
                 1,
@@ -6455,8 +6455,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 10, 11),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Clara rejoins the TARDIS for one last outing.",
+                "Train; Foretold; sixty-six; 66; seconds; surrendering; Gus; Perkins; Quell; Mr Collins",
                 Series.SERIES8,
                 8,
                 1,
@@ -6477,8 +6477,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 10, 18),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The TARDIS has shrunk on the outside, with the Doctor stuck indoors.",
+                "Bristol; Rigsy; graffiti; community service; 2Dis; Thing; Addams Family; Boneless; 2D; two dimensional;",
                 Series.SERIES8,
                 9,
                 1,
@@ -6499,8 +6499,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 10,25),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "One of Clara's pupils knocks on the TARDIS door.",
+                "Fairy Tale; trees; solar flare; Tiger; Blake; missing Sister; schoolchildren",
                 Series.SERIES8,
                 10,
                 1,
@@ -6521,8 +6521,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 11, 8),
                 "DVD/Blu-ray (2014).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Danny Pink is dead. What happens next will shock you.",
+                "Missy; Cybermen; 3W Institute; Skeletons; Danny Pink; Osgood; death; dies; St Paul's Cathedral; Nethersphere; Cyber-Brig; Clara Who; rain;",
                 Series.SERIES8,
                 11,
                 2,
@@ -6546,8 +6546,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2014, 12, 25),
                 "",
                 "img_url",
-                "synopsis",
-                "Christmas Special; Festive Special; Santa; Dream Crabs; Inception; Alien",
+                "The Doctor and Clara joins forces with Santa Claus to rescue a group of scientists.",
+                "Christmas Special; Festive Special; Santa; Dream Crabs; Face Huggers; Inception; Alien; The Thing; North Pole; satsuma; last appearance of: Danny Pink",
                 Series.SERIES9,
                 0,
                 1,
@@ -6568,8 +6568,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 9, 26),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor tries to rescue a boy from a battlefield, but abandons him upon learning his name.",
+                "Missy; Confession Dial; Davros; opens eyes; child; boy; mercy; Colony Sarff; Skaro; sewers; hand mines; Kaled; tank",
                 Series.SERIES9,
                 1,
                 2,
@@ -6590,8 +6590,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 10, 10),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "An underwater base has discovered an alien craft in the flooded ruins of a Scottish village.",
+                "Ghosts; Axe; deaf character; Fisher King; Bootstrap Paradox; Beethoven; rock theme",
                 Series.SERIES9,
                 2,
                 2,
@@ -6613,8 +6613,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 10, 17),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A viking village is under attack from the fearsome Mire.",
+                "Mire; Vikings; immortal; Yakety Sax; Benny Hill; Odin",
                 Series.SERIES9,
                 3,
                 1,
@@ -6637,8 +6637,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 10, 24),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor meets Ashildr again in Seventeenth Century England.",
+                "Highwayman; Immortal; Immortality; Ashildr; Me; lion; Portal;",
                 Series.SERIES9,
                 4,
                 1,
@@ -6658,8 +6658,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 11, 7),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A peace treaty has allowed twenty million Zygons to live on Earth disguised as humans.",
+                "Duplicates; Bonnie; UNIT; big ol speech; war is bad; Osgood boxes",
                 Series.SERIES9,
                 5,
                 2,
@@ -6682,8 +6682,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 11, 14),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Gagan Rasmussen has invented a device that reduces the time a person sleeps and also creates rampaging monsters. Relaxing.",
+                "Sleep Dust; Sandman; rheum; mutation; Morpheus",
                 Series.SERIES9,
                 6,
                 1,
@@ -6704,8 +6704,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 11, 21),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor and Clara get a phone call from Rigsy when a countdown appears on the back of his neck.",
+                "Trap Street; Chronolock; Me; refugees; mayor;",
                 Series.SERIES9,
                 7,
                 1,
@@ -6726,8 +6726,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 12, 5),
                 "",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor arrives in a constantly shifting castle, pursued by a Death-like figure.",
+                "Grief; teleport; diamond wall; one hell of a bird; Castle; confession dial; Gallifrey; Rassilon; Ashildr; hybrid; Cloisters; song; neuro-block; consent; memory; duty of care",
                 Series.SERIES9,
                 8,
                 2,
@@ -6736,7 +6736,7 @@ public class DataLoader implements ApplicationRunner {
         );
         heavenhell.addDoctor(twelfthDoctor);
         heavenhell.addCompanion(clara);
-        storyRepository.save(story);
+        storyRepository.save(heavenhell);
 
         CastAndCrew heavenhellwriter = new CastAndCrew(moffat, "Writer", CastOrCrew.CREW, heavenhell);
         castAndCrewRepository.save(heavenhellwriter);
@@ -6749,8 +6749,8 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2015, 12, 25),
                 "",
                 "img_url",
-                "synopsis",
-                "Christmas Special; Festive Special",
+                "The Doctor, due to a case of mistaken identity, gets roped into a diamond heist with his wife.",
+                "Christmas Special; Festive Special; severed heads; robot; Hydroflax; first appearance of Nardole; last appearance of: River Song; Singing Towers; Darillium",
                 Series.SERIES9,
                 9,
                 1,
@@ -6771,9 +6771,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 12, 25),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "Christmas Special; Festive Special",
-                Series.SERIES9,
+                "The Doctor accidentally gives a small boy superpowers.",
+                "River; died; Christmas Special; Festive Special; Superman; superhero; Harmony Shoal; alien brains; nanny;",
+                Series.SERIES10,
                 0,
                 1,
                 "",
@@ -6793,9 +6793,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 4, 15),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "The Doctor and Nardole have been undercover as university lecturers for decades, where he meets Bill Potts.",
+                "Bristol University; puddle; Movellans; Daleks",
+                Series.SERIES10,
                 1,
                 1,
                 "",
@@ -6815,9 +6815,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 4, 22),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "The Doctor and Bill arrive on one of Earth's earliest colonised planets, and discover no humans but two types of robot.",
+                "Emoji Robots; shepherds; colonists; cryogenics; Gliese 581d;",
+                Series.SERIES10,
                 2,
                 1,
                 "",
@@ -6837,9 +6837,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 4, 29),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "The Doctor takes Bill to the 1814 Frost Fair on the River Thames.",
+                "sea creature; infanticide; racism; punching; a; racist; Lord Sutcliffe; winter",
+                Series.SERIES10,
                 3,
                 1,
                 "",
@@ -6859,9 +6859,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 5, 6),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "Bill rents a flat and everybody dies.",
+                "Landlord; mother; renting; students; cockroach; wooden person; Poirot; Dryads; ",
+                Series.SERIES10,
                 4,
                 1,
                 "",
@@ -6881,9 +6881,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 5, 13),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "Nardole accompanies the Doctor and Bill to a space station where most of the crew have been killed by their own spacesuits.",
+                "Capitalism; suits; zombies; blind; algorithm; organic components;",
+                Series.SERIES10,
                 5,
                 1,
                 "",
@@ -6904,9 +6904,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 5, 20),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "Monk Trilogy;",
-                Series.SERIES9,
+                "The Doctor is sent to execute the Master.",
+                "Missy; Monk Trilogy; simulation; computer games; practice; email; you don't have to be real to be the Doctor;",
+                Series.SERIES10,
                 6,
                 1,
                 "",
@@ -6927,9 +6927,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 5, 27),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "A pyramid appears on the strategic border of the Russian, Chinese and U.S. armies.",
+                "Monk Trilogy; Blind; Consent; Biochemical Lab;",
+                Series.SERIES10,
                 7,
                 1,
                 "",
@@ -6952,16 +6952,16 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 6, 3),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "The Monks now rule the planet, convincing humanity they have been on Earth for millions of years.",
+                "Monk Trilogy; fake news; fake regeneration;",
+                Series.SERIES10,
                 8,
                 1,
                 "",
                 "https://tardis.wiki/wiki/The_Lie_of_the_Land_(TV_story)"
         );
         lieLand.addDoctor(twelfthDoctor);
-        story.addCompanion(nardole);
+        lieLand.addCompanion(nardole);
         lieLand.addCompanion(bill);
         storyRepository.save(lieLand);
 
@@ -6975,9 +6975,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 6, 10),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "NASA find the words 'God save the Queen' buried under the ice cap of Mars.",
+                "Friday; Ice; Warriors; Empress; Iraxxa; Redcoats; Alpha Centauri",
+                Series.SERIES10,
                 9,
                 1,
                 "",
@@ -6998,9 +6998,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 6, 17),
                 "DVD/Blu-ray (2017), Novelisation/Audiobook (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "The Doctor and Bill travel to Second Century Scotland to find out what happened to the Ninth Legion",
+                "Ninth Legion; Imperial Roman Army; crows; Picts; Ka; cairn; Missy; Scotland;",
+                Series.SERIES10,
                 10,
                 1,
                 "",
@@ -7021,9 +7021,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 7, 1),
                 "DVD/Blu-ray (2017).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "The Doctor, desperately wanting Missy to be redeemed, plunges everyone into extreme danger.",
+                "Black Hole; time dilation; Bill; shot; Cyber-conversion; Pain; Master; Mr; Saxon; Razor; disguises; Missy; multi-Master; Cybermen; Mondasian; final stand; kind; Heather;",
+                Series.SERIES10,
                 11,
                 2,
                 "",
@@ -7044,9 +7044,9 @@ public class DataLoader implements ApplicationRunner {
                 LocalDate.of(2017, 12,25),
                 "DVD/Blu-ray (2017), Novelisation/Audiobook (2018).",
                 "img_url",
-                "synopsis",
-                "Christmas Special; Festive Special",
-                Series.SERIES9,
+                "The Doctor (refusing to regenerate) meets the Doctor (refusing to regenerate) at the South Pole.",
+                "Christmas Special; Festive Special; multi-Doctor; Brigadier; World War One; First World War; Christmas Truce; regeneration; first appearance: Thirteenth Doctor; Rusty; Testimony; Clara; Nardole",
+                Series.SERIES10,
                 12,
                 1,
                 "",
@@ -7063,692 +7063,751 @@ public class DataLoader implements ApplicationRunner {
 
 
         Story womanFell = new Story(
-                "title",
+                "The Woman Who Fell to Earth",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 10, 7),
+                LocalDate.of(2018, 10, 7),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Ryan, Graham and Yaz have a strange night when an amnesiac woman falls through the roof of a train.",
+                "Grace; death; Tzim-Sha; Tim Shaw; Stenza; Sheffield; Steel; makes her own sonic; screwdriver; Kebab Guy; teeth; first appearance of: Ryan, Graham, Grace, Yaz; crane",
                 Series.SERIES11,
                 1,
                 1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/The_Woman_Who_Fell_to_Earth_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        womanFell.addDoctor(thirteenthDoctor);
+        womanFell.addCompanion(yaz);
+        womanFell.addCompanion(graham);
+        womanFell.addCompanion(ryan);
+        storyRepository.save(womanFell);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew womanFellwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, womanFell);
+        castAndCrewRepository.save(womanFellwriter);
 
         Story ghostMonument = new Story(
-                "title",
+                "The Ghost Monument",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 10, 14),
+                LocalDate.of(2018, 10, 14),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "The TARDIS is missing, and everyone is stranded on a planet called Desolation.",
+                "Race; crash; Art Malik; needlessly aggressive guy; carpet things; Remnants; robots;  first mention of: Timeless Child;",
+                Series.SERIES11,
+                2,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/The_Ghost_Monument_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        ghostMonument.addDoctor(thirteenthDoctor);
+        ghostMonument.addCompanion(yaz);
+        ghostMonument.addCompanion(graham);
+        ghostMonument.addCompanion(ryan);
+        storyRepository.save(ghostMonument);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew ghostMonumentwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, ghostMonument);
+        castAndCrewRepository.save(ghostMonumentwriter);
 
         Story rosa = new Story(
-                "title",
+                "Rosa",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 10, 21),
+                LocalDate.of(2018, 10, 21),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "A racist from the future goes back in time to stop Rosa Parks from solving racism.",
+                "Rosa Parks; Asteroid; 284996; Martin Luther King; racism; Krasko; Alabama; Montgomery; Bus Boycott; Emmett Till; Fred Gray;",
+                Series.SERIES11,
+                3,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/Rosa_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        rosa.addDoctor(thirteenthDoctor);
+        rosa.addCompanion(yaz);
+        rosa.addCompanion(graham);
+        rosa.addCompanion(ryan);
+        storyRepository.save(rosa);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew rosawriter = new CastAndCrew(mBlackman, "Writer", CastOrCrew.CREW, rosa);
+        castAndCrewRepository.save(rosawriter);
+        CastAndCrew rosawriter2 = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, rosa);
+        castAndCrewRepository.save(rosawriter2);
 
         Story arachnids = new Story(
-                "title",
+                "Arachnids in the UK",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 10, 28),
+                LocalDate.of(2018, 10, 28),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "Why are giant spiders converging on an unopened hotel?",
+                "Jack Robertson; Yaz's Mum; Dinnerladies; Coronation Street; hotel; giant; big; spiders; Sheffield",
+                Series.SERIES11,
+                4,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/Arachnids_in_the_UK_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        arachnids.addDoctor(thirteenthDoctor);
+        arachnids.addCompanion(yaz);
+        arachnids.addCompanion(graham);
+        arachnids.addCompanion(ryan);
+        storyRepository.save(arachnids);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew arachnidswriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, arachnids);
+        castAndCrewRepository.save(arachnidswriter);
 
         Story tsuranga = new Story(
-                "title",
+                "The Tsuranga Conundrum",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 11, 4),
+                LocalDate.of(2018, 11, 4),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor and friends are stranded on a hospital ship, without the TARDIS but with something eating the ship.",
+                "Pting; man giving birth; Adoption; hospital ship; anti-matter",
                 Series.SERIES11,
+                5,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/The_Tsuranga_Conundrum_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        tsuranga.addDoctor(thirteenthDoctor);
+        tsuranga.addCompanion(yaz);
+        tsuranga.addCompanion(graham);
+        tsuranga.addCompanion(ryan);
+        storyRepository.save(tsuranga);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew tsurangawriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, tsuranga);
+        castAndCrewRepository.save(tsurangawriter);
 
         Story demonsPunjab = new Story(
-                "title",
+                "Demons of the Punjab",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 11, 11),
+                LocalDate.of(2018, 11, 11),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "Yaz wants to learn more about the life of her grandmother, so the Doctor takes her to the Punjab in 1947.",
+                "Yaz; Nani; family; non-intervention; bearing witness; Thijarians; Partition; India; Pakistan; wedding; watch;",
+                Series.SERIES11,
+                6,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/Demons_of_the_Punjab_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        demonsPunjab.addDoctor(thirteenthDoctor);
+        demonsPunjab.addCompanion(yaz);
+        demonsPunjab.addCompanion(graham);
+        demonsPunjab.addCompanion(ryan);
+        storyRepository.save(demonsPunjab);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew demonsPunjabwriter = new CastAndCrew(vPatel, "Writer", CastOrCrew.CREW, demonsPunjab);
+        castAndCrewRepository.save(demonsPunjabwriter);
 
         Story kerblam = new Story(
-                "title",
+                "Kerblam!",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 11, 18),
+                LocalDate.of(2018, 11, 18),
+                "DVD/Blu-Ray (2019), Novelisation/Audiobook (2023).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "It looks like a multi-planetary megacorporation might be a bit morally dubious.",
+                "Space; Amazon; Kerblam man; workplace; fridging; bubble wrap; delivery man; the systems aren't the problem;",
+                Series.SERIES11,
+                7,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/Kerblam!_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        kerblam.addDoctor(thirteenthDoctor);
+        kerblam.addCompanion(yaz);
+        kerblam.addCompanion(graham);
+        kerblam.addCompanion(ryan);
+        storyRepository.save(kerblam);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew kerblamwriter = new CastAndCrew(mcTighe, "Writer", CastOrCrew.CREW, kerblam);
+        castAndCrewRepository.save(kerblamwriter);
 
         Story witchfinders = new Story(
-                "title",
+                "The Witchfinders",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 11, 25),
+                LocalDate.of(2018, 11, 25),
+                "DVD/Blu-Ray (2019), Novelisation/Audiobook (2021).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "Landing in the middle of a witch trial, the Doctor herself falls under suspicion.",
+                "Morax; gender; mud; Dunking; Witchcraft; witch; trials; hysteria; King; James I; James VI; arch;",
+                Series.SERIES11,
+                8,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/The_Witchfinders_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        witchfinders.addDoctor(thirteenthDoctor);
+        witchfinders.addCompanion(yaz);
+        witchfinders.addCompanion(graham);
+        witchfinders.addCompanion(ryan);
+        storyRepository.save(witchfinders);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew witchfinderswriter = new CastAndCrew(jWilkinson, "Writer", CastOrCrew.CREW, witchfinders);
+        castAndCrewRepository.save(witchfinderswriter);
 
         Story takesAway = new Story(
-                "title",
+                "It Takes You Away",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 12, 2),
+                LocalDate.of(2018, 12, 2),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "In an isolated house in the Norwegian fjords, a scared girl hides alone, waiting for her father to return. In the distance, a monster comes to take people away.",
+                "Grandad; Solitract; the actor Kevin Eldon; Norway; Woolly Rebellion; big; green; frog; Ribbons; Anti-zone; moths; bad parenting; blind character",
+                Series.SERIES11,
+                9,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/It_Takes_You_Away_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        takesAway.addDoctor(thirteenthDoctor);
+        takesAway.addCompanion(yaz);
+        takesAway.addCompanion(graham);
+        takesAway.addCompanion(ryan);
+        storyRepository.save(takesAway);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew takesAwaywriter = new CastAndCrew(hime, "Writer", CastOrCrew.CREW, takesAway);
+        castAndCrewRepository.save(takesAwaywriter);
 
         Story ranksoor = new Story(
-                "title",
+                "The Battle of Ranskoor Av Kolos",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2018, 12, 9),
+                LocalDate.of(2018, 12, 9),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "Nine different distress calls are all coming from the same planet.",
+                "Ux; Stenza; first draft; Tzim-Sha; Tim Shaw; memory loss",
+                Series.SERIES11,
+                10,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/The_Battle_of_Ranskoor_Av_Kolos_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        ranksoor.addDoctor(thirteenthDoctor);
+        ranksoor.addCompanion(yaz);
+        ranksoor.addCompanion(graham);
+        ranksoor.addCompanion(ryan);
+        storyRepository.save(ranksoor);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew ranksoorwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, ranksoor);
+        castAndCrewRepository.save(ranksoorwriter);
 
         Story resolution = new Story(
-                "title",
+                "Resolution",
                 Format.TV,
-                LocalDate.of(2018),
-                LocalDate.of(2018),
-                "",
+                LocalDate.of(2019, 1, 1),
+                LocalDate.of(2019, 1, 1),
+                "DVD/Blu-Ray (2019).",
                 "img_url",
-                "synopsis",
-                "keywords",
-                Series.SERIES9,
+                "Archaeologists discover buried alien fragments, and it goes about as well as you'd expect.",
+                "Festive Special; New Year Special; Dalek; solo Dalek; possession; bury your gays; Reconnaissance scout; Ryan's Dad; microwave; ",
+                Series.SERIES11,
+                11,
                 1,
-                1,
-                "prodcode",
-                "wikilink"
+                "",
+                "https://tardis.wiki/wiki/Resolution_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        resolution.addDoctor(thirteenthDoctor);
+        resolution.addCompanion(yaz);
+        resolution.addCompanion(graham);
+        resolution.addCompanion(graham);
+        storyRepository.save(resolution);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew resolutionwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, resolution);
+        castAndCrewRepository.save(resolutionwriter);
 
 
 
         Story spyfall = new Story(
-                "title",
+                "Spyfall",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 1, 1),
+                LocalDate.of(2020, 1, 5),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "MI6 enlists the Doctor to investigate former spy Daniel Barton, which escalates quickly.",
+                "Festive Special; Gallifrey; destruction of; Tissue Compression Eliminator; Plane Thieves; MI6; Kasaavin; James Bond",
                 Series.SERIES12,
                 1,
-                1,
+                2,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Spyfall_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        spyfall.addDoctor(thirteenthDoctor);
+        spyfall.addCompanion(yaz);
+        spyfall.addCompanion(graham);
+        spyfall.addCompanion(ryan);
+        storyRepository.save(spyfall);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew spyfallwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, spyfall);
+        castAndCrewRepository.save(spyfallwriter);
 
         Story orphan = new Story(
-                "title",
+                "Orphan 55",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 1, 12),
+                LocalDate.of(2020, 1, 12),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A free holiday turns into an absolute nightmare.",
+                "My Benni; Dregs; Tranquility Spa; future Earth; Siberia; Environment; Jay from; Inbetweeners; hopper virus;",
                 Series.SERIES12,
-                1,
+                2,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Orphan_55_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        orphan.addDoctor(thirteenthDoctor);
+        orphan.addCompanion(yaz);
+        orphan.addCompanion(graham);
+        orphan.addCompanion(ryan);
+        storyRepository.save(orphan);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew orphanwriter = new CastAndCrew(hime, "Writer", CastOrCrew.CREW, orphan);
+        castAndCrewRepository.save(orphanwriter);
 
         Story tesla = new Story(
-                "title",
+                "Nikola Tesla's Night of Terror",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 1, 19),
+                LocalDate.of(2020, 1, 19),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Little does Nikola Tesla suspect that parts of his equipment are being stolen by OTT scorpions.",
+                "Skithra; Thomas Edison; Wardenclyffe",
                 Series.SERIES12,
-                1,
+                3,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Nikola_Tesla%27s_Night_of_Terror_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        tesla.addDoctor(thirteenthDoctor);
+        tesla.addCompanion(yaz);
+        tesla.addCompanion(graham);
+        tesla.addCompanion(ryan);
+        storyRepository.save(tesla);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew teslawriter = new CastAndCrew(metivier, "Writer", CastOrCrew.CREW, tesla);
+        castAndCrewRepository.save(teslawriter);
 
-        Story fugitiveJudoon = new Story("title",
+        Story fugitiveJudoon = new Story("Fugitive of the Judoon",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 1, 26),
+                LocalDate.of(2020, 1, 26),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Judoon are hunting a dangerous fugitive in Gloucester, but is it really as simple as that?",
+                "Ruth; Fugitive Doctor; Big Ears; Captain Jack; Lone Cyberman; Division; Lighthouse; Police Box; TARDIS; Chameleon Arch",
                 Series.SERIES12,
-                1,
+                4,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Fugitive_of_the_Judoon_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        fugitiveJudoon.addDoctor(thirteenthDoctor);
+        fugitiveJudoon.addDoctor(fugitiveDoctor);
+        fugitiveJudoon.addCompanion(yaz);
+        fugitiveJudoon.addCompanion(graham);
+        fugitiveJudoon.addCompanion(ryan);
+        storyRepository.save(fugitiveJudoon);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew fugitiveJudoonwriter = new CastAndCrew(vPatel, "Writer", CastOrCrew.CREW, fugitiveJudoon);
+        castAndCrewRepository.save(fugitiveJudoonwriter);
+        CastAndCrew fugitiveJudoonwriter2 = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, fugitiveJudoon);
+        castAndCrewRepository.save(fugitiveJudoonwriter2);
 
         Story praxeus = new Story(
-                "title",
+                "Praxeus",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 2, 2),
+                LocalDate.of(2020, 2, 2),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "What connects birds, an astronaut and a deadly virus that makes people explode?",
+                "Virus; dead birds; astronaut; Madagascar; hazmat; unmentioned dead guy;",
                 Series.SERIES12,
-                1,
+                5,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Praxeus_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        praxeus.addDoctor(thirteenthDoctor);
+        praxeus.addCompanion(yaz);
+        praxeus.addCompanion(graham);
+        praxeus.addCompanion(ryan);
+        storyRepository.save(praxeus);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew praxeuswriter = new CastAndCrew(mcTighe, "Writer", CastOrCrew.CREW, praxeus);
+        castAndCrewRepository.save(praxeuswriter);
+        CastAndCrew praxeuswriter2 = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, praxeus);
+        castAndCrewRepository.save(praxeuswriter2);
 
-        Story canUhearme = new Story(
-                "title",
+        Story canUhearMe = new Story(
+                "Can You Hear Me?",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 2, 9),
+                LocalDate.of(2020, 2, 9),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A really creepy guy has his fingers in many pies.",
+                "Eternals; Mental Health; fear; detached; fingers; awkward; cancer; chat; 1380; Aleppo",
                 Series.SERIES12,
-                1,
+                6,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Can_You_Hear_Me%3F_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        canUhearMe.addDoctor(thirteenthDoctor);
+        canUhearMe.addCompanion(yaz);
+        canUhearMe.addCompanion(graham);
+        canUhearMe.addCompanion(ryan);
+        storyRepository.save(canUhearMe);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew canUhearMewriter = new CastAndCrew(cJames, "Writer", CastOrCrew.CREW, canUhearMe);
+        castAndCrewRepository.save(canUhearMewriter);
+        CastAndCrew canUhearMewriter2 = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, canUhearMe);
+        castAndCrewRepository.save(canUhearMewriter2);
 
         Story villaDiodati = new Story(
-                "title",
+                "The Haunting of Villa Diodati",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 2, 16),
+                LocalDate.of(2020, 2, 16),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor visits Mary SHelley on the night she creates Frankenstein.",
+                "Lone Cyberman; Byron; Frankenstein; Cyber-Poetry; Cyberium; ",
                 Series.SERIES12,
-                1,
+                7,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/The_Haunting_of_Villa_Diodati_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        villaDiodati.addDoctor(thirteenthDoctor);
+        villaDiodati.addCompanion(yaz);
+        villaDiodati.addCompanion(graham);
+        villaDiodati.addCompanion(ryan);
+        storyRepository.save(villaDiodati);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew villaDiodatiwriter = new CastAndCrew(mAlderton, "Writer", CastOrCrew.CREW, villaDiodati);
+        castAndCrewRepository.save(villaDiodatiwriter);
+
         Story ascenscionCybsTimelessChild = new Story(
-                "title",
+                "Ascension of the Cybermen/The Timeless Children",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2020, 2, 23),
+                LocalDate.of(2020, 3, 1),
+                "DVD/Blu-ray (2020).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor is separated from her companions in the aftermath of the Cyber-Wars, but what lies in wait for her at the Boundary?",
+                "Adoption; Lone Cyberman; Tecteun; Irish Policeman; Division; Morbius Doctors; Cyber Heads; Cyberium; Cyberdrone; Cyber Lords; Cyber-Wars; Boundary; gateway; wormhole; foundling; Gallifrey; 2.6 billion children; Master",
                 Series.SERIES12,
-                1,
-                1,
+                8,
+                2,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Ascension_of_the_Cybermen_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        ascenscionCybsTimelessChild.addDoctor(thirteenthDoctor);
+        ascenscionCybsTimelessChild.addCompanion(yaz);
+        ascenscionCybsTimelessChild.addCompanion(graham);
+        ascenscionCybsTimelessChild.addCompanion(ryan);
+        storyRepository.save(ascenscionCybsTimelessChild);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew ascenscionCybsTimelessChildwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, ascenscionCybsTimelessChild);
+        castAndCrewRepository.save(ascenscionCybsTimelessChildwriter);
 
         Story revolutionDaleks = new Story(
-                "title",
+                "Revolution of the Daleks",
                 Format.TV,
-                LocalDate.of(2020),
-                LocalDate.of(2020),
-                "",
+                LocalDate.of(2021, 1, 1),
+                LocalDate.of(2021, 1, 1),
+                "DVD/Blu-ray (2021).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor is in prison while on Earth Daleks are on the production line.",
+                "Jack Robertson; Captain Jack; prison; companion; departure; leave; Graham; final appearance: Ryan; Reconnaissance Dalek; drones",
                 Series.SERIES12,
-                1,
+                9,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Revolution_of_the_Daleks_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(graham);
-        storyRepository.save(ryan);
+        revolutionDaleks.addDoctor(thirteenthDoctor);
+        revolutionDaleks.addCompanion(yaz);
+        revolutionDaleks.addCompanion(graham);
+        revolutionDaleks.addCompanion(ryan);
+        revolutionDaleks.addCompanion(jack);
+        storyRepository.save(revolutionDaleks);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew revolutionDalekswriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, revolutionDaleks);
+        castAndCrewRepository.save(revolutionDalekswriter);
 
 
 
         Story flux = new Story(
-                "title",
+                "Flux",
                 Format.TV,
-                LocalDate.of(2021),
-                LocalDate.of(2021),
-                "",
+                LocalDate.of(2021, 10, 31),
+                LocalDate.of(2021, 12, 5),
+                "DVD/Blu-ray (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "After most of the universe is devastated, the Doctor learns more about her origins as she attempts to save the survivors.",
+                "Adoption; Azure; Swarm; Division; Tecteun; Williamson Tunnels; Sontarans; Angels; Daleks; Cybermen; Bel; Vinder; Grand Serpent; UNIT",
                 Series.SERIES13,
                 1,
-                1,
+                6,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Series_13_(Doctor_Who_2005)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        flux.addDoctor(thirteenthDoctor);
+        flux.addDoctor(fugitiveDoctor);
+        flux.addCompanion(yaz);
+        flux.addCompanion(dan);
+        storyRepository.save(flux);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew fluxwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, flux);
+        castAndCrewRepository.save(fluxwriter);
+
+        CastAndCrew fluxwriter2 = new CastAndCrew(mAlderton, "Writer", CastOrCrew.CREW, flux);
+        castAndCrewRepository.save(fluxwriter2);
 
         Story halloweenApocalypse = new Story(
-                "title",
+                "The Halloween Apocalypse",
                 Format.TV,
-                LocalDate.of(2021),
-                LocalDate.of(2021),
-                "",
+                LocalDate.of(2021, 10, 31),
+                LocalDate.of(2021, 10, 31),
+                "DVD/Blu-ray (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Something is tearing through all of time and space, destroying everything in its path.",
+                "Chapter One; Halloween; Trick or Treat!; first appearance of: Dan Lewis, Karvanista, Azure; Swarm; universe destroyed",
                 Series.SERIES13,
                 1,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/The_Halloween_Apocalypse_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        halloweenApocalypse.addDoctor(thirteenthDoctor);
+        halloweenApocalypse.addCompanion(yaz);
+        halloweenApocalypse.addCompanion(dan);
+        storyRepository.save(halloweenApocalypse);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew halloweenApocalypsewriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, halloweenApocalypse);
+        castAndCrewRepository.save(halloweenApocalypsewriter);
 
         Story warSontarans = new Story(
-                "title",
+                "War of the Sontarans",
                 Format.TV,
-                LocalDate.of(2021),
-                LocalDate.of(2021),
-                "",
+                LocalDate.of(2021, 11, 7),
+                LocalDate.of(2021, 11, 7),
+                "DVD/Blu-ray (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Sontarans have hijacked the Crimean War.",
+                "Chapter Two; Mary Seacole; Crimea; Crimean War; Atropos; Priest Triangle; Sontaran; wanted to ride a horse; Liverpool Docks",
                 Series.SERIES13,
-                1,
+                2,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/War_of_the_Sontarans_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        warSontarans.addDoctor(thirteenthDoctor);
+        warSontarans.addCompanion(yaz);
+        warSontarans.addCompanion(dan);
+        storyRepository.save(warSontarans);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew warSontaranswriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, warSontarans);
+        castAndCrewRepository.save(warSontaranswriter);
 
         Story onceTime = new Story(
-                "title",
+                "Once, Upon Time",
                 Format.TV,
-                LocalDate.of(2021),
-                LocalDate.of(2021),
-                "",
+                LocalDate.of(2021, 11, 14),
+                LocalDate.of(2021, 11, 14),
+                "DVD/Blu-ray (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor stands on a plinth and everyone has flashbacks.",
+                "Chapter Three; Atropos; Mouri; blue particles; time storm; Grand Serpent; Vinder; Bel; Me and your beautiful as yet unborn child; ",
                 Series.SERIES13,
-                1,
+                3,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Once,_Upon_Time_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        onceTime.addDoctor(thirteenthDoctor);
+        onceTime.addDoctor(fugitiveDoctor);
+        onceTime.addCompanion(yaz);
+        onceTime.addCompanion(dan);
+        storyRepository.save(onceTime);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew onceTimewriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, onceTime);
+        castAndCrewRepository.save(onceTimewriter);
 
         Story villageAngels = new Story(
-                "title",
+                "Village of the Angels",
                 Format.TV,
-                LocalDate.of(2021),
-                LocalDate.of(2021),
-                "",
+                LocalDate.of(2021, 11, 21),
+                LocalDate.of(2021, 11, 21),
+                "DVD/Blu-ray (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor's past catches up with her while everyone else catches up with the past.",
+                "Chapter Four; Eustacius Jericho; Claire; fire Angel; Division; Extraction Squad; turned into Angel",
                 Series.SERIES13,
-                1,
+                4,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Village_of_the_Angels_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        villageAngels.addDoctor(thirteenthDoctor);
+        villageAngels.addCompanion(yaz);
+        villageAngels.addCompanion(dan);
+        storyRepository.save(villageAngels);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew villageAngelswriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, villageAngels);
+        castAndCrewRepository.save(villageAngelswriter);
+        CastAndCrew villageAngelswriter2 = new CastAndCrew(mAlderton, "Writer", CastOrCrew.CREW, villageAngels);
+        castAndCrewRepository.save(villageAngelswriter2);
 
         Story survivorsFlux = new Story(
-                "title",
+                "Survivors of the Flux",
                 Format.TV,
-                LocalDate.of(2021),
-                LocalDate.of(2021),
-                "",
+                LocalDate.of(2021, 11, 28),
+                LocalDate.of(2021, 11, 28),
+                "DVD/Blu-ray (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor's Mum is passive aggressive.",
+                "Adoption; Chapter 5; UNIT; Grand Serpent; Multiverse; Awsok; Division; Universe; One; Two",
                 Series.SERIES13,
-                1,
+                5,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Survivors_of_the_Flux_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        survivorsFlux.addDoctor(thirteenthDoctor);
+        survivorsFlux.addCompanion(yaz);
+        survivorsFlux.addCompanion(dan);
+        storyRepository.save(survivorsFlux);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew survivorsFluxwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, survivorsFlux);
+        castAndCrewRepository.save(survivorsFluxwriter);
 
         Story vanquishers = new Story(
-                "title",
+                "The Vanquishers",
                 Format.TV,
-                LocalDate.of(2021),
-                LocalDate.of(2021),
-                "",
+                LocalDate.of(2021, 12, 5),
+                LocalDate.of(2021, 12, 5),
+                "DVD/Blu-ray (2022).",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor is split across three realities as the final Flux event approaches.",
+                "Chapter 6; Seven billion dead dogs floating in space; UNIT; Time; Williamson Tunnels; illogical house; last appearance of: Karvanista; Jericho; Claire; Grand Serpent; Ravagers; Swarm; Azure; Bel;  Passenger; betrayal",
                 Series.SERIES13,
-                1,
+                6,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/The_Vanquishers_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        vanquishers.addDoctor(thirteenthDoctor);
+        vanquishers.addCompanion(yaz);
+        vanquishers.addCompanion(dan);
+        storyRepository.save(vanquishers);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew vanquisherswriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, vanquishers);
+        castAndCrewRepository.save(vanquisherswriter);
+
 
 
         Story eveDaleks = new Story(
 
-                "title",
+                "Eve of the Daleks",
                 Format.TV,
-                LocalDate.of(2022),
-                LocalDate.of(2022),
-                "",
+                LocalDate.of(2022, 1, 1),
+                LocalDate.of(2022, 1, 1),
+                "DVD/Blu-ray (2022)",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "The Doctor and friends are trapped in a self storage facility in Manchester on New Year's Eve.",
+                "Daleks; Dalek Executioners; Yaz; romantic; feelings; Doctor; Self Storage; New Year; Festive Special; time loop",
                 Series.WHITTAKERSPECIALS,
                 1,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Eve_of_the_Daleks_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        eveDaleks.addDoctor(thirteenthDoctor);
+        eveDaleks.addCompanion(yaz);
+        eveDaleks.addCompanion(dan);
+        storyRepository.save(eveDaleks);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew eveDalekswriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, eveDaleks);
+        castAndCrewRepository.save(eveDalekswriter);
 
 
         Story legendSeaDevils = new Story(
 
-                "title",
+                "Legend of the Sea Devils",
                 Format.TV,
-                LocalDate.of(2022),
-                LocalDate.of(2022),
-                "",
+                LocalDate.of(2022, 4, 17),
+                LocalDate.of(2022, 4, 17),
+                "DVD/Blu-ray (2022)",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "A really angry Sea Devil wants to flood the Earth.",
+                "Easter Special; Sea Devil; leap; Chinese Pirates; Sword fight; Zheng Yi Sao; Yaz; Doctor; romantic; feelings",
                 Series.WHITTAKERSPECIALS,
-                1,
+                2,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/Legend_of_the_Sea_Devils_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        legendSeaDevils.addDoctor(thirteenthDoctor);
+        legendSeaDevils.addCompanion(yaz);
+        legendSeaDevils.addCompanion(dan);
+        storyRepository.save(legendSeaDevils);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew legendSeaDevilswriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, legendSeaDevils);
+        castAndCrewRepository.save(legendSeaDevilswriter);
+        CastAndCrew legendSeaDevilswriter2 = new CastAndCrew(eRoad, "Writer", CastOrCrew.CREW, legendSeaDevils);
+        castAndCrewRepository.save(legendSeaDevilswriter2);
 
 
         Story powerDr = new Story(
 
-                "title",
+                "The Power of the Doctor",
                 Format.TV,
-                LocalDate.of(2022),
-                LocalDate.of(2022),
-                "",
+                LocalDate.of(2022, 10, 23),
+                LocalDate.of(2022, 10, 23),
+                "DVD/Blu-ray (2022)",
                 "img_url",
-                "synopsis",
-                "keywords",
+                "Famous paintings have been mysteriously defaced and seismologists have gone missing! Oh no!",
+                "Forced; Regeneration; first appearance of: Fourteenth Doctor; Guardians of the Edge; Rasputin; insane photoshop; UNIT; Ashad; Adric; Centenary Special last appearance of: Yaz; Dan; Graham; Ian; Vinder;",
                 Series.WHITTAKERSPECIALS,
-                1,
+                3,
                 1,
                 "",
-                "wikilink"
+                "https://tardis.wiki/wiki/The_Power_of_the_Doctor_(TV_story)"
         );
-        story.addDoctor(thirteenthDoctor);
-        story.addCompanion(yaz);
-        story.addCompanion(dan);
+        powerDr.addDoctor(thirteenthDoctor);
+        powerDr.addDoctor(fugitiveDoctor);
+        powerDr.addDoctor(fifthDoctor);
+        powerDr.addDoctor(sixthDoctor);
+        powerDr.addDoctor(seventhDoctor);
+        powerDr.addDoctor(eighthDoctor);
+        powerDr.addCompanion(yaz);
+        powerDr.addCompanion(dan);
+        powerDr.addCompanion(tegan);
+        powerDr.addCompanion(ace);
+        powerDr.addCompanion(graham);
+        storyRepository.save(powerDr);
 
-        CastAndCrew writer = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, story);
-        castAndCrewRepository.save(writer);
+        CastAndCrew powerDrwriter = new CastAndCrew(chibnall, "Writer", CastOrCrew.CREW, powerDr);
+        castAndCrewRepository.save(powerDrwriter);
 
 
 

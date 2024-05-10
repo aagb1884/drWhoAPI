@@ -359,7 +359,7 @@ public class DataLoader implements ApplicationRunner {
         personRepository.save(terranceD);
         Person sDollard = new Person("Sarah Dollard", "Writer");
         personRepository.save(sDollard);
-        Person tDudley = new Person("Terence Dudley", "Writer");
+        Person tDudley = new Person("Terence Dudley", "Writer and Director");
         personRepository.save(tDudley);
         Person dEllis = new Person("David Ellis", "Writer");
         personRepository.save(dEllis);
@@ -566,6 +566,236 @@ public class DataLoader implements ApplicationRunner {
         Person bRedman = new Person("Briony Redman", "Writer");
         personRepository.save(bRedman);
 
+        Person jAhearne = new Person("Joe Ahearne", "Director");
+        personRepository.save(jAhearne);
+        Person cAllen = new Person("Christopher Allen", "Director");
+        personRepository.save(cAllen);
+        Person bAnderson = new Person("Bill Anderson", "Director");
+        personRepository.save(bAnderson);
+        Person sAprahamian = new Person("Sallie Aprahamian", "Director");
+        personRepository.save(sAprahamian);
+        Person aLaufer = new Person("Annetta Laufer", "Director");
+        personRepository.save(aLaufer);
+        Person mLeggo = new Person("Michael Leggo", "Director");
+        personRepository.save(mLeggo);
+        Person eurosLyn = new Person("Euros Lyn", "Director");
+        personRepository.save(eurosLyn);
+        Person cBarry = new Person("Christopher Barry", "Director");
+        personRepository.save(cBarry);
+        Person mBarry = new Person("Morris Barry", "Director");
+        personRepository.save(mBarry);
+        Person eBazalgette = new Person("Ed Bazalgette", "Director");
+        personRepository.save(eBazalgette);
+        Person rBennett = new Person("Rodney Bennett", "Director");
+        personRepository.save(rBennett);
+        Person pBernard = new Person("Paul Bernard", "Director");
+        personRepository.save(pBernard);
+        Person lBickford = new Person("Lovett Bickford", "Director");
+        personRepository.save(lBickford);
+        Person jBlack = new Person("John Black", "Director");
+        personRepository.save(jBlack);
+        Person fBlackburn = new Person("Farren Blackburn", "Director");
+        personRepository.save(fBlackburn);
+        Person dBlake = new Person("Darrol Blake", "Director");
+        personRepository.save(dBlake);
+        Person gBlake = new Person("Gerald Blake", "Director");
+        personRepository.save(gBlake);
+        Person kBoak = new Person("Keith Boak", "Director");
+        personRepository.save(kBoak);
+        Person mEBriant = new Person("Michael E. Briant", "Director");
+        personRepository.save(mEBriant);
+        Person aBromly = new Person("Alan Bromly", "Director");
+        personRepository.save(aBromly);
+        Person dCamfield = new Person("Douglas Camfield", "Director");
+        personRepository.save(dCamfield);
+        Person jcampbell = new Person("Johnny Campbell", "Director");
+        personRepository.save(jcampbell);
+        Person cButton  = new Person("Chanya Button", "Director");
+        personRepository.save(cButton);
+        Person jChilds = new Person("Jamie Childs", "Director");
+        personRepository.save(jChilds);
+        Person rClark = new Person("Richard Clark", "Director");
+        personRepository.save(rClark);
+        Person cClough = new Person("Chris Clough", "Director");
+        personRepository.save(cClough);
+        Person tCombe = new Person("Timothy Combe", "Director");
+        personRepository.save(tCombe);
+        Person jCrockett = new Person("John Crockett", "Director");
+        personRepository.save(jCrockett);
+        Person fCox = new Person("Frank Cox", "Director");
+        personRepository.save(fCox);
+        Person fCumming = new Person("Fiona Cumming", "Director");
+        personRepository.save(fCumming);
+        Person jDavies = new Person("John Davies", "Director");
+        personRepository.save(jDavies);
+        Person hDavid = new Person("Hugh David", "Director");
+        personRepository.save(hDavid);
+        Person mFerguson = new Person("Michael Ferguson", "Director");
+        personRepository.save(mFerguson);
+        Person sFolkson = new Person("Sheree Folkson", "Director");
+        personRepository.save(sFolkson);
+        Person aGoddard = new Person("Andy Goddard", "Director");
+        personRepository.save(aGoddard);
+        Person dGoodwin = new Person("Derrick Goodwin", "Director");
+        personRepository.save(dGoodwin);
+        Person jGorrie = new Person("John Gorrie", "Director");
+        personRepository.save(jGorrie);
+        Person lGough = new Person("Lawrence Gough", "Director");
+        personRepository.save(lGough);
+        Person bGrant = new Person("Brian Grant", "Director");
+        personRepository.save(bGrant);
+        Person kGrieve = new Person("Ken Grieve", "Director");
+        personRepository.save(kGrieve);
+        Person aGunn = new Person("Andrew Gunn", "Director");
+        personRepository.save(aGunn);
+        Person mHart = new Person("Michael Hart", "Director");
+        personRepository.save(mHart);
+        Person jHayes = new Person("John Hayes", "Director");
+        personRepository.save(jHayes);
+        Person gHarper = new Person("Graeme Harper", "Director, Production Assistant, Assistant Floor Manager.");
+        personRepository.save(gHarper);
+        Person mHayes = new Person("Michael Hayes", "Director");
+        personRepository.save(mHayes);
+        Person sHellings = new Person("Sarah Hellings", "Director");
+        personRepository.save(sHellings);
+        Person tHaynes = new Person("Toby Haynes", "Director");
+        personRepository.save(tHaynes);
+        Person pHoar = new Person("Peter Hoar", "Director");
+        personRepository.save(pHoar);
+        Person nHurran = new Person("Nick Hurran", "Director");
+        personRepository.save(nHurran);
+        Person wHussein = new Person("Waris Hussein", "Director");
+        personRepository.save(wHussein);
+        Person hHirsch = new Person("Henric Hirsch", "Director");
+        personRepository.save(hHirsch);
+        Person mImison = new Person("Michael Imison", "Director");
+        personRepository.save(mImison);
+        Person sHughes = new Person("Steve Hughes", "Director");
+        personRepository.save(sHughes);
+        Person lHJones = new Person("Lee Haven Jones", "Director");
+        personRepository.save(lHJones);
+        Person rJones = new Person("Ron Jones", "Director");
+        personRepository.save(rJones);
+        Person pJoyce = new Person("Paul Joyce", "Director");
+        personRepository.save(pJoyce);
+        Person mKerrigan = new Person("Michael Kerrigan", "Director");
+        personRepository.save(mKerrigan);
+        Person mKing = new Person("Mat King", "Director");
+        personRepository.save(mKing);
+        Person hMacDonald = new Person("Hettie MacDonald", "Director");
+        personRepository.save(hMacDonald);
+        Person dMcKinnon = new Person("Douglas McKinnon", "Director");
+        personRepository.save(dMcKinnon);
+        Person nMallett = new Person("Nicholas Mallett", "Director");
+        personRepository.save(nMallett);
+        Person dMaloney = new Person("David Maloney", "Director");
+        personRepository.save(dMaloney);
+        Person nManzoor = new Person("Nida Manzoor", "Director");
+        personRepository.save(nManzoor);
+        Person dMartinus = new Person("Derek Martinus", "Director");
+        personRepository.save(dMartinus);
+        Person rMartin = new Person("Richard Martin", "Director");
+        personRepository.save(rMartin);
+        Person lMayne = new Person("Lennie Mayne", "Director");
+        personRepository.save(lMayne);
+        Person kMcBain = new Person("Kenny McBain", "Director");
+        personRepository.save(kMcBain);
+        Person cMcCarthy = new Person("Colm McCarthy", "Director");
+        personRepository.save(cMcCarthy);
+        Person sMetzstein = new Person("Saul Metzstein", "Director");
+        personRepository.save(sMetzstein);
+        Person pMoffatt = new Person("Peter Moffatt", "Director");
+        personRepository.save(pMoffatt);
+        Person mLeestonSmith = new Person("Michael Leeston-Smith", "Director");
+        personRepository.save(mLeestonSmith);
+        Person gMill = new Person("Gerry Mill", "Director");
+        personRepository.save(gMill);
+        Person jMolotnikov = new Person("Justin Molotnikov", "Director");
+        personRepository.save(jMolotnikov);
+        Person aMorgan = new Person("Andrew Morgan", "Director");
+        personRepository.save(aMorgan);
+        Person mOMorris = new Person("Michael Owen Morris", "Director");
+        personRepository.save(mOMorris);
+        Person cMorshead = new Person("Catherine Morshead", "Director");
+        personRepository.save(cMorshead);
+        Person pMurphy = new Person("Paul Murphy", "Director");
+        personRepository.save(pMurphy);
+        Person dNettheim = new Person("Daniel Nettheim", "Director");
+        personRepository.save(dNettheim);
+        Person dOHara = new Person("Daniel O'Hara", "Director");
+        personRepository.save(dOHara);
+        Person cPalmer = new Person("Charles Palmer", "Director");
+        personRepository.save(cPalmer);
+        Person jPayne = new Person("Jamie Payne", "Director");
+        personRepository.save(jPayne);
+        Person jPerrott = new Person("Jennifer Perrott", "Director");
+        personRepository.save(jPerrott);
+        Person mPinfield = new Person("Mervyn Pinfield", "Director and Associate Producer.");
+        personRepository.save(mPinfield);
+        Person mRidge = new Person("Mary Ridge", "Director");
+        personRepository.save(mRidge);
+        Person pRoberts = new Person("Pennant Roberts", "Director");
+        personRepository.save(pRoberts);
+        Person mRobinson = new Person("Matthew Robinson", "Director");
+        personRepository.save(mRobinson);
+        Person pRussell = new Person("Paddy Russell", "Director");
+        personRepository.save(pRussell);
+        Person gSax = new Person("Geoffrey Sax", "Director");
+        personRepository.save(gSax);
+        Person aSaleem = new Person("Azhur Saleem", "Director");
+        personRepository.save(aSaleem);
+        Person bSellars = new Person("Bill Sellars", "Director");
+        personRepository.save(bSellars);
+        Person rSenior = new Person("Richard Senior", "Director");
+        personRepository.save(rSenior);
+        Person jSimpson = new Person("Julian Simpson", "Director");
+        personRepository.save(jSimpson);
+        Person adamSmith = new Person("Adam Smith", "Director");
+        personRepository.save(adamSmith);
+        Person jSmith = new Person("Julia Smith", "Director");
+        personRepository.save(jSmith);
+        Person gSpentonFoster = new Person("George Spenton-Foster", "Director");
+        personRepository.save(gSpentonFoster);
+        Person nStewart = new Person("Norman Stewart", "Director, Production Assistant");
+        personRepository.save(nStewart);
+        Person eSullivan = new Person("Emma Sullivan", "Director");
+        personRepository.save(eSullivan);
+        Person rTalalay = new Person("Rachel Talalay", "Director");
+        personRepository.save(rTalalay);
+        Person cTeague = new Person("Colin Teague", "Director");
+        personRepository.save(cTeague);
+        Person tKingsley = new Person("Tom Kingsley", "Director");
+        personRepository.save(tKingsley);
+        Person mTonderai = new Person("Mark Tonderai", "Director");
+        personRepository.save(mTonderai);
+        Person aTroughton = new Person("Alice Troughton", "Director");
+        personRepository.save(aTroughton);
+        Person rTucker = new Person("Rex Tucker", "Director, Producer");
+        personRepository.save(rTucker);
+        Person tdVCole = new Person("Tristan de Vere Cole", "Director");
+        personRepository.save(tdVCole);
+        Person tVirgo = new Person("Tony Virgo", "Director");
+        personRepository.save(tVirgo);
+        Person hWang = new Person("Haolu Wang", "Director");
+        personRepository.save(hWang);
+        Person aWareing = new Person("Alan Wareing", "Director");
+        personRepository.save(aWareing);
+        Person aWay = new Person("Ashley Way", "Director");
+        personRepository.save(aWay);
+        Person jWebb = new Person("Jeremy Webb", "Director");
+        personRepository.save(jWebb);
+        Person bWheatley = new Person("Ben Wheatley", "Director");
+        personRepository.save(bWheatley);
+        Person pWilmshurst = new Person("Paul Wilmshurst", "Director");
+        personRepository.save(pWilmshurst);
+        Person sWoolfenden = new Person("Stephen Woolfenden", "Director");
+        personRepository.save(sWoolfenden);
+        Person wYip = new Person("Wayne Yip", "Director");
+        personRepository.save(wYip);
+        Person dZeff = new Person("Dan Zeff", "Director");
+        personRepository.save(dZeff);
+
+
         User andrewB = new
                 User("andrew.blair.work@gmail.com",
                 "aagb1884", "Scotland",
@@ -594,6 +824,19 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(unearthly);
         CastAndCrew writerAUC = new CastAndCrew(coburn, "Writer", CastOrCrew.CREW, unearthly);
         castAndCrewRepository.save(writerAUC);
+        CastAndCrew directorAUC = new CastAndCrew(wHussein, "Director", CastOrCrew.CREW, unearthly);
+        castAndCrewRepository.save(directorAUC);
+        CastAndCrew sEditorAUC = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, unearthly);
+        castAndCrewRepository.save(sEditorAUC);
+        CastAndCrew producerAUC = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, unearthly);
+        castAndCrewRepository.save(producerAUC);
+
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story theDaleks = new Story(
                 "The Daleks",
@@ -616,6 +859,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(theDaleks);
         CastAndCrew writerTD = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, theDaleks);
         castAndCrewRepository.save(writerTD);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story edgeDestruction = new Story(
@@ -638,7 +887,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(edgeDestruction);
         CastAndCrew writerEoD = new CastAndCrew(dWhitaker, "Writer", CastOrCrew.CREW, edgeDestruction);
         castAndCrewRepository.save(writerEoD);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story marcoPolo = new Story(
                 "Marco Polo",
@@ -661,7 +915,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(marcoPolo);
         CastAndCrew name = new CastAndCrew(lucarotti, "Writer", CastOrCrew.CREW, marcoPolo);
         castAndCrewRepository.save(name);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story keysMarinus = new Story(
                 "The Keys of Marinus",
@@ -684,6 +943,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(keysMarinus);
         CastAndCrew writerKM = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, keysMarinus);
         castAndCrewRepository.save(writerKM);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story aztecs = new Story(
                 "The Aztecs",
@@ -706,6 +971,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(aztecs);
         CastAndCrew writerAztecs = new CastAndCrew(lucarotti, "Writer", CastOrCrew.CREW, aztecs);
         castAndCrewRepository.save(writerAztecs);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story sensorites = new Story(
                 "The Sensorites",
@@ -728,6 +999,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(sensorites);
         CastAndCrew writerSensorites = new CastAndCrew(prNewman, "Writer", CastOrCrew.CREW, sensorites);
         castAndCrewRepository.save(writerSensorites);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story reignTerror = new Story(
                 "The Reign of Terror",
@@ -750,6 +1027,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(reignTerror);
         CastAndCrew writerReign = new CastAndCrew(spooner, "Writer", CastOrCrew.CREW, reignTerror);
         castAndCrewRepository.save(writerReign);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story planetGiants = new Story(
@@ -773,6 +1056,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(planetGiants);
         CastAndCrew writerGiants = new CastAndCrew(lMarks, "Writer", CastOrCrew.CREW, planetGiants);
         castAndCrewRepository.save(writerGiants);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story dalekInvasion = new Story(
                 "The Dalek Invasion of Earth",
@@ -795,7 +1084,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(dalekInvasion);
         CastAndCrew writerDalInv = new CastAndCrew(tNation, "writer", CastOrCrew.CREW, dalekInvasion);
         castAndCrewRepository.save(writerDalInv);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dWhitaker, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story rescue = new Story(
                 "The Rescue",
@@ -818,6 +1112,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(rescue);
         CastAndCrew writerRescue = new CastAndCrew(dWhitaker, "Writer", CastOrCrew.CREW, rescue);
         castAndCrewRepository.save(writerRescue);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(spooner, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story romans = new Story(
                 "The Romans",
@@ -840,7 +1140,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(romans);
         CastAndCrew writerRomans = new CastAndCrew(spooner, "Writer", CastOrCrew.CREW, romans);
         castAndCrewRepository.save(writerRomans);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(spooner, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story webPlanet = new Story(
                 "The Web Planet",
@@ -863,6 +1168,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(webPlanet);
         CastAndCrew writerWebPlanet = new CastAndCrew(strutton, "Writer", CastOrCrew.CREW, webPlanet);
         castAndCrewRepository.save(writerWebPlanet);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(spooner, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story crusade = new Story(
                 "The Crusade",
@@ -885,6 +1196,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(crusade);
         CastAndCrew writerCrusade = new CastAndCrew(dWhitaker, "Writer", CastOrCrew.CREW, crusade);
         castAndCrewRepository.save(writerCrusade);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(spooner, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story spaceMuseum = new Story(
                 "The Space Museum",
@@ -907,6 +1224,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(spaceMuseum);
         CastAndCrew writerSM = new CastAndCrew(gJones, "Writer", CastOrCrew.CREW, spaceMuseum);
         castAndCrewRepository.save(writerSM);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(spooner, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story chase = new Story(
                 "The Chase",
@@ -929,7 +1252,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(chase);
         CastAndCrew writerChase = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, chase);
         castAndCrewRepository.save(writerChase);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(spooner, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story timeMeddler = new Story(
                 "The Time Meddler",
@@ -951,7 +1279,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(timeMeddler);
         CastAndCrew writerMeddler = new CastAndCrew(spooner, "Writer", CastOrCrew.CREW, timeMeddler);
         castAndCrewRepository.save(writerMeddler);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(tosh, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story galaxy4 = new Story(
@@ -974,6 +1307,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(galaxy4);
         CastAndCrew writerG4 = new CastAndCrew(wEmms, "Writer", CastOrCrew.CREW, galaxy4);
         castAndCrewRepository.save(writerG4);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(tosh, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story missionUnknown = new Story(
                 "Mission to the Unknown",
@@ -993,7 +1332,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(missionUnknown);
         CastAndCrew writerMUnknown = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, missionUnknown);
         castAndCrewRepository.save(writerMUnknown);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(tosh, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(verity, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story mythMakers = new Story(
                 "The Myth Makers",
@@ -1015,6 +1359,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(mythMakers);
         CastAndCrew writerMM = new CastAndCrew(dCotton, "Writer", CastOrCrew.CREW, mythMakers);
         castAndCrewRepository.save(writerMM);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(tosh, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(wiles, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story dalekMasterplan = new Story(
                 "The Daleks’ Master Plan",
@@ -1039,6 +1389,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerDM1);
         CastAndCrew writerDM2 = new CastAndCrew(spooner, "Writer", CastOrCrew.CREW, dalekMasterplan);
         castAndCrewRepository.save(writerDM2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(tosh, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(wiles, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story massacre = new Story(
                 "The Massacre",
@@ -1059,7 +1415,14 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(massacre);
         CastAndCrew writerMassacre = new CastAndCrew(tosh, "Writer", CastOrCrew.CREW, massacre);
         castAndCrewRepository.save(writerMassacre);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(tosh, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew sEditor2 = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor2);
+        CastAndCrew producer = new CastAndCrew(wiles, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story ark = new Story(
                 "The Ark",
@@ -1083,7 +1446,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerArk1);
         CastAndCrew writerArk2 = new CastAndCrew(lScott, "Writer", CastOrCrew.CREW, ark);
         castAndCrewRepository.save(writerArk2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(wiles, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story celestialToymaker = new Story(
                 "The Celestial Toymaker",
@@ -1105,6 +1473,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(celestialToymaker);
         CastAndCrew writerToymaker = new CastAndCrew(hayles, "role", CastOrCrew.CREW, celestialToymaker);
         castAndCrewRepository.save(writerToymaker);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story gunfighters = new Story(
@@ -1127,6 +1501,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(gunfighters);
         CastAndCrew writerGunfighter = new CastAndCrew(dCotton, "role", CastOrCrew.CREW, gunfighters);
         castAndCrewRepository.save(writerGunfighter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story savages = new Story(
                 "The Savages",
@@ -1148,6 +1528,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(savages);
         CastAndCrew writerSavages = new CastAndCrew(iSBlack, "Writer", CastOrCrew.CREW, savages);
         castAndCrewRepository.save(writerSavages);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story warMachines = new Story(
                 "The War Machines",
@@ -1170,7 +1556,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(warMachines);
         CastAndCrew writerWMachines = new CastAndCrew(iSBlack, "Writer", CastOrCrew.CREW, warMachines);
         castAndCrewRepository.save(writerWMachines);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story smugglers = new Story(
                 "The Smugglers",
@@ -1192,6 +1583,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(smugglers);
         CastAndCrew writerSmugglers = new CastAndCrew(hayles, "Writer", CastOrCrew.CREW, smugglers);
         castAndCrewRepository.save(writerSmugglers);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story tenthPlanet = new Story(
                 "The Tenth Planet",
@@ -1215,6 +1612,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writer10p1);
         CastAndCrew writer10p2 = new CastAndCrew(gDavis, "Writer", CastOrCrew.CREW, tenthPlanet);
         castAndCrewRepository.save(writer10p2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story powerDaleks = new Story(
                 "The Power of the Daleks",
@@ -1238,6 +1641,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerPowerDal1);
         CastAndCrew writerPowerDal2 = new CastAndCrew(spooner, "Writer", CastOrCrew.CREW, powerDaleks);
         castAndCrewRepository.save(writerPowerDal2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story highlanders = new Story(
                 "The Highlanders",
@@ -1262,7 +1671,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerHighlanders1);
         CastAndCrew writerHighlanders2 = new CastAndCrew(gDavis, "Writer", CastOrCrew.CREW, highlanders);
         castAndCrewRepository.save(writerHighlanders2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story underwaterMenace = new Story(
                 "The Underwater Menace",
@@ -1285,6 +1699,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(underwaterMenace);
         CastAndCrew writerMenace = new CastAndCrew(orme, "Writer", CastOrCrew.CREW, underwaterMenace);
         castAndCrewRepository.save(writerMenace);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story moonbase = new Story(
                 "The Moonbase",
@@ -1309,6 +1729,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerMoonbase1);
         CastAndCrew writerMoonbase2 = new CastAndCrew(gDavis, "Writer", CastOrCrew.CREW, moonbase);
         castAndCrewRepository.save(writerMoonbase2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story macra = new Story(
                 "The Macra Terror",
@@ -1331,6 +1757,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(macra);
         CastAndCrew macraWriter = new CastAndCrew(iSBlack, "Writer", CastOrCrew.CREW, macra);
         castAndCrewRepository.save(macraWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story facelessOnes = new Story(
                 "The Faceless Ones",
@@ -1355,6 +1787,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(facelessWriter1);
         CastAndCrew facelessWriter2 = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, facelessOnes);
         castAndCrewRepository.save(facelessWriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story evilDaleks = new Story(
                 "The Evil of the Daleks",
@@ -1376,7 +1814,14 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(evilDaleks);
         CastAndCrew writerEvilD = new CastAndCrew(dWhitaker, "Writer", CastOrCrew.CREW, evilDaleks);
         castAndCrewRepository.save(writerEvilD);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(gDavis, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew sEditor2 = new CastAndCrew(pBryant, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor2);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story tomb = new Story(
@@ -1401,6 +1846,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(tombWriter1);
         CastAndCrew tombWriter2 = new CastAndCrew(gDavis, "Writer", CastOrCrew.CREW, tomb);
         castAndCrewRepository.save(tombWriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(pemberton, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story abominable = new Story(
                 "The Abominable Snowmen",
@@ -1424,7 +1875,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(abominableWriter1);
         CastAndCrew abominableWriter2 = new CastAndCrew(hLincoln, "Writer", CastOrCrew.CREW, abominable);
         castAndCrewRepository.save(abominableWriter2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(pBryant, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story iceWarriors = new Story(
                 "The Ice Warriors",
@@ -1446,6 +1902,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(iceWarriors);
         CastAndCrew iceWriter = new CastAndCrew(hayles, "Writer", CastOrCrew.CREW, iceWarriors);
         castAndCrewRepository.save(iceWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(pBryant, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story enemyWorld = new Story(
@@ -1468,6 +1930,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(enemyWorld);
         CastAndCrew enemyWorldWriter = new CastAndCrew(dWhitaker, "Writer", CastOrCrew.CREW, enemyWorld);
         castAndCrewRepository.save(enemyWorldWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(pBryant, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(iLloyd, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story webFear = new Story(
                 "The Web of Fear",
@@ -1492,7 +1960,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(webFearWriter1);
         CastAndCrew webFearWriter2 = new CastAndCrew(hLincoln, "Writer", CastOrCrew.CREW, webFear);
         castAndCrewRepository.save(webFearWriter2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(sherwin, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story furyDeep = new Story(
                 "Fury from the Deep",
@@ -1514,6 +1987,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(furyDeep);
         CastAndCrew furyWriter = new CastAndCrew(pemberton, "role", CastOrCrew.CREW, furyDeep);
         castAndCrewRepository.save(furyWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(sherwin, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story wheelSpace = new Story(
                 "The Wheel in Space",
@@ -1535,6 +2014,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(wheelSpace);
         CastAndCrew wheelWriter = new CastAndCrew(dWhitaker, "Writer", CastOrCrew.CREW, wheelSpace);
         castAndCrewRepository.save(wheelWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(sherwin, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story dominators = new Story(
                 "The Dominators",
@@ -1558,6 +2043,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerDom1);
         CastAndCrew writerDom2 = new CastAndCrew(hLincoln, "Writer", CastOrCrew.CREW, dominators);
         castAndCrewRepository.save(writerDom2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(sherwin, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story mindRobber = new Story(
                 "The Mind Robber",
@@ -1581,6 +2072,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(mindWriter1);
         CastAndCrew mindWriter2 = new CastAndCrew(sherwin, "Writer", CastOrCrew.CREW, mindRobber);
         castAndCrewRepository.save(mindWriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(sherwin, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story invasion = new Story(
                 "The Invasion",
@@ -1602,6 +2099,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(invasion);
         CastAndCrew InvasionWriter = new CastAndCrew(sherwin, "Writer", CastOrCrew.CREW, invasion);
         castAndCrewRepository.save(InvasionWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story krotons = new Story(
                 "The Krotons",
@@ -1623,6 +2126,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(krotons);
         CastAndCrew writerKrotons = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, krotons);
         castAndCrewRepository.save(writerKrotons);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story seedsDeath = new Story(
                 "The Seeds of Death",
@@ -1646,6 +2155,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerSeedeath1);
         CastAndCrew writerSeedeath2 = new CastAndCrew(terranceD, "Writer", CastOrCrew.CREW, seedsDeath);
         castAndCrewRepository.save(writerSeedeath2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story spacePirates = new Story(
                 "The Space Pirates",
@@ -1667,6 +2182,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(spacePirates);
         CastAndCrew writerSpirates = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, spacePirates);
         castAndCrewRepository.save(writerSpirates);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(sherwin, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(pBryant, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story warGames = new Story(
                 "The War Games",
@@ -1690,7 +2211,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(warGameWrite1);
         CastAndCrew warGameWrite2 = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, warGames);
         castAndCrewRepository.save(warGameWrite2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(sherwin, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story spearhead = new Story(
                 "Spearhead from Space",
@@ -1714,6 +2240,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew spearheadWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, spearhead);
         castAndCrewRepository.save(spearheadWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(sherwin, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story silurians = new Story(
                 "Doctor Who and the Silurians",
@@ -1736,6 +2268,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew writerSilurians = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, silurians);
         castAndCrewRepository.save(writerSilurians);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story ambassadors = new Story(
                 "The Ambassadors of Death",
@@ -1764,7 +2302,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(ambassadorWriter2);
         CastAndCrew ambassadorWriter3 = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, ambassadors);
         castAndCrewRepository.save(ambassadorWriter3);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story inferno = new Story(
@@ -1790,7 +2333,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew writerInferno = new CastAndCrew(houghton, "Writer", CastOrCrew.CREW, inferno);
         castAndCrewRepository.save(writerInferno);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story terrorAutons = new Story(
@@ -1817,7 +2365,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew writerAutons = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, terrorAutons);
         castAndCrewRepository.save(writerAutons);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story mindEvil = new Story(
                 "The Mind of Evil",
@@ -1843,7 +2396,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew writerMind = new CastAndCrew(houghton, "role", CastOrCrew.CREW, mindEvil);
         castAndCrewRepository.save(writerMind);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story clawsAxos = new Story(
                 "The Claws of Axos",
@@ -1871,7 +2429,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(writerAxos1);
         CastAndCrew writerAxos2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, clawsAxos);
         castAndCrewRepository.save(writerAxos2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story colonySpace = new Story(
@@ -1895,7 +2458,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew colonyWriter = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, colonySpace);
         castAndCrewRepository.save(colonyWriter);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story daemons = new Story(
                 "The Dæmons",
@@ -1923,6 +2491,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(daemonWrite1);
         CastAndCrew daemonWrite2 = new CastAndCrew(sloman, "Writer", CastOrCrew.CREW, daemons);
         castAndCrewRepository.save(daemonWrite2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story dayDaleks = new Story(
                 "Day of the Daleks",
@@ -1948,6 +2522,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew dayDwriter = new CastAndCrew(lMarks, "Writer", CastOrCrew.CREW, dayDaleks);
         castAndCrewRepository.save(dayDwriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story cursePeladon = new Story(
                 "The Curse of Peladon",
@@ -1970,6 +2550,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew cPeladonWriter = new CastAndCrew(hayles, "Writer", CastOrCrew.CREW, cursePeladon);
         castAndCrewRepository.save(cPeladonWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story seaDevils = new Story(
                 "The Sea Devils",
@@ -1992,6 +2578,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew writerSeaDevil = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, seaDevils);
         castAndCrewRepository.save(writerSeaDevil);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story mutants = new Story(
                 "The Mutants",
@@ -2016,7 +2608,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(mutantWriter1);
         CastAndCrew mutantWriter2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, mutants);
         castAndCrewRepository.save(mutantWriter2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story timeMonster = new Story(
                 "The Time Monster",
@@ -2042,7 +2639,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew writerTimeMonster = new CastAndCrew(sloman, "Writer", CastOrCrew.CREW, timeMonster);
         castAndCrewRepository.save(writerTimeMonster);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story threeDoctors = new Story("The Three Doctors",
                 Format.TV,
@@ -2070,6 +2672,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(threedrWr1);
         CastAndCrew threedrWr2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, threeDoctors);
         castAndCrewRepository.save(threedrWr2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story carnival = new Story("Carnival of Monsters",
@@ -2092,6 +2700,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew carnivalWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, carnival);
         castAndCrewRepository.save(carnivalWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story frontier = new Story(
                 "Frontier in Space",
@@ -2114,6 +2728,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew frontierWriter = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, frontier);
         castAndCrewRepository.save(frontierWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story planetDaleks = new Story(
                 "Planet of the Daleks",
@@ -2136,6 +2756,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew planetDalekWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, planetDaleks);
         castAndCrewRepository.save(planetDalekWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story greenDeath = new Story(
                 "The Green Death",
@@ -2161,7 +2787,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew greenDeathWriter = new CastAndCrew(sloman, "Writer", CastOrCrew.CREW, greenDeath);
         castAndCrewRepository.save(greenDeathWriter);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story timeWarrior = new Story(
                 "The Time Warrior",
@@ -2184,6 +2815,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew timeWarriorWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, timeWarrior);
         castAndCrewRepository.save(timeWarriorWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story invasionDinosaurs = new Story(
                 "Invasion of the Dinosaurs",
@@ -2209,6 +2846,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew invDinoWriter = new CastAndCrew(hulke, "Writer", CastOrCrew.CREW, invasionDinosaurs);
         castAndCrewRepository.save(invDinoWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story deathDaleks = new Story(
                 "Death to the Daleks",
@@ -2232,6 +2875,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew deathDaleksWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, deathDaleks);
         castAndCrewRepository.save(deathDaleksWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story monsterPeladon = new Story(
                 "The Monster of Peladon",
@@ -2254,6 +2903,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew monsterPeladonWriter = new CastAndCrew(hayles, "Writer", CastOrCrew.CREW, monsterPeladon);
         castAndCrewRepository.save(monsterPeladonWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story planetSpiders = new Story(
                 "Planet of the Spiders",
@@ -2281,7 +2936,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(planetSpidersWriter1);
         CastAndCrew planetSpidersWriter2 = new CastAndCrew(bLetts, "Writer", CastOrCrew.CREW, planetSpiders);
         castAndCrewRepository.save(planetSpidersWriter2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(terranceD, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story robot = new Story(
                 "Robot",
@@ -2307,6 +2967,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew robotWriter = new CastAndCrew(terranceD, "Writer", CastOrCrew.CREW, robot);
         castAndCrewRepository.save(robotWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(bLetts, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story arkSpace = new Story(
                 "The Ark in Space",
@@ -2330,6 +2996,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew arkSpaceWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, arkSpace);
         castAndCrewRepository.save(arkSpaceWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story sontaranExperiment = new Story(
                 "The Sontaran Experiment",
@@ -2355,6 +3027,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(sontaranExperimentW1);
         CastAndCrew sontaranExperimentW2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, sontaranExperiment);
         castAndCrewRepository.save(sontaranExperimentW2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story genesisDaleks = new Story(
                 "Genesis of the Daleks",
@@ -2378,6 +3056,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew genesisDaleksWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, genesisDaleks);
         castAndCrewRepository.save(genesisDaleksWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story revengeCybermen = new Story(
                 "Revenge of the Cybermen",
@@ -2403,11 +3087,16 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(revengeCybermenWriter1);
         CastAndCrew revengeCybermenWriter2 = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, revengeCybermen);
         castAndCrewRepository.save(revengeCybermenWriter2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story terrorZygons = new Story(
-                "title",
+                "Terror of the Zygons",
                 Format.TV,
                 LocalDate.of(1975, 8, 30),
                 LocalDate.of(1975, 9, 20),
@@ -2430,6 +3119,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew terrorZygonsWriter = new CastAndCrew(rBanksStewart, "Writer", CastOrCrew.CREW, terrorZygons);
         castAndCrewRepository.save(terrorZygonsWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story planetEvil = new Story(
                 "Planet of Evil",
@@ -2452,6 +3147,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew planetEvilWrite = new CastAndCrew(lMarks, "Writer", CastOrCrew.CREW, planetEvil);
         castAndCrewRepository.save(planetEvilWrite);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story pyramids = new Story(
                 "Pyramids of Mars",
@@ -2476,6 +3177,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(pyramidswriter1);
         CastAndCrew pyramidswriter2 = new CastAndCrew(greifer, "Writer", CastOrCrew.CREW, pyramids);
         castAndCrewRepository.save(pyramidswriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story androidInvasion = new Story(
                 "The Android Invasion",
@@ -2500,6 +3207,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew androidWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, androidInvasion);
         castAndCrewRepository.save(androidWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story brainMorbius = new Story(
                 "The Brain of Morbius",
@@ -2524,6 +3237,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(brainMorbiusWriter1);
         CastAndCrew brainMorbiusWriter2 = new CastAndCrew(terranceD, "Writer", CastOrCrew.CREW, brainMorbius);
         castAndCrewRepository.save(brainMorbiusWriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story seedsDoom = new Story(  "The Seeds of Doom",
                 Format.TV,
@@ -2545,7 +3264,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew seedsDoomWriter = new CastAndCrew(rBanksStewart, "Writer", CastOrCrew.CREW, seedsDoom);
         castAndCrewRepository.save(seedsDoomWriter);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story masque = new Story(
@@ -2569,6 +3293,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew masqueWriter = new CastAndCrew(lMarks, "Writer", CastOrCrew.CREW, masque);
         castAndCrewRepository.save(masqueWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story handFear = new Story(
                 "The Hand of Fear",
@@ -2593,6 +3323,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(handFearWriter1);
         CastAndCrew handFearWriter2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, handFear);
         castAndCrewRepository.save(handFearWriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story deadlyAssassin = new Story(
                 "The Deadly Assassin",
@@ -2614,6 +3350,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew deadlyWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, deadlyAssassin);
         castAndCrewRepository.save(deadlyWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story faceEvil = new Story(
                 "The Face of Evil",
@@ -2636,6 +3378,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew faceEvilWriter = new CastAndCrew(cBoucher, "Writer", CastOrCrew.CREW, faceEvil);
         castAndCrewRepository.save(faceEvilWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story robotsDeath = new Story(
                 "The Robots of Death",
@@ -2658,6 +3406,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew robotsDeathWriter = new CastAndCrew(cBoucher, "Writer", CastOrCrew.CREW, robotsDeath);
         castAndCrewRepository.save(robotsDeathWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story talons = new Story(
                 "The Talons of Weng-Chiang",
@@ -2680,7 +3434,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew talonsWriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, talons);
         castAndCrewRepository.save(talonsWriter);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(hinchcliffe, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story fangRock = new Story(
@@ -2704,6 +3463,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew fangRockname = new CastAndCrew(terranceD, "Writer", CastOrCrew.CREW, fangRock);
         castAndCrewRepository.save(fangRockname);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story invisibleEnemy = new Story(
                 "The Invisible Enemy",
@@ -2728,6 +3493,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(invisibleEnemywriter);
         CastAndCrew invisibleEnemywriter2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, invisibleEnemy);
         castAndCrewRepository.save(invisibleEnemywriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story fendahl = new Story(
                 "Image of the Fendahl",
@@ -2750,6 +3521,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew fendahlwriter = new CastAndCrew(cBoucher, "Writer", CastOrCrew.CREW, fendahl);
         castAndCrewRepository.save(fendahlwriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(holmes, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story sunmakers = new Story(
                 "The Sunmakers",
@@ -2773,6 +3550,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew sunmakersname = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, sunmakers);
         castAndCrewRepository.save(sunmakersname);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story underworld = new Story(
                 "Underworld",
@@ -2799,6 +3582,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew underworldwriter2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, underworld );
         castAndCrewRepository.save(underworldwriter2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story invasionTime = new Story(
                 "The Invasion of Time",
@@ -2826,7 +3615,12 @@ public class DataLoader implements ApplicationRunner {
         CastAndCrew invasionTimewriter2 = new CastAndCrew(gWilliams, "Writer", CastOrCrew.CREW, invasionTime);
         castAndCrewRepository.save(invasionTimewriter2);
 
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
 
@@ -2851,6 +3645,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew riboswriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, ribos);
         castAndCrewRepository.save(riboswriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story piratePlanet = new Story(
 
@@ -2875,6 +3675,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew piratePlanetwriter = new CastAndCrew(dAdams, "Writer", CastOrCrew.CREW, piratePlanet);
         castAndCrewRepository.save(piratePlanetwriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story stonesBlood = new Story(
 
@@ -2899,6 +3705,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew stonesBloodwriter = new CastAndCrew(dFisher, "Writer", CastOrCrew.CREW, stonesBlood);
         castAndCrewRepository.save(stonesBloodwriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story tara = new Story(
 
@@ -2923,6 +3735,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew tarawriter = new CastAndCrew(dFisher, "Writer", CastOrCrew.CREW, tara);
         castAndCrewRepository.save(tarawriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story kroll = new Story(
 
@@ -2946,6 +3764,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew krollwriter = new CastAndCrew(holmes, "Writer", CastOrCrew.CREW, kroll);
         castAndCrewRepository.save(krollwriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story armageddon = new Story(
 
@@ -2973,7 +3797,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew armageddonWriter2 = new CastAndCrew(dMartin, "Writer", CastOrCrew.CREW, armageddon);
         castAndCrewRepository.save(armageddonWriter2);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(aRead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story destinyDaleks = new Story(
@@ -2997,6 +3826,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew destinyDaleksWriter = new CastAndCrew(tNation, "Writer", CastOrCrew.CREW, destinyDaleks);
         castAndCrewRepository.save(destinyDaleksWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dAdams, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story cityDeath = new Story(
                 "City of Death",
@@ -3023,6 +3858,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(cityDeathwriter2);
         CastAndCrew cityDeathwriter3 = new CastAndCrew(dFisher, "Writer", CastOrCrew.CREW, cityDeath);
         castAndCrewRepository.save(cityDeathwriter3);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dAdams, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story creaturePit = new Story(
                 "The Creature from the Pit",
@@ -3046,6 +3887,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew creaturePitWriter = new CastAndCrew(dFisher, "Writer", CastOrCrew.CREW, creaturePit);
         castAndCrewRepository.save(creaturePitWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dAdams, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story nightmareEden = new Story(
                 "Nightmare of Eden",
@@ -3069,6 +3916,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew edenWriter = new CastAndCrew(bBaker, "Writer", CastOrCrew.CREW, nightmareEden);
         castAndCrewRepository.save(edenWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dAdams, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story nimon = new Story(
                 "The Horns of Nimon",
@@ -3093,7 +3946,12 @@ public class DataLoader implements ApplicationRunner {
         CastAndCrew nimonWriter = new CastAndCrew(aRead, "Writer", CastOrCrew.CREW, nimon);
         castAndCrewRepository.save(nimonWriter);
 
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(dAdams, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(gWilliams, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
 
         Story leisureHive = new Story(
@@ -3117,6 +3975,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew leisureHiveWriter = new CastAndCrew(dFisher, "Writer", CastOrCrew.CREW, leisureHive);
         castAndCrewRepository.save(leisureHiveWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(bidmead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(jnt, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story meglos = new Story(
                 "Meglos",
@@ -3141,6 +4005,12 @@ public class DataLoader implements ApplicationRunner {
         castAndCrewRepository.save(meglos1);
         CastAndCrew meglos2 = new CastAndCrew(aMcculloch, "Writer", CastOrCrew.CREW, meglos);
         castAndCrewRepository.save(meglos2);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(bidmead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(jnt, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story fullCircle = new Story( "Full Circle",
                 Format.TV,
@@ -3163,6 +4033,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew fullCircleWriter = new CastAndCrew(aSmith, "Writer", CastOrCrew.CREW, fullCircle);
         castAndCrewRepository.save(fullCircleWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(bidmead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(jnt, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story stateDecay = new Story(
                 "State of Decay",
@@ -3187,6 +4063,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew stateDecayWriter = new CastAndCrew(terranceD, "Writer", CastOrCrew.CREW, stateDecay);
         castAndCrewRepository.save(stateDecayWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(bidmead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(jnt, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story warriorsgate = new Story(
                 "Warriors' Gate",
@@ -3211,6 +4093,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew wGateWriter = new CastAndCrew(sGallagher, "Writer", CastOrCrew.CREW, warriorsgate);
         castAndCrewRepository.save(wGateWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(bidmead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(jnt, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story traken = new Story(
                 "The Keeper of Traken",
@@ -3232,6 +4120,12 @@ public class DataLoader implements ApplicationRunner {
         storyRepository.save(traken);
         CastAndCrew trakenWriter = new CastAndCrew(jByrne, "Writer", CastOrCrew.CREW, traken);
         castAndCrewRepository.save(trakenWriter);
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(bidmead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(jnt, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story logopolis = new Story(
                 "Logopolis",
@@ -3256,7 +4150,12 @@ public class DataLoader implements ApplicationRunner {
 
         CastAndCrew logopolisWriter = new CastAndCrew(bidmead, "Writer", CastOrCrew.CREW, logopolis);
         castAndCrewRepository.save(logopolisWriter);
-
+        CastAndCrew director = new CastAndCrew(name, "Director", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(director);
+        CastAndCrew sEditor = new CastAndCrew(bidmead, "Script Editor", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(sEditor);
+        CastAndCrew producer = new CastAndCrew(jnt, "Producer", CastOrCrew.CREW, story);
+        castAndCrewRepository.save(producer);
 
         Story castrovalva = new Story(
                 "Castrovalva",

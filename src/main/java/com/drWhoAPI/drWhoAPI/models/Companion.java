@@ -25,7 +25,7 @@ public class Companion {
     private String mainActor;
     @Column
     private String bio;
-    @JsonIgnoreProperties({"doctors", "companions"})
+    @JsonIgnoreProperties({"doctors", "companions", "castAndCrew"})
     @ManyToMany
     @JoinTable(
             name = "companion_stories",

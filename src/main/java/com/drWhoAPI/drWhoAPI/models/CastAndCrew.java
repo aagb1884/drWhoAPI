@@ -1,6 +1,7 @@
 package com.drWhoAPI.drWhoAPI.models;
 
 import com.drWhoAPI.drWhoAPI.models.enums.CastOrCrew;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
@@ -8,8 +9,9 @@ import jakarta.persistence.*;
 @Table
 public class CastAndCrew {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY) private Long id;
-    @JsonIgnoreProperties({"castCrewRoles"})
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+    @JsonIgnoreProperties({"castAndCrew"})
     @ManyToOne
     @JoinColumn(name = "person_id")
     private Person person;
@@ -19,6 +21,7 @@ public class CastAndCrew {
     @Column
     private CastOrCrew category;
     @ManyToOne
+    @JsonIgnoreProperties({"castAndCrew"})
     @JoinColumn(name = "story_id", nullable = false)
     private Story story;
 

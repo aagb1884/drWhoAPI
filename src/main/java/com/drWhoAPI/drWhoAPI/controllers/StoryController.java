@@ -39,7 +39,7 @@ class StoryController {
         Story updatedStory = storyRepository.findById(id).get();
         updatedStory.setTitle(updatedStory.getTitle());
 //        updatedStory.setCast(updatedStory.getCast());
-        updatedStory.setCastCrew(updatedStory.getCastCrew());
+        updatedStory.setCastAndCrew(updatedStory.getCastAndCrew());
         updatedStory.setMedia(updatedStory.getMedia());
         updatedStory.setFirstEpBroadcast(updatedStory.getFirstEpBroadcast());
         updatedStory.setLastEpBroadcast(updatedStory.getLastEpBroadcast());
@@ -65,7 +65,7 @@ class StoryController {
         Story newStory = new Story();
         newStory.setTitle(newStory.getTitle());
 //        newStory.setCast(newStory.getCast());
-        newStory.setCastCrew(newStory.getCastCrew());
+        newStory.setCastAndCrew(newStory.getCastAndCrew());
         newStory.setMedia(newStory.getMedia());
         newStory.setFirstEpBroadcast(newStory.getFirstEpBroadcast());
         newStory.setLastEpBroadcast(newStory.getLastEpBroadcast());

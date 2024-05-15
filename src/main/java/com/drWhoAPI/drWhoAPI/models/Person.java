@@ -1,13 +1,15 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
+import org.hibernate.annotations.Cascade;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="people")
+@Table(name="persons")
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -16,11 +18,9 @@ public class Person {
     private String name;
     @Column
     private String info;
-//    @JsonIgnoreProperties({"person"})
-//    @OneToMany(mappedBy = "person")
-//    private List<Cast> castRoles;
-    @JsonIgnoreProperties({"person"})
     @OneToMany(mappedBy = "person")
+    @JsonIgnoreProperties({"person", "story"})
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     private List<CastAndCrew> castCrewRoles;
 
     public Person() {
@@ -29,7 +29,6 @@ public class Person {
     public Person(String name, String info) {
         this.name = name;
         this.info = info;
-//        this.castRoles = new ArrayList<>();
         this.castCrewRoles = new ArrayList<>();
     }
 
@@ -57,17 +56,6 @@ public class Person {
         this.info = info;
     }
 
-//    public List<Cast> getCastRoles() {
-//        return castRoles;
-//    }
-//
-//    public void setCastRoles(List<Cast> castRoles) {
-//        this.castRoles = castRoles;
-//    }
-//
-//    public void addToCast(Cast person){ this.castRoles.add(person);}
-//
-//    public void removeFromCast(Cast person) { this.castRoles.remove(person);}
     public List<CastAndCrew> getCastCrewRoles() {
         return castCrewRoles;
     }

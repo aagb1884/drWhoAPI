@@ -5,6 +5,7 @@ import com.drWhoAPI.drWhoAPI.models.enums.Series;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import org.hibernate.annotations.Cascade;
 
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="stories")
+@Table(name="storys")
 public class Story {
 
     @Id
@@ -21,11 +22,9 @@ public class Story {
     private Long id;
     @Column
     private String title;
-//    @JsonIgnoreProperties({"person", "story"})
-//    @OneToMany(mappedBy = "story")
-//    private List<Cast> cast;
-    @JsonIgnoreProperties({"person", "story"})
-    @OneToMany(mappedBy = "story")
+    @OneToMany(mappedBy = "story", cascade = CascadeType.ALL)
+    @JsonManagedReference
+    @JsonIgnoreProperties({"story"})
     private List<CastAndCrew> castAndCrew;
     @Enumerated(EnumType.STRING)
     @Column
@@ -38,6 +37,7 @@ public class Story {
     private LocalDate lastEpBroadcast;
     @Column
     private String releases;
+
     @JsonIgnoreProperties({"stories"})
     @ManyToMany
     @JoinTable(
@@ -61,6 +61,7 @@ public class Story {
     )
     private List<Doctor> doctors;
     @JsonBackReference
+    @JsonIgnoreProperties({"storys"})
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(
@@ -87,7 +88,7 @@ public class Story {
     private String imgURL;
     @Column
     private String synopsis;
-    @Column
+    @Column(length = 1000)
     private String keywords;
     @Enumerated(EnumType.STRING)
     @Column
@@ -109,7 +110,6 @@ public class Story {
 
     public Story(String title, Format media, LocalDate firstEpBroadcast, LocalDate lastEpBroadcast, String releases, String imgURL, String synopsis, String keywords, Series series, Integer storyNumber, Integer noOfEpisodes, String productionCode, String wikiLink) {
         this.title = title;
-//        this.cast = new ArrayList<>();
         this.castAndCrew = new ArrayList<>();
         this.media = media;
         this.firstEpBroadcast = firstEpBroadcast;
@@ -144,20 +144,20 @@ public class Story {
         this.title = title;
     }
 
-    public List<CastAndCrew> getCastCrew() {
+    public List<CastAndCrew> getCastAndCrew() {
         return castAndCrew;
     }
 
-    public void setCastCrew(List<CastAndCrew> castAndCrew) {
+    public void setCastAndCrew(List<CastAndCrew> castAndCrew) {
         this.castAndCrew = castAndCrew;
     }
 
-    public void addCastCrew(CastAndCrew castCrewMember){
-        this.castAndCrew.add(castCrewMember);
+    public void addCastAndCrew(CastAndCrew castAndCrewMember){
+        this.castAndCrew.add(castAndCrewMember);
     }
 
-    public void removeCrew(CastAndCrew castCrewMember){
-        this.castAndCrew.remove(castCrewMember);
+    public void removeCastAndCrew(CastAndCrew castAndCrewMember){
+        this.castAndCrew.remove(castAndCrewMember);
     }
 
     public Format getMedia() {

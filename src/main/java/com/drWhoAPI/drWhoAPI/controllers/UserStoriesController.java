@@ -16,23 +16,23 @@ class UserStoriesController {
     @Autowired
     UserStoriesRepository reviewRepository;
 
-    @GetMapping(value = "/reviews")
+    @GetMapping(value = "/user_stories")
     public ResponseEntity<List<UserStories>> getAllReviews(){
         return new ResponseEntity<>(reviewRepository.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping(value = "/reviews/{id}")
+    @GetMapping(value = "/user_stories/{id}")
     public ResponseEntity getSingleReview(@PathVariable Long id){
         return new ResponseEntity(reviewRepository.findById(id), HttpStatus.OK);
     }
 
-    @DeleteMapping(value = "/reviews/{id}")
+    @DeleteMapping(value = "/user_stories/{id}")
     public ResponseEntity<Optional> deleteReview(@PathVariable Long id){
         reviewRepository.deleteById(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }
 
-    @PutMapping(value = "/reviews/{id}")
+    @PutMapping(value = "/user_stories/{id}")
     public ResponseEntity<UserStories> updateReview(
             @RequestBody UserStories review,
             @PathVariable Long id){
@@ -48,7 +48,7 @@ class UserStoriesController {
         return new ResponseEntity<>(updatedReview, HttpStatus.OK);
     }
 
-    @PostMapping(value = "/reviews")
+    @PostMapping(value = "/user_stories")
     public ResponseEntity<UserStories> createReview(@RequestBody UserStories review) {
         UserStories newReview = new UserStories();
         newReview.setStory(review.getStory());

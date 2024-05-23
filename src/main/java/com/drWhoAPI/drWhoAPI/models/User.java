@@ -14,6 +14,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @Column
+    private String firstname;
+    @Column
+    private String lastname;
+    @Column
     private String email;
     @Column
     private String display_name;
@@ -32,7 +36,9 @@ public class User {
     public User() {
     }
 
-    public User(String email, String display_name, String location, String userImgURL, String userBio, String userWebsite) {
+    public User(String firstname, String lastname, String email, String display_name, String location, String userImgURL, String userBio, String userWebsite) {
+        this.firstname = firstname;
+        this.lastname = lastname;
         this.email = email;
         this.display_name = display_name;
         this.location = location;
@@ -48,6 +54,22 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getFirstname() {
+        return firstname;
+    }
+
+    public void setFirstname(String firstname) {
+        this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     public String getEmail() {

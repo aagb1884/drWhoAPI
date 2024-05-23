@@ -1,5 +1,7 @@
 package com.drWhoAPI.drWhoAPI.models.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum Format {
 
     AUDIO("Audio"),
@@ -16,7 +18,8 @@ public enum Format {
         this.value = value;
     }
 
-    public String getValue() {
+    @JsonValue
+    String getValue() {
         return this.value;
     }
 

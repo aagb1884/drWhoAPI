@@ -1,5 +1,7 @@
 package com.drWhoAPI.drWhoAPI.models.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum Series {
     SEASON1("Season 1"),
     SEASON2("Season 2"),
@@ -72,7 +74,8 @@ public enum Series {
         this.value = value;
     }
 
-    public String getValue() {
+    @JsonValue
+    String getValue() {
         return this.value;
     }
 }

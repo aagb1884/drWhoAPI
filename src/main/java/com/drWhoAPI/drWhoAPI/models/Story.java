@@ -24,7 +24,7 @@ public class Story {
     private String title;
     @OneToMany(mappedBy = "story", cascade = CascadeType.ALL)
     @JsonManagedReference
-    @JsonIgnoreProperties({"story"})
+    @JsonIgnoreProperties({"story", "castCrewRoles"})
     private List<CastAndCrew> castAndCrew;
     @Enumerated(EnumType.STRING)
     @Column
@@ -60,8 +60,8 @@ public class Story {
             }
     )
     private List<Doctor> doctors;
-    @JsonBackReference
-    @JsonIgnoreProperties({"storys"})
+
+    @JsonIgnoreProperties({"stories"})
     @ManyToMany
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinTable(

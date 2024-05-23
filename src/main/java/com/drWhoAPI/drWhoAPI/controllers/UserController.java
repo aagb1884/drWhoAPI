@@ -38,6 +38,8 @@ class UserController {
             @RequestBody User user,
             @PathVariable Long id){
         User updatedUser = userRepository.findById(id).get();
+        updatedUser.setFirstname(user.getFirstname());
+        updatedUser.setLastname(user.getLastname());
         updatedUser.setEmail(user.getEmail());
         updatedUser.setLocation(user.getDisplay_name());
         updatedUser.setLocation(user.getLocation());
@@ -54,6 +56,8 @@ class UserController {
     @PostMapping(value = "/users")
     public ResponseEntity<User> createUser(@RequestBody User user) {
         User newUser = new User();
+        newUser.setFirstname(user.getFirstname());
+        newUser.setLastname(user.getLastname());
         newUser.setEmail(user.getEmail());
         newUser.setLocation(user.getDisplay_name());
         newUser.setLocation(user.getLocation());

@@ -1,5 +1,6 @@
 package com.drWhoAPI.drWhoAPI.models;
 
+import com.drWhoAPI.drWhoAPI.models.enums.UserType;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
@@ -13,6 +14,10 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column
+    private String auth0uniqueID;
+    @Column
+    private UserType userType;
     @Column
     private String firstname;
     @Column
@@ -36,7 +41,9 @@ public class User {
     public User() {
     }
 
-    public User(String firstname, String lastname, String email, String display_name, String location, String userImgURL, String userBio, String userWebsite) {
+    public User(String auth0uniqueID, UserType userType, String firstname, String lastname, String email, String display_name, String location, String userImgURL, String userBio, String userWebsite) {
+        this.auth0uniqueID = auth0uniqueID;
+        this.userType = userType;
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
@@ -54,6 +61,22 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public String getAuth0uniqueID() {
+        return auth0uniqueID;
+    }
+
+    public void setAuth0uniqueID(String auth0uniqueID) {
+        this.auth0uniqueID = auth0uniqueID;
+    }
+
+    public UserType getUserType() {
+        return userType;
+    }
+
+    public void setUserType(UserType userType) {
+        this.userType = userType;
     }
 
     public String getFirstname() {

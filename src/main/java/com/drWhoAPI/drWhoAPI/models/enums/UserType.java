@@ -1,5 +1,7 @@
 package com.drWhoAPI.drWhoAPI.models.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum UserType {
 
     ADMIN("Website Admin"),
@@ -11,7 +13,8 @@ public enum UserType {
         this.value = value;
     }
 
-    public String getValue() {
+    @JsonValue
+    String getValue() {
         return this.value;
     }
 

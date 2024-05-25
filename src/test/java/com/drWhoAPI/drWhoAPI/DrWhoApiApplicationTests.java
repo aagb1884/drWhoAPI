@@ -2,10 +2,7 @@ package com.drWhoAPI.drWhoAPI;
 
 import com.drWhoAPI.drWhoAPI.models.*;
 import com.drWhoAPI.drWhoAPI.models.CastAndCrew;
-import com.drWhoAPI.drWhoAPI.models.enums.CastOrCrew;
-import com.drWhoAPI.drWhoAPI.models.enums.Format;
-import com.drWhoAPI.drWhoAPI.models.enums.Series;
-import com.drWhoAPI.drWhoAPI.models.enums.UserStoryType;
+import com.drWhoAPI.drWhoAPI.models.enums.*;
 import com.drWhoAPI.drWhoAPI.repositories.*;
 import org.checkerframework.checker.units.qual.A;
 import org.junit.jupiter.api.Test;
@@ -58,8 +55,8 @@ class DrWhoApiApplicationTests {
 
 	@Test
 	public void canSaveUser(){
-		User todd = new User("todd@email.com", "hot_todd", "Nebraska", "userImgURL", "Todd is great.", "www.hottoddy.com");
-		userRepository.save(todd);
+		User andrew = new User("", UserType.ADMIN, "Andrew", "Blair", "andrew.blair.work@gmail.com", "aagb1884", "Scotland", "", "writer.", "https://andrewblair.co.uk/");
+		userRepository.save(andrew);
 	}
 
 	@Test
@@ -115,10 +112,10 @@ class DrWhoApiApplicationTests {
 		companionRepository.save(susan);
 		unearthly.addCompanion(susan);
 		storyRepository.save(unearthly);
-		User todd = new User("todd@email.com", "hot_todd", "Nebraska", "userImgURL", "Todd is great.", "www.hottoddy.com");
-		userRepository.save(todd);
+		User andrew = new User("", UserType.ADMIN, "Andrew", "Blair", "andrew.blair.work@gmail.com", "aagb1884", "Scotland", "", "writer.", "https://andrewblair.co.uk/");
+		userRepository.save(andrew);
 		LocalDateTime testDateTime = LocalDateTime.now();
-		UserStories review = new UserStories(unearthly, todd, UserStoryType.REVIEW, "great", 4, false, testDateTime);
+		UserStories review = new UserStories(unearthly, andrew, UserStoryType.REVIEW, "great", 4, false, testDateTime);
 		reviewRepository.save(review);
 
 	}

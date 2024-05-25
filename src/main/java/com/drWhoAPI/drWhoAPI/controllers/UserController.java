@@ -1,6 +1,5 @@
 package com.drWhoAPI.drWhoAPI.controllers;
 
-import com.drWhoAPI.drWhoAPI.models.Doctor;
 import com.drWhoAPI.drWhoAPI.models.User;
 import com.drWhoAPI.drWhoAPI.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -55,7 +54,7 @@ class UserController {
         return new ResponseEntity<>(updatedUser, HttpStatus.OK);
     }
 
-    @PostMapping(value = "/users")
+    @PostMapping(value = "/users", consumes = "application/json", produces = "application/json")
     public ResponseEntity<User> createUser(@RequestBody User user) {
         User newUser = new User();
         newUser.setAuth0uniqueID(user.getAuth0uniqueID());
@@ -63,7 +62,7 @@ class UserController {
         newUser.setFirstname(user.getFirstname());
         newUser.setLastname(user.getLastname());
         newUser.setEmail(user.getEmail());
-        newUser.setLocation(user.getDisplay_name());
+        newUser.setDisplay_name(user.getDisplay_name());
         newUser.setLocation(user.getLocation());
         newUser.setUserImgURL(user.getUserImgURL());
         newUser.setUserBio(user.getUserBio());

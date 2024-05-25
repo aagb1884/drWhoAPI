@@ -2,6 +2,7 @@ package com.drWhoAPI.drWhoAPI.models;
 
 import com.drWhoAPI.drWhoAPI.models.enums.UserType;
 import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ public class User {
     private Long id;
     @Column
     private String auth0uniqueID;
+    @Enumerated(EnumType.STRING)
     @Column
     private UserType userType;
     @Column
@@ -34,7 +36,7 @@ public class User {
     private String userBio;
     @Column
     private String userWebsite;
-    @JsonBackReference
+    @JsonIgnoreProperties({"user"})
     @OneToMany(mappedBy = "user", fetch= FetchType.LAZY)
     private List<UserStories> userStories;
 

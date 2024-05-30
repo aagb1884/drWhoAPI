@@ -1,5 +1,7 @@
 package com.drWhoAPI.drWhoAPI.models.enums;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum UserStoryType {
     REVIEW("Review"),
     WATCHLIST("Want to Watch/Listen/Read");
@@ -9,7 +11,7 @@ public enum UserStoryType {
     UserStoryType(String value) {
         this.value = value;
     }
-
+    
     public String getValue() {
         return this.value;
     }

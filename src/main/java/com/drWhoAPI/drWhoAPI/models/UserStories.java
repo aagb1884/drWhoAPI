@@ -16,9 +16,9 @@ public class UserStories {
     private Long id;
     @ManyToOne
     @JoinColumn(name = "story_id", nullable = false)
-    @JsonIgnoreProperties({"reviews"})
+    @JsonIgnoreProperties({"userStories", "storyConnections", "castAndCrew"})
     private Story story;
-    @JsonIgnoreProperties({"userReviews"})
+    @JsonIgnoreProperties({"userStories"})
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     @JoinColumn(name = "user_id", nullable = false)

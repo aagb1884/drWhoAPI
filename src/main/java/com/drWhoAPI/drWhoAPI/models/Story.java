@@ -23,7 +23,7 @@ public class Story {
     @Column
     private String title;
     @OneToMany(mappedBy = "story", cascade = CascadeType.ALL)
-    @JsonManagedReference
+
     @JsonIgnoreProperties({"story", "castCrewRoles"})
     private List<CastAndCrew> castAndCrew;
     @Enumerated(EnumType.STRING)

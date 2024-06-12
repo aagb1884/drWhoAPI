@@ -33,19 +33,19 @@ public class UserStories {
     @Column
     private Boolean reviewPrivate;
     @Column(name = "date_time")
-    private LocalDateTime creationOfReviewDateTime;
+    private String creationOfReviewDateTime;
 
     public UserStories() {
     }
 
-    public UserStories(Story story, User user, UserStoryType type, String review, Integer rating, Boolean reviewPrivate, LocalDateTime creationOfReviewDateTime) {
+    public UserStories(Story story, User user, UserStoryType type, String review, Integer rating, Boolean reviewPrivate, String creationOfReviewDateTime) {
         this.story = story;
         this.user = user;
         this.type = type;
         this.review = review;
         this.rating = rating;
         this.reviewPrivate = reviewPrivate;
-        this.creationOfReviewDateTime = LocalDateTime.now();
+        this.creationOfReviewDateTime = creationOfReviewDateTime;
     }
 
     public Long getId() {
@@ -104,11 +104,11 @@ public class UserStories {
         this.reviewPrivate = reviewPrivate;
     }
 
-    public LocalDateTime getCreationOfReviewDateTime() {
+    public String getCreationOfReviewDateTime() {
         return creationOfReviewDateTime;
     }
 
-    public void setCreationOfReviewDateTime(LocalDateTime creationOfReviewDateTime) {
+    public void setCreationOfReviewDateTime(String creationOfReviewDateTime) {
         this.creationOfReviewDateTime = creationOfReviewDateTime;
     }
 }

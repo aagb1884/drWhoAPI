@@ -21,18 +21,15 @@ public class Story {
     @Column
     private String title;
     @OneToMany(mappedBy = "story", cascade = CascadeType.ALL)
-
     @JsonIgnoreProperties({"story", "castCrewRoles"})
     private List<CastAndCrew> castAndCrew;
     @Enumerated(EnumType.STRING)
     @Column
     private Format media;
     @Column
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate firstEpBroadcast;
+    private String firstEpBroadcast;
     @Column
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate lastEpBroadcast;
+    private String lastEpBroadcast;
     @Column
     private String releases;
 
@@ -106,7 +103,7 @@ public class Story {
     public Story() {
     }
 
-    public Story(String title, Format media, LocalDate firstEpBroadcast, LocalDate lastEpBroadcast, String releases, String imgURL, String synopsis, String keywords, Series series, Integer storyNumber, Integer noOfEpisodes, String productionCode, String wikiLink) {
+    public Story(String title, Format media, String firstEpBroadcast, String lastEpBroadcast, String releases, String imgURL, String synopsis, String keywords, Series series, Integer storyNumber, Integer noOfEpisodes, String productionCode, String wikiLink) {
         this.title = title;
         this.castAndCrew = new ArrayList<>();
         this.media = media;
@@ -166,19 +163,19 @@ public class Story {
         this.media = media;
     }
 
-    public LocalDate getFirstEpBroadcast() {
+    public String getFirstEpBroadcast() {
         return firstEpBroadcast;
     }
 
-    public void setFirstEpBroadcast(LocalDate firstEpBroadcast) {
+    public void setFirstEpBroadcast(String firstEpBroadcast) {
         this.firstEpBroadcast = firstEpBroadcast;
     }
 
-    public LocalDate getLastEpBroadcast() {
+    public String getLastEpBroadcast() {
         return lastEpBroadcast;
     }
 
-    public void setLastEpBroadcast(LocalDate lastEpBroadcast) {
+    public void setLastEpBroadcast(String lastEpBroadcast) {
         this.lastEpBroadcast = lastEpBroadcast;
     }
 

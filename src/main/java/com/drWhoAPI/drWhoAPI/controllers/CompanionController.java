@@ -52,7 +52,7 @@ class CompanionController {
     public ResponseEntity<Companion> createCompanion(@RequestBody Companion companion) {
         Companion newCompanion = new Companion();
         newCompanion.setFirstName(companion.getFirstName());
-        newCompanion.setLastName(companion.getFirstName());
+        newCompanion.setLastName(companion.getLastName());
         newCompanion.setNickname(companion.getNickname());
         newCompanion.setPrimaryEra(companion.getPrimaryEra());
         newCompanion.setMainActor(companion.getMainActor());

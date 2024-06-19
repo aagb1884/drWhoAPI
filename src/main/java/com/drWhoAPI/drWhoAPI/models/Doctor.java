@@ -20,7 +20,7 @@ public class Doctor {
     private String mainActor;
     @Column
     private String bio;
-    @JsonIgnoreProperties({"doctors", "companions", "castAndCrew", "stories"})
+    @JsonIgnoreProperties({"doctors", "companions", "castAndCrew"})
     @ManyToMany
     @JoinTable(
             name = "doctor_stories",

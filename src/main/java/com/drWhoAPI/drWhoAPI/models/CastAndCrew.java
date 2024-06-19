@@ -11,7 +11,7 @@ public class CastAndCrew {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @JsonIgnoreProperties({"castAndCrew"})
+    @JsonIgnoreProperties({"castCrewRoles"})
     @ManyToOne
     @JoinColumn(name = "person_id")
     private Person person;

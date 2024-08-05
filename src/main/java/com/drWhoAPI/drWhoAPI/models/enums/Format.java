@@ -9,6 +9,7 @@ public enum Format {
     FILM("Film"),
     PROSE("Prose"),
     COMIC("Comic"),
+    WEBCAST("Webcast"),
     OTHER("Other");
 
 

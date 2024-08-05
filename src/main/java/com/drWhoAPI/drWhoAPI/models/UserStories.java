@@ -26,7 +26,7 @@ public class UserStories {
     @Enumerated(EnumType.STRING)
     @Column
     private UserStoryType type;
-    @Column
+    @Column(length = 30000)
     private String review;
     @Column
     private Integer rating;

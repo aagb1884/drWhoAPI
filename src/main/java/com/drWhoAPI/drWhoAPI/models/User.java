@@ -39,6 +39,18 @@ public class User {
     @JsonIgnoreProperties({"user"})
     @OneToMany(mappedBy = "user", fetch= FetchType.LAZY)
     private List<UserStories> userStories;
+    @JsonIgnoreProperties({"followers", "following", "userStories"})
+    @ManyToMany
+    @JoinTable(
+            name = "user_following",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "follower_id")
+    )
+    private List<User> following;
+
+    @JsonIgnoreProperties({"followers", "following", "userStories"})
+    @ManyToMany(mappedBy = "following")
+    private List<User> followers;
 
     public User() {
     }
@@ -55,6 +67,8 @@ public class User {
         this.userBio = userBio;
         this.userWebsite = userWebsite;
         this.userStories = new ArrayList<UserStories>();
+        this.following = new ArrayList<User>();
+        this.followers = new ArrayList<>();
     }
 
     public Long getId() {
@@ -159,5 +173,29 @@ public class User {
 
     public void removeUserStory(UserStories userStory) {
         this.userStories.remove(userStory);
+    }
+
+    public List<User> getFollowing() {
+        return following;
+    }
+
+    public void setFollowing(List<User> following) {
+        this.following = following;
+    }
+
+    public void addToFollowingList(User user) {
+        this.following.add(user);
+    }
+
+    public void removeFromFollowingList(User user) {
+        this.following.remove(user);
+    }
+
+    public List<User> getFollowers() {
+        return followers;
+    }
+
+    public void setFollowers(List<User> followers) {
+        this.followers = followers;
     }
 }

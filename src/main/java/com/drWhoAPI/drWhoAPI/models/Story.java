@@ -2,12 +2,10 @@ package com.drWhoAPI.drWhoAPI.models;
 
 import com.drWhoAPI.drWhoAPI.models.enums.Format;
 import com.drWhoAPI.drWhoAPI.models.enums.Series;
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import org.hibernate.annotations.Cascade;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -79,9 +77,32 @@ public class Story {
             }
     )
     private List<Companion> companions;
+    @JsonIgnoreProperties({"stories"})
+    @ManyToMany
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @JoinTable(
+            name = "antagonist_stories",
+            joinColumns = {
+                    @JoinColumn(
+                            name = "story_id",
+                            nullable = false,
+                            updatable = false,
+                            insertable = false
+                    )
+            },
+            inverseJoinColumns = {
+                    @JoinColumn(
+                            name = "antagonist_id",
+                            nullable = false,
+                            updatable = false,
+                            insertable = false
+                    )
+            }
+    )
+    private List<Antagonist> antagonists;
     @Column
     private String imgURL;
-    @Column
+    @Column(length = 1000)
     private String synopsis;
     @Column(length = 1000)
     private String keywords;
@@ -112,6 +133,7 @@ public class Story {
         this.releases = releases;
         this.doctors = new ArrayList<>();
         this.companions = new ArrayList<>();
+        this.antagonists = new ArrayList<>();
         this.imgURL = imgURL;
         this.synopsis = synopsis;
         this.keywords = keywords;
@@ -214,6 +236,20 @@ public class Story {
     }
 
     public void removeCompanion(Companion companion){ this.companions.remove(companion);}
+
+    public List<Antagonist> getAntagonists() {
+        return antagonists;
+    }
+
+    public void setAntagonists(List<Antagonist> antagonists) {
+        this.antagonists = antagonists;
+    }
+
+    public void addAntagonist(Antagonist antagonist){
+        this.antagonists.add(antagonist);
+    }
+
+    public void removeAntagonist(Antagonist antagonist){ this.antagonists.remove(antagonist);}
 
     public String getImgURL() {
         return imgURL;

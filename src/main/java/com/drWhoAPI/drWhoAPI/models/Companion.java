@@ -22,6 +22,8 @@ public class Companion {
     @Column
     private String primaryEra;
     @Column
+    private String primaryMedia;
+    @Column
     private String mainActor;
     @Column
     private String bio;
@@ -51,11 +53,12 @@ public class Companion {
     public Companion() {
     }
 
-    public Companion(String firstName, String lastName, String nickname, String primaryEra, String mainActor, String bio) {
+    public Companion(String firstName, String lastName, String nickname, String primaryEra, String primaryMedia, String mainActor, String bio) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.nickname = nickname;
         this.primaryEra = primaryEra;
+        this.primaryMedia = primaryMedia;
         this.mainActor = mainActor;
         this.bio = bio;
         this.stories = new ArrayList<>();
@@ -99,6 +102,14 @@ public class Companion {
 
     public void setPrimaryEra(String primaryEra) {
         this.primaryEra = primaryEra;
+    }
+
+    public String getPrimaryMedia() {
+        return primaryMedia;
+    }
+
+    public void setPrimaryMedia(String primaryMedia) {
+        this.primaryMedia = primaryMedia;
     }
 
     public String getMainActor() {

@@ -48,6 +48,8 @@ class UserController {
         updatedUser.setUserBio(user.getUserBio());
         updatedUser.setUserWebsite(user.getUserWebsite());
         updatedUser.setUserStories(user.getUserStories());
+        updatedUser.setFollowing(user.getFollowing());
+        updatedUser.setFollowers(user.getFollowers());
 
         userRepository.save(updatedUser);
 
@@ -68,6 +70,8 @@ class UserController {
         newUser.setUserBio(user.getUserBio());
         newUser.setUserWebsite(user.getUserWebsite());
         newUser.setUserStories(user.getUserStories());
+        newUser.setFollowing(user.getFollowing());
+        newUser.setFollowers(user.getFollowers());
 
         userRepository.save(newUser);
 

@@ -40,6 +40,7 @@ class CompanionController {
         updatedCompanion.setLastName(companion.getLastName());
         updatedCompanion.setNickname(companion.getNickname());
         updatedCompanion.setPrimaryEra(companion.getPrimaryEra());
+        updatedCompanion.setPrimaryMedia(companion.getPrimaryMedia());
         updatedCompanion.setMainActor(companion.getMainActor());
         updatedCompanion.setBio(companion.getBio());
 
@@ -55,6 +56,7 @@ class CompanionController {
         newCompanion.setLastName(companion.getLastName());
         newCompanion.setNickname(companion.getNickname());
         newCompanion.setPrimaryEra(companion.getPrimaryEra());
+        newCompanion.setPrimaryMedia(companion.getPrimaryMedia());
         newCompanion.setMainActor(companion.getMainActor());
         newCompanion.setBio(companion.getBio());
 

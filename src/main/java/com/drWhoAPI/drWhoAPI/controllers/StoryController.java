@@ -50,6 +50,7 @@ class StoryController {
         updatedStory.setSynopsis(updatedStory.getSynopsis());
         updatedStory.setKeywords(updatedStory.getKeywords());
         updatedStory.setSeries(updatedStory.getSeries());
+        updatedStory.setSubSeries(updatedStory.getSubSeries());
         updatedStory.setStoryNumber(updatedStory.getStoryNumber());
         updatedStory.setProductionCode(updatedStory.getProductionCode());
         updatedStory.setWikiLink(updatedStory.getWikiLink());
@@ -64,7 +65,6 @@ class StoryController {
     public ResponseEntity<Story> createStory(@RequestBody Story Story) {
         Story newStory = new Story();
         newStory.setTitle(newStory.getTitle());
-//        newStory.setCast(newStory.getCast());
         newStory.setCastAndCrew(newStory.getCastAndCrew());
         newStory.setMedia(newStory.getMedia());
         newStory.setFirstEpBroadcast(newStory.getFirstEpBroadcast());
@@ -76,6 +76,7 @@ class StoryController {
         newStory.setSynopsis(newStory.getSynopsis());
         newStory.setKeywords(newStory.getKeywords());
         newStory.setSeries(newStory.getSeries());
+        newStory.setSubSeries(newStory.getSubSeries());
         newStory.setStoryNumber(newStory.getStoryNumber());
         newStory.setProductionCode(newStory.getProductionCode());
         newStory.setWikiLink(newStory.getWikiLink());

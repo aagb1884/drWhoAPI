@@ -42,6 +42,7 @@ public class DataLoader implements ApplicationRunner {
                 "synopsis",
                 "Christmas Special, Nicola Coughlan",
                 Series.SEASON22025,
+                "",
                 0,
                 1,
                 "",
